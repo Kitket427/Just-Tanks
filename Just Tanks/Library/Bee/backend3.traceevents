@@ -1,0 +1,880 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1740576609357953, "dur":31652, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576609389615, "dur":396, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576609390077, "dur":412, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576609390554, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":0, "ts":1740576609390698, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":0, "ts":1740576609390874, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":0, "ts":1740576609391323, "dur":122, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/pka8h/b8c6p5jjeyvg.obj" }}
+,{ "pid":12345, "tid":0, "ts":1740576609391545, "dur":146, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/l5s6h46lib75.obj" }}
+,{ "pid":12345, "tid":0, "ts":1740576609391902, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/_dummy_for_header_discovery" }}
+,{ "pid":12345, "tid":0, "ts":1740576609392119, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ju3ddxdv9yzv.obj" }}
+,{ "pid":12345, "tid":0, "ts":1740576609392321, "dur":144, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/coo9o3fex4p0.obj" }}
+,{ "pid":12345, "tid":0, "ts":1740576609392664, "dur":120, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/hszoi2zef6mi.obj" }}
+,{ "pid":12345, "tid":0, "ts":1740576609394636, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/i40l5gn8ql59.obj" }}
+,{ "pid":12345, "tid":0, "ts":1740576609390511, "dur":7328, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576609397845, "dur":11048724, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576620446572, "dur":359, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576620446931, "dur":87, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576620447038, "dur":70, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1740576620447347, "dur":5509, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1740576609391199, "dur":6686, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609397894, "dur":423, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609398317, "dur":273, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609398591, "dur":263, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609398855, "dur":6564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609405631, "dur":56, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ysy1shwjlagv4.lump.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609405701, "dur":8860, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ysy1shwjlagv4.lump.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609414940, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Assembly.h" }}
+,{ "pid":12345, "tid":1, "ts":1740576609414610, "dur":1489, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609405689, "dur":10410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/3ql98m6nl3qo.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609416155, "dur":479, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\adler32.c" }}
+,{ "pid":12345, "tid":1, "ts":1740576609416907, "dur":436, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\stdarg.h" }}
+,{ "pid":12345, "tid":1, "ts":1740576609416649, "dur":787, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609416150, "dur":1287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/qagyc0ie4e8q.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609417474, "dur":890, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\v1hhzwj19ckj0.lump.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609418380, "dur":595, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609417465, "dur":1511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/hv5cfkdaykz1.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609419018, "dur":323, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\mono\\MonoPosixHelper.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609419370, "dur":300, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\mono\\MonoPosixHelper.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420113, "dur":171, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-config.h" }}
+,{ "pid":12345, "tid":1, "ts":1740576609419681, "dur":702, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609419016, "dur":1368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/trehtnatx38x.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420435, "dur":166, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Remoting\\RemotingServices.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420609, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\Windows.winmd" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420667, "dur":174, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420422, "dur":420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/6n9yjv1mrr6v.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420896, "dur":136, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\dictionary_hash.c" }}
+,{ "pid":12345, "tid":1, "ts":1740576609421092, "dur":83, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609420886, "dur":290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/uop629qsxs6y.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609421206, "dur":316, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\Mono.Unity\\UnityTls.cpp" }}
+,{ "pid":12345, "tid":1, "ts":1740576609421535, "dur":578, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609421192, "dur":921, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ju3ddxdv9yzv.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609422151, "dur":201, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\inffast.c" }}
+,{ "pid":12345, "tid":1, "ts":1740576609422664, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\joystickapi.h" }}
+,{ "pid":12345, "tid":1, "ts":1740576609422371, "dur":392, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609422133, "dur":631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/mlj1j7suc598.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609422786, "dur":391, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\crc32.c" }}
+,{ "pid":12345, "tid":1, "ts":1740576609423177, "dur":626, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\crc32.c" }}
+,{ "pid":12345, "tid":1, "ts":1740576609423828, "dur":374, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609422785, "dur":1418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/0fbin04qlh83.obj" }}
+,{ "pid":12345, "tid":1, "ts":1740576609424238, "dur":86, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609424237, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityAnalyticsModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609424338, "dur":4113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityAnalyticsModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609428482, "dur":65, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609428554, "dur":2135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1740576609430693, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DirectorModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609430691, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.DirectorModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609430779, "dur":2357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.DirectorModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609433142, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteShapeModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609433141, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SpriteShapeModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609433278, "dur":1977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SpriteShapeModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609435258, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609435257, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UIModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609435365, "dur":1570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UIModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609439464, "dur":507, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576609436951, "dur":3040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1740576609439997, "dur":731, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VideoModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609439994, "dur":735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VideoModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609440766, "dur":4338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VideoModule.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609445354, "dur":10093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1740576609455455, "dur":330, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609455453, "dur":333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609455804, "dur":6064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Mathematics.pdb" }}
+,{ "pid":12345, "tid":1, "ts":1740576609462255, "dur":9659507, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1740576619121763, "dur":1324871, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609391002, "dur":6866, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609397872, "dur":578, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609398450, "dur":283, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609398734, "dur":394, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609399129, "dur":6243, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609405507, "dur":64, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/5smbg46mfjya4.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609405583, "dur":73, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/6hzof0en9p7q0.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609405692, "dur":1734, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\rq5ifsww1tt11.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609407446, "dur":465, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609405679, "dur":2232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/sqp1ykgqfyyf.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609407934, "dur":4119, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\6hzof0en9p7q0.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609412317, "dur":442, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\baselib\\Include\\C\\Internal\\Baselib_Lock_SemaphoreBased.inl.h" }}
+,{ "pid":12345, "tid":2, "ts":1740576609412064, "dur":1263, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609407931, "dur":5397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/gcdmnbu0jcmz.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609413384, "dur":258, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\3cw78st3ik0t0.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609413679, "dur":140, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609413381, "dur":439, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/d230l0l5f7ho.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609413820, "dur":433, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609414262, "dur":487, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\3esh4pm1g5380.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609414760, "dur":66, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\Windows.winmd" }}
+,{ "pid":12345, "tid":2, "ts":1740576609414826, "dur":647, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609414258, "dur":1216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/v4io260h5iox.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609415503, "dur":581, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\mpsm8r3h54pp3.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609416101, "dur":289, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609415498, "dur":893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/51vqw29wt6zo.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609416391, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609416484, "dur":1045, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya2.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609418197, "dur":582, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\vcruntime_typeinfo.h" }}
+,{ "pid":12345, "tid":2, "ts":1740576609418875, "dur":143, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\CodeAnalysis\\sourceannotations.h" }}
+,{ "pid":12345, "tid":2, "ts":1740576609417540, "dur":1540, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609416482, "dur":2599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ee7f9emzlpnm.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419114, "dur":354, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System\\System.Net\\Dns.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419767, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\corecrt_terminate.h" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419488, "dur":370, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419098, "dur":761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/kynqh9wwy9do.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419873, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\static_dict.c" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419930, "dur":137, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\static_dict.c" }}
+,{ "pid":12345, "tid":2, "ts":1740576609420068, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe" }}
+,{ "pid":12345, "tid":2, "ts":1740576609420127, "dur":74, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609419870, "dur":332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/eowsazcnkh2t.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609420234, "dur":241, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime\\RuntimeImports.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609420609, "dur":253, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Assembly.h" }}
+,{ "pid":12345, "tid":2, "ts":1740576609420486, "dur":711, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609420221, "dur":976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/kygfaiqvz0ot.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421253, "dur":151, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\Mono.Security.Cryptography\\KeyPairPersistence.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421412, "dur":55, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421237, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/yhhotrp9e3z8.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421468, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421618, "dur":141, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\brotli_bit_stream.c" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421787, "dur":183, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609421598, "dur":373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/uqb9f1p33gvq.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609422033, "dur":213, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\trees.c" }}
+,{ "pid":12345, "tid":2, "ts":1740576609422255, "dur":337, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609422011, "dur":581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/e91f7hjiaknl.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609422631, "dur":257, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\gzlib.c" }}
+,{ "pid":12345, "tid":2, "ts":1740576609422904, "dur":413, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609422618, "dur":702, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/715y89jjbstb.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609423355, "dur":228, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ffpbluhqv2up0.lump.cpp" }}
+,{ "pid":12345, "tid":2, "ts":1740576609423598, "dur":161, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576609423351, "dur":409, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/o2dklx2r6zm7.obj" }}
+,{ "pid":12345, "tid":2, "ts":1740576609424268, "dur":5086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609429368, "dur":2018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609431404, "dur":3517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609434938, "dur":1206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609436147, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VRModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1740576609436145, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VRModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1740576609436240, "dur":1833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VRModule.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1740576609438089, "dur":3556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609441662, "dur":5406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609447083, "dur":6754, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609453866, "dur":5289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609459173, "dur":12911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1740576609472088, "dur":9649670, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1740576619121759, "dur":1324808, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609391119, "dur":6757, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609397885, "dur":552, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609398437, "dur":249, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609398686, "dur":383, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609399069, "dur":6307, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609405637, "dur":105, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/xldqv91cf4bo0.lump.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609405769, "dur":6778, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\xldqv91cf4bo0.lump.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609412585, "dur":894, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609405743, "dur":7736, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/qjz737l0epac.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609413500, "dur":1065, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya5.lump.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609414575, "dur":787, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609413496, "dur":1867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/3rjri9icbf61.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609415387, "dur":547, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\3cw78st3ik0t1.lump.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609415959, "dur":475, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609415383, "dur":1051, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/glejn8j9bnyi.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609416453, "dur":996, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\k5es2leh553j0.lump.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609417675, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\wchar.h" }}
+,{ "pid":12345, "tid":3, "ts":1740576609417463, "dur":496, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609416450, "dur":1510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/xwjjqojkae39.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609417986, "dur":709, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\piiibvf7hvpe1.lump.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609418875, "dur":115, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-tokentype.h" }}
+,{ "pid":12345, "tid":3, "ts":1740576609419000, "dur":209, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\math.h" }}
+,{ "pid":12345, "tid":3, "ts":1740576609418707, "dur":888, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609417983, "dur":1613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/x5pwj9jxc3j3.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609419638, "dur":561, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System.Core\\System.IO.MemoryMappedFiles\\MemoryMapImpl.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609420209, "dur":342, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609419620, "dur":931, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/haltn7wrbl7t.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609420621, "dur":109, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\histogram.c" }}
+,{ "pid":12345, "tid":3, "ts":1740576609420750, "dur":118, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609420570, "dur":299, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ntb1i6doq8nl.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609420897, "dur":144, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\encode.c" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421053, "dur":189, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609420882, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/dksqsziu577e.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421279, "dur":176, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\Microsoft.Win32\\NativeMethods.cpp" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421612, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\vcruntime_new.h" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421465, "dur":257, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421266, "dur":457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/zh0miig5hr3d.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421757, "dur":228, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\bit_cost.c" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421996, "dur":161, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609421746, "dur":412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/2c9vnydhlteq.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609422189, "dur":216, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\gzwrite.c" }}
+,{ "pid":12345, "tid":3, "ts":1740576609422418, "dur":376, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609422176, "dur":619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/l5s6h46lib75.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609422795, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609422902, "dur":65, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\bdwgc\\extra\\krait_signal_handler.c" }}
+,{ "pid":12345, "tid":3, "ts":1740576609422882, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/pka8h/b8c6p5jjeyvg.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609423006, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609423178, "dur":58, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\dec\\state.c" }}
+,{ "pid":12345, "tid":3, "ts":1740576609423248, "dur":160, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609423158, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/0fj27ivv2w4m.obj" }}
+,{ "pid":12345, "tid":3, "ts":1740576609423488, "dur":870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1740576609424425, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GridModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609424424, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.GridModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609424536, "dur":3873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.GridModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609428419, "dur":103, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TilemapModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609428417, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TilemapModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609428530, "dur":100, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609428656, "dur":1824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TilemapModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609430486, "dur":206, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609430483, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609430709, "dur":1653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.2D.Animation.Runtime.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609432377, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1740576609433985, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609433983, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609434160, "dur":1814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InternalAPIEngineBridge.001.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609435987, "dur":1819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":3, "ts":1740576609439500, "dur":557, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609437870, "dur":2198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1740576609440091, "dur":1596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1740576609441691, "dur":430, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Collections.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609441689, "dur":434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Collections.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609442137, "dur":6111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Collections.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609455412, "dur":1407, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609448289, "dur":8692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1740576609456983, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609456982, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609457119, "dur":3764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609460889, "dur":178, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreTextEngineModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609460888, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextCoreTextEngineModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609477885, "dur":158, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576609461080, "dur":16994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextCoreTextEngineModule.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1740576609478076, "dur":9643717, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1740576619121793, "dur":1324780, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609391331, "dur":6575, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609397913, "dur":551, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609398465, "dur":235, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609398701, "dur":390, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609399092, "dur":6285, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609405508, "dur":74, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/xphcj4whis8y0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609405634, "dur":64, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/bhawex956d5d0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609405714, "dur":1193, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\bhawex956d5d0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609406925, "dur":248, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609405700, "dur":1474, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/x7rio4s6dww3.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609407198, "dur":690, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\keuohvkiy6xq0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609407912, "dur":543, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609407195, "dur":1260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/3dl1d7i3lyel.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609408480, "dur":4131, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ysy1shwjlagv3.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609412627, "dur":924, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609408476, "dur":5076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/07ar7e8jpnau.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609413574, "dur":514, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\d7v31m1d005b0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609414102, "dur":622, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609413571, "dur":1154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/hszoi2zef6mi.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609414752, "dur":822, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\x1r9p7ag2ivy0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609415596, "dur":661, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609414748, "dur":1509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/coo9o3fex4p0.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609416291, "dur":1124, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ypnjrakzp21g0.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609417604, "dur":175, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\vadefs.h" }}
+,{ "pid":12345, "tid":4, "ts":1740576609417427, "dur":595, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609416287, "dur":1736, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/2yu4oqcoxjqq.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418080, "dur":321, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\dec\\huffman.c" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418429, "dur":94, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\corecrt.h" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418411, "dur":211, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418056, "dur":567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/0m18mq9sr0yf.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418672, "dur":71, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\common\\platform.c" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418754, "dur":64, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418645, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/7aultznpyvjd.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418858, "dur":472, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\WindowsGames\\Win32ApiWindowsGamesEmulation.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609419832, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\baselib\\Include\\Internal\\PlatformDetection.h" }}
+,{ "pid":12345, "tid":4, "ts":1740576609419896, "dur":183, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-string-types.h" }}
+,{ "pid":12345, "tid":4, "ts":1740576609419342, "dur":767, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609418846, "dur":1264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/a87v4hou6kfg.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609420139, "dur":575, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Security.Policy\\Evidence.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609420726, "dur":551, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609420125, "dur":1153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/5f4nea7qeoyb.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421307, "dur":183, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\Interop.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421506, "dur":104, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421294, "dur":316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/p1u107qy56ta.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421654, "dur":210, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\block_splitter.c" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421874, "dur":115, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421640, "dur":349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/s9fd8xrn4udg.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609421990, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609422064, "dur":206, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\inflate.c" }}
+,{ "pid":12345, "tid":4, "ts":1740576609422490, "dur":190, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\ole.h" }}
+,{ "pid":12345, "tid":4, "ts":1740576609422796, "dur":133, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\reason.h" }}
+,{ "pid":12345, "tid":4, "ts":1740576609422282, "dur":670, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609422044, "dur":909, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/8et5er0k7yoo.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609423005, "dur":110, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\backward_references.c" }}
+,{ "pid":12345, "tid":4, "ts":1740576609423126, "dur":145, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609422993, "dur":279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/rsiz5nlaxrlo.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609423304, "dur":536, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\mpsm8r3h54pp2.lump.cpp" }}
+,{ "pid":12345, "tid":4, "ts":1740576609423850, "dur":344, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609423300, "dur":894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/2il8uubtxqju.obj" }}
+,{ "pid":12345, "tid":4, "ts":1740576609424218, "dur":106, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609424217, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityWebRequestModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609424336, "dur":4837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityWebRequestModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609429176, "dur":205, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\analytics.json" }}
+,{ "pid":12345, "tid":4, "ts":1740576609429175, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/analytics.json" }}
+,{ "pid":12345, "tid":4, "ts":1740576609429390, "dur":2131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/analytics.json" }}
+,{ "pid":12345, "tid":4, "ts":1740576609431525, "dur":326, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609431523, "dur":329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609431868, "dur":2673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Burst.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609434577, "dur":2420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":4, "ts":1740576609437001, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.JSONSerializeModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609437000, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.JSONSerializeModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609437101, "dur":1780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.JSONSerializeModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609438885, "dur":179, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AndroidJNIModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609438883, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AndroidJNIModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609439073, "dur":184, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576609439262, "dur":1779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AndroidJNIModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609441055, "dur":3796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":4, "ts":1740576609444855, "dur":141, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609444854, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609445020, "dur":10991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AssetBundleModule.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1740576609456032, "dur":4332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1740576609460385, "dur":21196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1740576609481585, "dur":9640198, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1740576619121783, "dur":1324833, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609391625, "dur":6321, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609397957, "dur":429, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609398387, "dur":189, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609398576, "dur":295, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609398871, "dur":6563, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609405509, "dur":98, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/fqlsemvdhl0i0.lump.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609405680, "dur":2211, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\9oqn4h9ixusr0.lump.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609407909, "dur":554, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609405670, "dur":2794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/oot38x5ijp7k.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609408486, "dur":4266, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\xldqv91cf4bo1.lump.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609412766, "dur":1102, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609408482, "dur":5387, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/9uqiamm5bjw2.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609413870, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609413944, "dur":1778, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\k5es2leh553j3.lump.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609415979, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\sys\\types.h" }}
+,{ "pid":12345, "tid":5, "ts":1740576609415731, "dur":664, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609413941, "dur":2455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/mawuzigxz3lp.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609416437, "dur":1341, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ehwq7bf2bbkr0.lump.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609418100, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Threading\\InternalThread.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609417804, "dur":599, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609416434, "dur":1970, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/wgrnhhzc0t5s.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609418426, "dur":470, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\common\\transform.c" }}
+,{ "pid":12345, "tid":5, "ts":1740576609418424, "dur":512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/qc1p1sxr6zpl.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609418976, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/1iwnxgk89rmf.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609419080, "dur":714, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System\\System.Threading\\Semaphore.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609419955, "dur":133, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-class-internals.h" }}
+,{ "pid":12345, "tid":5, "ts":1740576609420113, "dur":506, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\c-api\\il2cpp-config-api-platforms.h" }}
+,{ "pid":12345, "tid":5, "ts":1740576609419805, "dur":821, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609419067, "dur":1560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/aync5jjwg7vg.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609420651, "dur":1026, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.CompilerServices\\RuntimeHelpers.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609421677, "dur":938, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.CompilerServices\\RuntimeHelpers.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609422796, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\metadata\\Il2CppTypeHash.h" }}
+,{ "pid":12345, "tid":5, "ts":1740576609422625, "dur":520, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609420648, "dur":2497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/83d3pq044kya.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609423146, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609423345, "dur":450, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\mpsm8r3h54pp1.lump.cpp" }}
+,{ "pid":12345, "tid":5, "ts":1740576609423806, "dur":392, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576609423341, "dur":857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/zzaqtmdp1a3z.obj" }}
+,{ "pid":12345, "tid":5, "ts":1740576609424314, "dur":4497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609428843, "dur":1881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609430757, "dur":1909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609432700, "dur":3146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609435859, "dur":3441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609439336, "dur":1870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609441210, "dur":502, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIElementsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609441209, "dur":504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UIElementsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609441726, "dur":5132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UIElementsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609446875, "dur":4078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609450961, "dur":262, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InputSystem.ForUI.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609450960, "dur":264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InputSystem.ForUI.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609451280, "dur":7192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InputSystem.ForUI.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609458478, "dur":313, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PhysicsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609458476, "dur":316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.PhysicsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609458805, "dur":2758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.PhysicsModule.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1740576609461580, "dur":21358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1740576609482941, "dur":9638822, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1740576619121764, "dur":1324861, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1740576609390962, "dur":6896, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1740576609397866, "dur":7494, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1740576609405471, "dur":1654, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker D:/Unity/Just Tanks/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
+,{ "pid":12345, "tid":6, "ts":1740576609407126, "dur":1288, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1740576609409971, "dur":94, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609410067, "dur":186, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Cinemachine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609410298, "dur":756, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411056, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411122, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411185, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411348, "dur":113, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411462, "dur":145, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411608, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411668, "dur":158, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411827, "dur":54, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609411882, "dur":679, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609412562, "dur":141, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609412705, "dur":204, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609412910, "dur":427, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609413339, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609413413, "dur":317, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609413732, "dur":451, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414184, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414310, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414388, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414452, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414511, "dur":52, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414563, "dur":293, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609414857, "dur":352, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415210, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415279, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415361, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415426, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415514, "dur":115, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415631, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415746, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415819, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609415940, "dur":102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416050, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416122, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416199, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416264, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416355, "dur":317, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416673, "dur":99, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416773, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609416844, "dur":766, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609417611, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609417686, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609417755, "dur":193, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609417949, "dur":671, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609418621, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609418697, "dur":85, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609418782, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609418864, "dur":177, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609419042, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609419114, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609419179, "dur":113, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1740576609409624, "dur":9669, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"IL2CPP_CodeGen D:/Unity/Just Tanks/Library/Bee/artifacts/il2cpp_conv_1idd.traceevents" }}
+,{ "pid":12345, "tid":6, "ts":1740576609419298, "dur":245, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1740576609420806, "dur":9698607, "ph":"X", "name": "IL2CPP_CodeGen",  "args": { "detail":"D:/Unity/Just Tanks/Library/Bee/artifacts/il2cpp_conv_1idd.traceevents" }}
+,{ "pid":12345, "tid":6, "ts":1740576619121756, "dur":1324814, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609391290, "dur":6605, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609397903, "dur":476, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609398379, "dur":243, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609398622, "dur":250, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609398873, "dur":6535, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609405517, "dur":113, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ke0l9irooa0t0.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609405695, "dur":1191, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\rq5ifsww1tt12.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609406904, "dur":265, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609405681, "dur":1489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/b2gc5ygvcsk6.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609407201, "dur":328, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\rq5ifsww1tt10.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609407540, "dur":201, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609407198, "dur":543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/p7ejxcimjiil.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609407769, "dur":374, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\af5iypi4rsxz0.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609408181, "dur":331, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609407765, "dur":748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/j40kae4vtt2v.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609408539, "dur":157, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ke0l9irooa0t0.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609408740, "dur":165, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609408536, "dur":369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/usz8rnbaua68.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609408931, "dur":3581, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ysy1shwjlagv0.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609412530, "dur":916, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609408927, "dur":4520, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/buyfykb7zxre.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609413498, "dur":367, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\infback.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609414266, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\rpcdcep.h" }}
+,{ "pid":12345, "tid":7, "ts":1740576609413902, "dur":515, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609413473, "dur":945, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/tmxr12it2n2v.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609414452, "dur":769, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\x1r9p7ag2ivy1.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609415236, "dur":538, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609414448, "dur":1327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/f7yrqbeitk6u.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609415818, "dur":389, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\8442d1upm6rq0.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609416304, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\corecrt_wdirect.h" }}
+,{ "pid":12345, "tid":7, "ts":1740576609416227, "dur":254, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609415814, "dur":667, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/jbeezb4adyjx.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609416525, "dur":370, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\75tsh7hkmy250.lump.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609416907, "dur":435, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\baselib\\Include\\C\\Internal\\Baselib_CappedSemaphore_SemaphoreBased.inl.h" }}
+,{ "pid":12345, "tid":7, "ts":1740576609417378, "dur":304, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\corecrt_wctype.h" }}
+,{ "pid":12345, "tid":7, "ts":1740576609416906, "dur":1254, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609416521, "dur":1641, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/3vdaw0suo3we.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418212, "dur":321, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\dec\\decode.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418548, "dur":118, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418180, "dur":486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ds7aae9z458w.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418692, "dur":57, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\common\\dictionary.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418761, "dur":80, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418681, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/6v404avwnboq.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418871, "dur":177, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\Std\\ThreadImpl.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609419064, "dur":209, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609418858, "dur":416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/cnz0kdw5bc7y.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609419274, "dur":307, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609419598, "dur":172, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System\\Microsoft.Win32\\NativeMethods.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609419832, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\corecrt_wprocess.h" }}
+,{ "pid":12345, "tid":7, "ts":1740576609419802, "dur":292, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609419584, "dur":510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/xonr5f6nafbu.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420130, "dur":65, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\memory.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420206, "dur":91, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420113, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/kh5llvsgrmkq.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420320, "dur":251, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Versioning\\VersioningHelper.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420575, "dur":361, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Versioning\\VersioningHelper.cpp" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420948, "dur":119, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609420316, "dur":752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/av57hfiks74e.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609421096, "dur":255, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\compress_fragment_two_pass.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609421351, "dur":195, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\compress_fragment_two_pass.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609421556, "dur":242, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609421094, "dur":705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/l64y3xgr1oo5.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609421850, "dur":293, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\uncompr.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609422143, "dur":193, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\uncompr.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609422346, "dur":299, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609421848, "dur":797, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/fizvcyfn2ngo.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609422678, "dur":179, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\deflate.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609422858, "dur":279, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\deflate.c" }}
+,{ "pid":12345, "tid":7, "ts":1740576609423149, "dur":386, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609422676, "dur":859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/cvony8sfmvvl.obj" }}
+,{ "pid":12345, "tid":7, "ts":1740576609423565, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1740576609423679, "dur":673, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609424379, "dur":4943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1740576609429326, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.XRModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609429324, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.XRModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609429431, "dur":2720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.XRModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609432155, "dur":190, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PropertiesModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609432153, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.PropertiesModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609432360, "dur":2729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.PropertiesModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609435103, "dur":1333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1740576609436455, "dur":146, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SharedInternalsModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609436453, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SharedInternalsModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609436638, "dur":2248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SharedInternalsModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609438889, "dur":172, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1740576609438888, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1740576609439099, "dur":7748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1740576609446851, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ParticleSystemModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609446850, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.ParticleSystemModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609450150, "dur":58, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609446950, "dur":3270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.ParticleSystemModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609450224, "dur":79, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextRenderingModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609450222, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextRenderingModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609458426, "dur":112, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609450317, "dur":8247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextRenderingModule.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1740576609472271, "dur":4121, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576609458584, "dur":17963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1740576609476558, "dur":9645202, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1740576619121761, "dur":1324815, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609391373, "dur":6542, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609397919, "dur":329, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609398249, "dur":350, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609398600, "dur":226, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609398826, "dur":6544, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609405416, "dur":65, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/8442d1upm6rq0.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609405517, "dur":189, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/k5es2leh553j2.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609405718, "dur":2849, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\k5es2leh553j2.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609408579, "dur":445, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609405708, "dur":3317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/jrlcyait3n5u.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609409050, "dur":420, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\52kpgw8nyr4k0.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609409483, "dur":326, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609409048, "dur":761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/l6bd5vr8eqvz.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609409831, "dur":2192, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\cmbpefgwsc660.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609412244, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\crtdbg.h" }}
+,{ "pid":12345, "tid":8, "ts":1740576609413209, "dur":158, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\utils\\dynamic_array.h" }}
+,{ "pid":12345, "tid":8, "ts":1740576609412045, "dur":1417, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609409828, "dur":3634, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ynztdgl9o7xo.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609413482, "dur":611, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya6.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609414209, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\crtdbg.h" }}
+,{ "pid":12345, "tid":8, "ts":1740576609414313, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\__msvc_system_error_abi.hpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609414104, "dur":759, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609413478, "dur":1386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/6au9jhhg7umw.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609414891, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\702pamaq6f8h0.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609414949, "dur":657, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\702pamaq6f8h0.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609415621, "dur":324, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609414889, "dur":1057, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/w2wafs5onw41.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609415972, "dur":2057, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya1.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609418295, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\timezoneapi.h" }}
+,{ "pid":12345, "tid":8, "ts":1740576609418427, "dur":81, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\__msvc_system_error_abi.hpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609418999, "dur":156, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\combaseapi.h" }}
+,{ "pid":12345, "tid":8, "ts":1740576609418044, "dur":1240, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609415968, "dur":3317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/v2f520luov1v.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609419342, "dur":216, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System\\System.IO\\FileSystemWatcher.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609419569, "dur":131, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609419306, "dur":394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/174j0ehxidzc.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609419733, "dur":314, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\encoder_dict.c" }}
+,{ "pid":12345, "tid":8, "ts":1740576609420060, "dur":356, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609419721, "dur":696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/07c4dhuv5sal.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609420464, "dur":142, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Remoting.Proxies\\RealProxy.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609420636, "dur":145, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609420451, "dur":331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/r7y4m2pgtncy.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609420805, "dur":383, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\fast_log.c" }}
+,{ "pid":12345, "tid":8, "ts":1740576609421188, "dur":310, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\fast_log.c" }}
+,{ "pid":12345, "tid":8, "ts":1740576609421509, "dur":120, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609420803, "dur":826, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/48o4v2zg4udt.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609421652, "dur":935, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya4.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609422598, "dur":628, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609421647, "dur":1579, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/kgsgcvi7dlkb.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609423284, "dur":788, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\k5es2leh553j1.lump.cpp" }}
+,{ "pid":12345, "tid":8, "ts":1740576609424289, "dur":83, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\vadefs.h" }}
+,{ "pid":12345, "tid":8, "ts":1740576609424083, "dur":508, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609423280, "dur":1311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/g8auw2jp77o0.obj" }}
+,{ "pid":12345, "tid":8, "ts":1740576609424619, "dur":4196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609428818, "dur":500, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CoreModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1740576609428817, "dur":502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.CoreModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1740576609429335, "dur":2618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.CoreModule.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1740576609431970, "dur":151, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609432125, "dur":2694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609434823, "dur":234, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Cinemachine.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1740576609434822, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Cinemachine.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1740576609435107, "dur":1973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Cinemachine.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1740576609439646, "dur":439, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576609437096, "dur":3002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609440131, "dur":1632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609441926, "dur":4783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609446728, "dur":3669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609450413, "dur":6486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609456965, "dur":4065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609461055, "dur":16068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1740576609477127, "dur":9644645, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1740576619121773, "dur":1324792, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609391433, "dur":6491, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609397931, "dur":452, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609398383, "dur":204, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609398587, "dur":253, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609398841, "dur":6527, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609405474, "dur":2340, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\pch\\pch-cpp.hpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609407816, "dur":368, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\u1oik\\pch-cpp-18046145610710189441.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609408201, "dur":428, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609405454, "dur":3176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022Pch Library/Bee/artifacts/WinPlayerBuildProgram/u1oik/pch-cpp-18046145610710189441.pch (+obj)" }}
+,{ "pid":12345, "tid":9, "ts":1740576609408690, "dur":3775, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ysy1shwjlagv1.lump.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609412481, "dur":631, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609408686, "dur":4427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ed9xzs9awd88.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609413114, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609413279, "dur":1283, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\6hzof0en9p7q1.lump.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609414573, "dur":561, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609413274, "dur":1860, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/jvn4ojs4fs2t.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609415162, "dur":955, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\piiibvf7hvpe2.lump.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609416183, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\metadata\\Il2CppGenericClassCompare.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609416133, "dur":270, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609415157, "dur":1247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/0o0elhi18i0x.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609416464, "dur":1126, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\piiibvf7hvpe0.lump.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609417601, "dur":463, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609416460, "dur":1605, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/euyldvjsf9xc.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418065, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418312, "dur":111, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\dec\\bit_reader.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418428, "dur":94, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418528, "dur":134, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418288, "dur":374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/4n8gb67xit32.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418701, "dur":83, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\common\\constants.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418796, "dur":126, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418687, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/xb4y4tew71o1.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418944, "dur":284, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\Emscripten\\SocketBridge.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609419325, "dur":471, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\c-api\\il2cpp-config-api-platforms.h" }}
+,{ "pid":12345, "tid":9, "ts":1740576609419272, "dur":527, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609418941, "dur":858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ffxpxdorkxpa.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609419818, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609419985, "dur":256, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\metablock.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609420260, "dur":184, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609419974, "dur":471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/vwixywvm5xnp.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609420492, "dur":477, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Remoting.Contexts\\Context.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609420977, "dur":160, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609420479, "dur":658, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/wq90nzjo16bw.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421170, "dur":82, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\compress_fragment.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421265, "dur":125, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421159, "dur":231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/c6j2l9l0ru5d.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421431, "dur":88, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\cluster.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421575, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\corecrt_wctype.h" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421531, "dur":229, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421419, "dur":342, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/tpaevqoo3mgx.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421806, "dur":326, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\zutil.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609422142, "dur":313, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609421783, "dur":672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/9nqhgk0shhvp.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609422506, "dur":221, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\gzread.c" }}
+,{ "pid":12345, "tid":9, "ts":1740576609422907, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\bcrypt.h" }}
+,{ "pid":12345, "tid":9, "ts":1740576609422740, "dur":563, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609422479, "dur":824, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/m9kyqns6imq0.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609423350, "dur":591, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\mpsm8r3h54pp0.lump.cpp" }}
+,{ "pid":12345, "tid":9, "ts":1740576609424289, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\vcruntime_new_debug.h" }}
+,{ "pid":12345, "tid":9, "ts":1740576609423955, "dur":441, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609423347, "dur":1050, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/wg07refl5um5.obj" }}
+,{ "pid":12345, "tid":9, "ts":1740576609428356, "dur":201, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609424426, "dur":4157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609428586, "dur":218, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609428584, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609428820, "dur":1663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609430531, "dur":1603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609432137, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609432136, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TerrainModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609432226, "dur":1645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TerrainModule.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609433874, "dur":199, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityLinkerToEditorData.json" }}
+,{ "pid":12345, "tid":9, "ts":1740576609433873, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityLinkerToEditorData.json" }}
+,{ "pid":12345, "tid":9, "ts":1740576609434081, "dur":196, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609434280, "dur":1701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityLinkerToEditorData.json" }}
+,{ "pid":12345, "tid":9, "ts":1740576609435996, "dur":1817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609437817, "dur":587, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InputSystem.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609437816, "dur":590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InputSystem.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609438427, "dur":2491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.InputSystem.pdb" }}
+,{ "pid":12345, "tid":9, "ts":1740576609444576, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576609440966, "dur":3700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609444691, "dur":5924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609450617, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609450849, "dur":7968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609458856, "dur":2559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609461462, "dur":16078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1740576609477559, "dur":9644218, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1740576619121777, "dur":1324827, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609391553, "dur":6382, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609397942, "dur":517, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609398460, "dur":260, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609398720, "dur":368, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609399088, "dur":6301, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609405424, "dur":68, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/piiibvf7hvpe2.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609405507, "dur":55, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/d7v31m1d005b0.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609405585, "dur":91, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/azqhjl3um37d1.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609405687, "dur":6542, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\azqhjl3um37d1.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609412317, "dur":118, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\baselib\\Include\\C\\Baselib_Timer.h" }}
+,{ "pid":12345, "tid":10, "ts":1740576609412248, "dur":914, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609405678, "dur":7485, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/3hnr27tyge89.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609413259, "dur":473, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\6hzof0en9p7q2.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609413747, "dur":434, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609413211, "dur":971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/meymqrq8b8io.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609414248, "dur":967, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\x1r9p7ag2ivy2.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609415231, "dur":603, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609414208, "dur":1627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/iq99rjcmp0mp.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609415854, "dur":926, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ukyhov2h40qj0.lump.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609417408, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\baselib\\Include\\C\\Baselib_Thread.h" }}
+,{ "pid":12345, "tid":10, "ts":1740576609417675, "dur":104, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\include\\xmmintrin.h" }}
+,{ "pid":12345, "tid":10, "ts":1740576609417780, "dur":327, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\sys\\types.h" }}
+,{ "pid":12345, "tid":10, "ts":1740576609418197, "dur":118, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\gc\\NullGC.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609418429, "dur":92, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\utils\\Il2CppError.h" }}
+,{ "pid":12345, "tid":10, "ts":1740576609416797, "dur":1878, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609415851, "dur":2824, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/wzyrqjh43z0y.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609418693, "dur":290, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\vm-utils\\icalls\\mscorlib\\System.Threading\\Interlocked.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609418983, "dur":399, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\vm-utils\\icalls\\mscorlib\\System.Threading\\Interlocked.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609419397, "dur":525, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609418691, "dur":1231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/i40l5gn8ql59.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609419923, "dur":229, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420165, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Security.Cryptography\\RNGCryptoServiceProvider.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420232, "dur":124, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Security.Cryptography\\RNGCryptoServiceProvider.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420367, "dur":77, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420163, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/6h4jeo479cgr.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420477, "dur":237, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\literal_cost.c" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420727, "dur":81, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420464, "dur":345, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/g1ebotzw4npc.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420857, "dur":52, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\entropy_encode.c" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420921, "dur":130, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609420843, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/vr5n58ppekwo.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609421052, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609421179, "dur":97, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\command.c" }}
+,{ "pid":12345, "tid":10, "ts":1740576609421289, "dur":126, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609421163, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/y4du47ifbax8.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609421471, "dur":725, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\debugger\\il2cpp-api-debugger.cpp" }}
+,{ "pid":12345, "tid":10, "ts":1740576609422224, "dur":595, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609421431, "dur":1389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/6vp93bfh7ytp.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609422877, "dur":200, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\backward_references_hq.c" }}
+,{ "pid":12345, "tid":10, "ts":1740576609423090, "dur":272, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609422835, "dur":527, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/jmoyw9ti5skw.obj" }}
+,{ "pid":12345, "tid":10, "ts":1740576609423363, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609423487, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576609423576, "dur":454, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Universal.Runtime.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609423574, "dur":460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipelines.Universal.Runtime.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609424318, "dur":4725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipelines.Universal.Runtime.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609429058, "dur":2053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1740576609431115, "dur":79, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AIModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609431113, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AIModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609431206, "dur":1978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AIModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609433259, "dur":2186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1740576609435449, "dur":173, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AudioModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609435447, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AudioModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609435639, "dur":2909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AudioModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609438564, "dur":2260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":10, "ts":1740576609440829, "dur":94, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609440827, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.InputModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609440963, "dur":4752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.InputModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609445721, "dur":167, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipeline.Universal.ShaderLibrary.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609445718, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609445929, "dur":4255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609450192, "dur":99, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreFontEngineModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609450189, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextCoreFontEngineModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609450317, "dur":5785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.TextCoreFontEngineModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609456114, "dur":4920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/System.dll" }}
+,{ "pid":12345, "tid":10, "ts":1740576609461039, "dur":83, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubsystemsModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609461037, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SubsystemsModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609461134, "dur":21265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.SubsystemsModule.pdb" }}
+,{ "pid":12345, "tid":10, "ts":1740576609482403, "dur":9639377, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1740576619121781, "dur":1324813, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609391759, "dur":6193, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609397952, "dur":398, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609398350, "dur":243, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609398593, "dur":226, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609398820, "dur":294, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609399114, "dur":6260, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609405479, "dur":187, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/keuohvkiy6xq0.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609405699, "dur":6648, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\azqhjl3um37d0.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609412367, "dur":891, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609405685, "dur":7574, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/0yc90zvukyrf.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609413260, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609413380, "dur":689, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\xphcj4whis8y0.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609414078, "dur":670, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609413376, "dur":1372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/2ufgghnxrnx5.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609414787, "dur":322, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\mltkho01mfyv0.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609415123, "dur":193, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609414784, "dur":532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/dz6j9gquxk3u.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609415340, "dur":668, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya0.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609416172, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\String.h" }}
+,{ "pid":12345, "tid":11, "ts":1740576609416031, "dur":699, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609415336, "dur":1395, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/sj5m1snqsfl1.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609416732, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609416903, "dur":1983, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\5smbg46mfjya3.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609418896, "dur":619, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609416900, "dur":2616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/hxhyank3h53g.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419537, "dur":73, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System\\Mono.Net.Security\\MonoTlsProviderFactory.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419611, "dur":54, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\System\\Mono.Net.Security\\MonoTlsProviderFactory.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419675, "dur":63, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419535, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/k1k4zmj7bs5m.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419822, "dur":146, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\utf8_util.c" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419968, "dur":209, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\os\\ClassLibraryPAL\\brotli\\enc\\utf8_util.c" }}
+,{ "pid":12345, "tid":11, "ts":1740576609420195, "dur":81, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609419820, "dur":456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/nwgf9uvrjd59.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609420277, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609420510, "dur":141, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Remoting.Activation\\ActivationServices.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609420651, "dur":1066, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\libil2cpp\\icalls\\mscorlib\\System.Runtime.Remoting.Activation\\ActivationServices.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609422019, "dur":478, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\baselib\\Include\\C\\Internal\\Compiler\\Baselib_Atomic_Gcc_Patch.h" }}
+,{ "pid":12345, "tid":11, "ts":1740576609421727, "dur":924, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609420507, "dur":2145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/z93t5qvbwwx3.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609422686, "dur":281, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\gzclose.c" }}
+,{ "pid":12345, "tid":11, "ts":1740576609422979, "dur":382, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609422672, "dur":689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/iss0nlz2palf.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609423418, "dur":453, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\fqlsemvdhl0i0.lump.cpp" }}
+,{ "pid":12345, "tid":11, "ts":1740576609423880, "dur":150, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576609423377, "dur":654, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/efylaxhn870q.obj" }}
+,{ "pid":12345, "tid":11, "ts":1740576609424057, "dur":239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Core.Runtime.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609424055, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipelines.Core.Runtime.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609424322, "dur":4870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Unity.RenderPipelines.Core.Runtime.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609429207, "dur":2067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1740576609431278, "dur":102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609431276, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609431392, "dur":2296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609433698, "dur":127, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VFXModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609433697, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VFXModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609433842, "dur":3460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.VFXModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609437305, "dur":231, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AnimationModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609437304, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AnimationModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609437558, "dur":2708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.AnimationModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609440271, "dur":92, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputLegacyModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609440269, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.InputLegacyModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609440377, "dur":1499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.InputLegacyModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609441892, "dur":251, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609441878, "dur":266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609442219, "dur":8726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609450948, "dur":695, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.IMGUIModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609450947, "dur":699, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.IMGUIModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609451666, "dur":6934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.IMGUIModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609458604, "dur":77, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.Physics2DModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609458602, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.Physics2DModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609458716, "dur":13379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Games/Just Tanks/Just Tank_BackUpThisFolder_ButDontShipItWithYourGame/Managed/UnityEngine.Physics2DModule.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1740576609472098, "dur":9649690, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1740576619121789, "dur":1324795, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609391859, "dur":6104, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609397964, "dur":417, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609398381, "dur":219, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609398601, "dur":267, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609398868, "dur":6529, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609405516, "dur":102, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/mpsm8r3h54pp2.lump.cpp" }}
+,{ "pid":12345, "tid":12, "ts":1740576609405635, "dur":93, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MakeLump Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/ysy1shwjlagv2.lump.cpp" }}
+,{ "pid":12345, "tid":12, "ts":1740576609405743, "dur":7512, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\ysy1shwjlagv2.lump.cpp" }}
+,{ "pid":12345, "tid":12, "ts":1740576609413286, "dur":1009, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609405730, "dur":8566, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/hwjg107esto3.obj" }}
+,{ "pid":12345, "tid":12, "ts":1740576609414402, "dur":583, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ei6vj\\c9l0d13epz7o0.lump.cpp" }}
+,{ "pid":12345, "tid":12, "ts":1740576609414999, "dur":480, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609414355, "dur":1125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/ei6vj/8htfhwnu7bno.obj" }}
+,{ "pid":12345, "tid":12, "ts":1740576609415504, "dur":5322, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\bdwgc\\extra\\gc.c" }}
+,{ "pid":12345, "tid":12, "ts":1740576609421103, "dur":196, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\bdwgc\\include\\gc_mark.h" }}
+,{ "pid":12345, "tid":12, "ts":1740576609421764, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\objidlbase.h" }}
+,{ "pid":12345, "tid":12, "ts":1740576609420839, "dur":1158, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609415500, "dur":6498, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/pka8h/uz7hetfrklos.obj" }}
+,{ "pid":12345, "tid":12, "ts":1740576609422020, "dur":807, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\inftrees.c" }}
+,{ "pid":12345, "tid":12, "ts":1740576609422827, "dur":264, "ph":"X", "name": "ScanImplicitDeps",  "args": { "detail":"D:\\Unity\\2022.3.20f1\\Editor\\Data\\il2cpp\\external\\zlib\\inftrees.c" }}
+,{ "pid":12345, "tid":12, "ts":1740576609423107, "dur":416, "ph":"X", "name": "ImplicitDepsSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1740576609422018, "dur":1505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_Win64_VS2022 Library/Bee/artifacts/WinPlayerBuildProgram/f0vvw/pno14qt7c1la.obj" }}
+,{ "pid":12345, "tid":12, "ts":1740576609423668, "dur":1594, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneWindows.json" }}
+,{ "pid":12345, "tid":12, "ts":1740576609425264, "dur":211711, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\Just Tanks\\Library\\PackageCache\\com.unity.burst@1.8.12\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":12, "ts":1740576609423549, "dur":213428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":12, "ts":1740576609637400, "dur":10809064, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":0, "ts":1740576620459630, "dur":2520, "ph":"X", "name": "ProfilerWriteOutput" }
+,
