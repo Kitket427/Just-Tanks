@@ -760,12 +760,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275d6af4e797498408d8dec563570fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.6
+  speed: 2.4
   changeDirectionTime: 0
   timeA: 1
   timeB: 2
   distance: 12
-  rotationSpeed: 11
+  rotationSpeed: 8
   trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
 --- !u!114 &-8762551075838004073
 MonoBehaviour:

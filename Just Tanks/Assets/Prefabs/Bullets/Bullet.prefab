@@ -82,8 +82,10 @@ MonoBehaviour:
   dam: 0
   speed: 0.4
   time: 3
+  timeEffect: 0
   effect: {fileID: 4679837596717464489, guid: f20c29b0f1264af4d92a1c972931bb30, type: 3}
   ex: {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
+  rico: {fileID: 2884583356960329003, guid: 197bcec450b74314ab89241fcb6599e4, type: 3}
   bullet: []
   posEffect: {fileID: 5431454299473393059}
   ricount: 3

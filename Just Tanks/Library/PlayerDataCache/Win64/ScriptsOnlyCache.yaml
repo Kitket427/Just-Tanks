@@ -14,7 +14,6 @@ ScriptsOnlyBuild:
     - Teleport
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
-    - Cinemachine.CinemachineComposer
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineTargetGroup
     - Cinemachine.CinemachineTransposer
@@ -235,6 +234,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -276,8 +279,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4396}
     - Class: 114
-      Script: {instanceID: 4830}
-    - Class: 114
       Script: {instanceID: 4982}
     - Class: 114
       Script: {instanceID: 5026}
@@ -308,81 +309,81 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7598}
     - Class: 114
-      Script: {instanceID: 8122}
+      Script: {instanceID: 8138}
     - Class: 114
-      Script: {instanceID: 8140}
+      Script: {instanceID: 8538}
     - Class: 114
-      Script: {instanceID: 8540}
+      Script: {instanceID: 8680}
     - Class: 114
-      Script: {instanceID: 8682}
+      Script: {instanceID: 8880}
     - Class: 114
-      Script: {instanceID: 8882}
+      Script: {instanceID: 8946}
     - Class: 114
-      Script: {instanceID: 8948}
+      Script: {instanceID: 9070}
     - Class: 114
-      Script: {instanceID: 8972}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9074}
+      Script: {instanceID: 9764}
     - Class: 114
-      Script: {instanceID: 9444}
+      Script: {instanceID: 9834}
     - Class: 114
-      Script: {instanceID: 9768}
+      Script: {instanceID: 10096}
     - Class: 114
-      Script: {instanceID: 9838}
+      Script: {instanceID: 10206}
     - Class: 114
-      Script: {instanceID: 10100}
+      Script: {instanceID: 10396}
     - Class: 114
-      Script: {instanceID: 10210}
+      Script: {instanceID: 10480}
     - Class: 114
-      Script: {instanceID: 10400}
+      Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 10484}
+      Script: {instanceID: 11484}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11752}
     - Class: 114
-      Script: {instanceID: 11232}
+      Script: {instanceID: 11816}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 12220}
     - Class: 114
-      Script: {instanceID: 11760}
-    - Class: 114
-      Script: {instanceID: 11824}
-    - Class: 114
-      Script: {instanceID: 12086}
-    - Class: 114
-      Script: {instanceID: 12110}
-    - Class: 114
-      Script: {instanceID: 12230}
+      Script: {instanceID: 12302}
     - Class: 114
       Script: {instanceID: 12312}
     - Class: 114
-      Script: {instanceID: 12322}
+      Script: {instanceID: 12402}
     - Class: 114
-      Script: {instanceID: 12412}
+      Script: {instanceID: 12526}
     - Class: 114
-      Script: {instanceID: 12536}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 12918}
     - Class: 114
-      Script: {instanceID: 12928}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 12966}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13786}
+      Script: {instanceID: 14126}
     - Class: 114
-      Script: {instanceID: 30866}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 36554}
+      Script: {instanceID: 14138}
     - Class: 114
-      Script: {instanceID: 36564}
+      Script: {instanceID: 14142}
     - Class: 114
-      Script: {instanceID: 42658}
+      Script: {instanceID: 14146}
     - Class: 114
-      Script: {instanceID: 66378}
+      Script: {instanceID: 14150}
     - Class: 114
-      Script: {instanceID: 83452}
+      Script: {instanceID: 14154}
+    - Class: 114
+      Script: {instanceID: 14158}
+    - Class: 114
+      Script: {instanceID: 14162}
+    - Class: 114
+      Script: {instanceID: 14170}
+    - Class: 114
+      Script: {instanceID: 14174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1506,12 +1507,6 @@ ScriptsOnlyBuild:
     className: ScreenSpaceAmbientOcclusion
   - hash:
       serializedVersion: 2
-      Hash: 05882754ae549c13b2e6321f3b7be370
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Player
-  - hash:
-      serializedVersion: 2
       Hash: ed8e62f07ec878233f5493a335003493
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.UI
@@ -1648,12 +1643,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine
     namespaceName: Cinemachine
     className: CinemachinePipeline
-  - hash:
-      serializedVersion: 2
-      Hash: 5d6c311315ac44bf76f158223c0ab8fb
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: InputManager
   - hash:
       serializedVersion: 2
       Hash: e9db29e31ba60222fa1690a9445f34f5
@@ -2040,12 +2029,6 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 38d46748a857bec41d98afbdef2117fa
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Rico
-  - hash:
-      serializedVersion: 2
       Hash: 7d026ae582dc02c5edc3fc23b8c03ff7
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
@@ -2094,12 +2077,6 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
-      Hash: 7ed80f347c1f363ae0390103e394dfbc
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Bullet
-  - hash:
-      serializedVersion: 2
       Hash: 1ce63d97d1ca25cba2d91d5f32fd5f79
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -2140,12 +2117,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerHBox
-  - hash:
-      serializedVersion: 2
-      Hash: 5c482262e7150825119658021415f4a2
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Aim
   - hash:
       serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
@@ -2412,16 +2383,22 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 5c482262e7150825119658021415f4a2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Aim
+  - hash:
+      serializedVersion: 2
+      Hash: 853de15fff10914b5cb9a33f54ad8ff7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Teleport
+  - hash:
+      serializedVersion: 2
       Hash: 451de0e4ed9d9b902eb6f73fdd51eec7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Fire
-  - hash:
-      serializedVersion: 2
-      Hash: b7a231484be2b0f038f81899d1c06901
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: HitPoints
   - hash:
       serializedVersion: 2
       Hash: 83f7d0a747396cc20f7e85ae8e731f35
@@ -2436,17 +2413,41 @@ ScriptsOnlyBuild:
     className: AIController
   - hash:
       serializedVersion: 2
-      Hash: 853de15fff10914b5cb9a33f54ad8ff7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Teleport
-  - hash:
-      serializedVersion: 2
       Hash: 6be6f41aa69c877df484f17a5fe89d11
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: 70b6ca7df0a4983f93befb6c76b076b0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: b7a231484be2b0f038f81899d1c06901
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HitPoints
+  - hash:
+      serializedVersion: 2
+      Hash: 05882754ae549c13b2e6321f3b7be370
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: 38d46748a857bec41d98afbdef2117fa
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Rico
+  - hash:
+      serializedVersion: 2
+      Hash: 5d6c311315ac44bf76f158223c0ab8fb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: InputManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Games/Just Tanks/Just Tank.exe
+  playerPath: D:/Games/Just/Just Tank.exe

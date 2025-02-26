@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
     public bool richoshet, fire, dam;
     public float speed, time, timeEffect;
-    [SerializeField] private GameObject effect, ex;
+    [SerializeField] private GameObject effect, ex, rico;
     [SerializeField] private GameObject[] bullet;
     [SerializeField] private Transform posEffect;
     [SerializeField] private int ricount;
@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     {
         if (time > 0) Invoke(nameof(Dead), time);
         if (!richoshet && GetComponentInChildren<Rico>()) GetComponentInChildren<Rico>().enabled = false;
-        Invoke(nameof(Active), 0.1f);
+        Invoke(nameof(Active), 0.04f);
         if (fire) Invoke(nameof(Fire), 0.2f);
     }
     void Active()
@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
     private void FixedUpdate()
     {
         transform.Translate(Vector2.right * speed);
-        if (effect && speed != 0 && timeEffect >= 0.03f / speed)
+        if (effect && speed != 0 && timeEffect >= 0.01f / speed)
         {
             Instantiate(effect, posEffect.position, transform.rotation);
             timeEffect = 0;
@@ -63,11 +63,12 @@ public class Bullet : MonoBehaviour
                 }
             }
         }
-        if (speed != 0)
+        if (speed != 0 && dam)
         {
             if ((!richoshet || ricount <= 0)) Dead();
             else
             {
+                Instantiate(rico, transform.position, transform.rotation);
                 dam = true;
                 ricount--;
                 CancelInvoke();

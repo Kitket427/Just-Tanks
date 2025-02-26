@@ -21,7 +21,7 @@ public class AIController : MonoBehaviour
     void FixedUpdate()
     {
         MoveTowardsTarget();
-        if (rb.velocity.x > 0.1f || rb.velocity.y > 0.1f || rb.velocity.x < -0.1f || rb.velocity.y < -0.1f)
+        if (trail && (rb.velocity.x > 0.1f || rb.velocity.y > 0.1f || rb.velocity.x < -0.1f || rb.velocity.y < -0.1f))
         {
             if (time >= 0.3f / speed)
             {
