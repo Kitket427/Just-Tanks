@@ -88,7 +88,7 @@ MonoBehaviour:
   rico: {fileID: 2884583356960329003, guid: 197bcec450b74314ab89241fcb6599e4, type: 3}
   bullet: []
   posEffect: {fileID: 5431454299473393059}
-  ricount: 3
+  ricount: 2
   breakouts: 0
 --- !u!70 &8734850471251482247
 CapsuleCollider2D:

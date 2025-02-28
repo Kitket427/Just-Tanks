@@ -269,7 +269,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90da3b3727f457748a5478439f1b7d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: 0
+  type: 1
   rotateZ: 0
   rotate: 0
   speed: 90
@@ -622,6 +622,7 @@ GameObject:
   - component: {fileID: 7978814406129016133}
   - component: {fileID: 4606007372569034873}
   - component: {fileID: 523243654942225932}
+  - component: {fileID: 9123021469728920171}
   m_Layer: 6
   m_Name: QuadAI1
   m_TagString: Untagged
@@ -838,6 +839,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: {x: 50, y: 50}
   jump: 100
+--- !u!114 &9123021469728920171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6269024014703266720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7460909432516731530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,7 +1094,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1

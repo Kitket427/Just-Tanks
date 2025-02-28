@@ -12,13 +12,14 @@ struct Trigger
 public class HitPoints : MonoBehaviour, ITakeDamage
 {
     [SerializeField] private BossBar bossBar;
-    [SerializeField] private int hp, hpMax, healingAfter, healingSpeed;
+    [SerializeField] private int hp, hpMax, healingAfter, healingTime;
     [SerializeField] private SpriteRenderer[] sprites;
     [SerializeField] private Material[] materials;
     [SerializeField] private GameObject objDead, effect;
     [SerializeField] private Trigger[] triggers;
     [SerializeField] private Color color;
     private bool isDead;
+    [SerializeField] private bool player, bossColor;
     void Start()
     {
         hpMax = hp;
@@ -27,8 +28,19 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             if (item.color != Color.black)item.color = color;
         }
     }
+    void Update()
+    {
+        if (bossColor)
+        {
+            foreach (var item in sprites)
+            {
+                if (item.color != Color.black) item.color = color;
+            }
+        }
+    }
     void ITakeDamage.TakeDamage(int damage)
     {
+        if(player) FindObjectOfType<CameraShake>().TriggerShake(0.1f, damage/7f, damage / 7f);
         hp -= damage;
         if (hp <= 0 && isDead == false)
         {
@@ -55,7 +67,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     void Healing()
     {
         hp++;
-        if(hp < hpMax) Invoke(nameof(Healing), 1f/healingSpeed);
+        if(hp < hpMax) Invoke(nameof(Healing), 1f/(hpMax / healingTime));
         if (bossBar) bossBar.Damage(hp, hpMax);
     }
     void ReturnMat()
@@ -73,6 +85,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
         {
             item.obj.SetActive(item.active);
         }
+        FindObjectOfType<CameraShake>().TriggerShake(0.12f, 7f, 7f);
         Destroy(objDead);
     }
 }

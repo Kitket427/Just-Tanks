@@ -97,10 +97,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -363,11 +361,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14126}
-    - Class: 114
       Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 14138}
+      Script: {instanceID: 14134}
     - Class: 114
       Script: {instanceID: 14142}
     - Class: 114
@@ -381,9 +377,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14162}
     - Class: 114
-      Script: {instanceID: 14170}
+      Script: {instanceID: 14166}
     - Class: 114
       Script: {instanceID: 14174}
+    - Class: 114
+      Script: {instanceID: 14178}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2450,4 +2448,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Games/Just/Just Tank.exe
+  playerPath: D:/Games/Just Tanks/Just Tank.exe

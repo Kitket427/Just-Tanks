@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90da3b3727f457748a5478439f1b7d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: 0
+  type: 1
   rotateZ: 0
   rotate: 0
   speed: 45
@@ -536,6 +536,7 @@ GameObject:
   - component: {fileID: 742804606119046829}
   - component: {fileID: 2461476745372927491}
   - component: {fileID: 333173640757185479}
+  - component: {fileID: -1028607486978751232}
   m_Layer: 6
   m_Name: TankAI1
   m_TagString: Untagged
@@ -749,6 +750,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: {x: 50, y: 50}
   jump: 100
+--- !u!114 &-1028607486978751232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7962580341932633482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8046227620504434006
 GameObject:
   m_ObjectHideFlags: 0

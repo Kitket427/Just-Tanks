@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90da3b3727f457748a5478439f1b7d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: 0
+  type: 1
   rotateZ: 0
   rotate: 0
   speed: 135
@@ -620,6 +620,7 @@ GameObject:
   - component: {fileID: 8953164376022501648}
   - component: {fileID: 8690617112082074197}
   - component: {fileID: 7111555879091620156}
+  - component: {fileID: 1707717907865690359}
   m_Layer: 6
   m_Name: TankAI3
   m_TagString: Untagged
@@ -781,7 +782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossBar: {fileID: 0}
-  hp: 70
+  hp: 90
   hpMax: 0
   healingAfter: 0
   healingSpeed: 0
@@ -833,3 +834,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: {x: 50, y: 50}
   jump: 100
+--- !u!114 &1707717907865690359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010642470125476174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

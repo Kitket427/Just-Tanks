@@ -11,7 +11,7 @@ public class Fire : MonoBehaviour
     [SerializeField] private LayerMask layerMask;
     public void Shoot()
     {
-        if (reload == false && !Physics2D.OverlapCircle(transform.position, 1, layerMask))
+        if (reload == false && !Physics2D.OverlapCircle(transform.position, 0.3f, layerMask))
         {
             foreach (var item in spawnObj)
             {

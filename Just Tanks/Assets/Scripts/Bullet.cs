@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     {
         if (time > 0) Invoke(nameof(Dead), time);
         if (!richoshet && GetComponentInChildren<Rico>()) GetComponentInChildren<Rico>().enabled = false;
-        Invoke(nameof(Active), 0.04f);
+        Invoke(nameof(Active), 0.02f);
         if (fire) Invoke(nameof(Fire), 0.2f);
     }
     void Active()

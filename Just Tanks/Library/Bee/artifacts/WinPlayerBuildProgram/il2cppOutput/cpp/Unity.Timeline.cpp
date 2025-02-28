@@ -24989,23 +24989,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DiscreteTime_CompareTo_m9A2C892A6E409
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	int64_t V_0 = 0;
 	{
 		RuntimeObject* L_0 = ___0_obj;
 		if (!((RuntimeObject*)IsInstSealed((RuntimeObject*)L_0, DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6_il2cpp_TypeInfo_var)))
 		{
-			goto IL_001f;
+			goto IL_0022;
 		}
 	}
 	{
-		int64_t* L_1 = (int64_t*)(&__this->___m_DiscreteTime);
+		int64_t L_1 = __this->___m_DiscreteTime;
+		V_0 = L_1;
 		RuntimeObject* L_2 = ___0_obj;
 		int64_t L_3 = ((DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6*)UnBox(L_2, DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6_il2cpp_TypeInfo_var))->___m_DiscreteTime;
 		int32_t L_4;
-		L_4 = Int64_CompareTo_m63A0BDA03C5B1DEB7387B1C53D6BFD961E4F5490(L_1, L_3, NULL);
+		L_4 = Int64_CompareTo_m63A0BDA03C5B1DEB7387B1C53D6BFD961E4F5490((&V_0), L_3, NULL);
 		return L_4;
 	}
 
-IL_001f:
+IL_0022:
 	{
 		return 1;
 	}
@@ -25352,10 +25354,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteTime_t1598D60B0B2432F702E2A6120D04369
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DiscreteTime_ToString_mFE5EEC6255B3AA617F692DA9EB7DF4A5AD71FD83 (DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6* __this, const RuntimeMethod* method) 
 {
+	int64_t V_0 = 0;
 	{
-		int64_t* L_0 = (int64_t*)(&__this->___m_DiscreteTime);
+		int64_t L_0 = __this->___m_DiscreteTime;
+		V_0 = L_0;
 		String_t* L_1;
-		L_1 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B(L_0, NULL);
+		L_1 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_0), NULL);
 		return L_1;
 	}
 }
@@ -25370,10 +25374,12 @@ IL2CPP_EXTERN_C  String_t* DiscreteTime_ToString_mFE5EEC6255B3AA617F692DA9EB7DF4
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DiscreteTime_GetHashCode_m59E889384FD1F78DC2A1220C228EAB164F8995CE (DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6* __this, const RuntimeMethod* method) 
 {
+	int64_t V_0 = 0;
 	{
-		int64_t* L_0 = (int64_t*)(&__this->___m_DiscreteTime);
+		int64_t L_0 = __this->___m_DiscreteTime;
+		V_0 = L_0;
 		int32_t L_1;
-		L_1 = Int64_GetHashCode_mDB050BE2AC244D92B14D1DF725AAD279CDC48496(L_0, NULL);
+		L_1 = Int64_GetHashCode_mDB050BE2AC244D92B14D1DF725AAD279CDC48496((&V_0), NULL);
 		return L_1;
 	}
 }
