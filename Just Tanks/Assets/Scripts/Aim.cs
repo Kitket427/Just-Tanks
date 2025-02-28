@@ -21,7 +21,10 @@ public class Aim : MonoBehaviour
         else
         {
             transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
-            if (type == TypeOfUnit.enemy) target = FindObjectOfType<Player>().GetComponent<Transform>();
+            if (type == TypeOfUnit.enemy)
+            {
+                if(FindObjectOfType<Player>()) target = FindObjectOfType<Player>().GetComponent<Transform>();
+            }
             else Finder();
         }
         rotate = rotateZ = transform.eulerAngles.z;

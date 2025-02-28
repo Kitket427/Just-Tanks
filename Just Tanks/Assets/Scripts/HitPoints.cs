@@ -19,7 +19,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     [SerializeField] private Trigger[] triggers;
     [SerializeField] private Color color;
     private bool isDead;
-    [SerializeField] private bool player, bossColor;
+    [SerializeField] private bool player, bossColor, enemiesCounter;
     void Start()
     {
         hpMax = hp;
@@ -86,6 +86,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             item.obj.SetActive(item.active);
         }
         FindObjectOfType<CameraShake>().TriggerShake(0.12f, 7f, 7f);
+        if (enemiesCounter) FindObjectOfType<Spawner>().EnemyDown();
         Destroy(objDead);
     }
 }

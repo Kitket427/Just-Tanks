@@ -521,6 +521,7 @@ MonoBehaviour:
   distance: 45
   target: {fileID: 0}
   fire: {fileID: 3756260162825624649}
+  gamepad: 0
 --- !u!1 &7962580341932633482
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +702,7 @@ MonoBehaviour:
   hp: 40
   hpMax: 0
   healingAfter: 0
-  healingSpeed: 0
+  healingTime: 0
   sprites:
   - {fileID: 6706961136174601419}
   - {fileID: 5540092022137037034}
@@ -717,6 +718,9 @@ MonoBehaviour:
   effect: {fileID: 5692371481818956671, guid: f4d425e68861f494eabe6ff31a828b36, type: 3}
   triggers: []
   color: {r: 0.6, g: 1, b: 0.6, a: 1}
+  player: 0
+  bossColor: 0
+  enemiesCounter: 1
 --- !u!114 &2461476745372927491
 MonoBehaviour:
   m_ObjectHideFlags: 0

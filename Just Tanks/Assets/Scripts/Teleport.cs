@@ -9,7 +9,7 @@ public class Teleport : MonoBehaviour
     private Transform player;
     private void Start()
     {
-        player = FindObjectOfType<Player>().GetComponent<Transform>();
+        if(FindObjectOfType<Player>()) player = FindObjectOfType<Player>().GetComponent<Transform>();
     }
     private void Update()
     {

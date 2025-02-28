@@ -1,22 +1,112 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
+[System.Serializable]
+struct SpawnEnemies
+{
+    public GameObject enemy;
+    public int count;
+}
+
+[System.Serializable]
+struct WaveEnemies
+{
+    public SpawnEnemies[] spawnEnemies;
+    public GameObject[] friends;
+}
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] tanks;
-    [SerializeField] private float timeA, timeB, distance;
+    [SerializeField] private Text[] texts;
+    [SerializeField] private int waveNumber, enemiesCounter, timeToWave;
+    [SerializeField] private WaveEnemies[] waveEnemies;
+    [SerializeField] private float timeA, timeB, timeMultiplier, distance;
     private void Start()
     {
-        Invoke(nameof(Spawn), Random.Range(timeA, timeB));
+        texts[0].text = "";
+        texts[1].text = "";
+        texts[2].text = "";
+        Invoke(nameof(WaveStart), 7);
     }
     void Spawn()
     {
         int a = Random.Range(0, 2);
         int b = Random.Range(0, 2);
-        Instantiate(tanks[Random.Range(0, tanks.Length)], new Vector2(transform.position.x + distance * (-1 + a*2), transform.position.y + distance * (-1 + b * 2)), transform.rotation);
+        int randomTank = Random.Range(0, waveEnemies[waveNumber - 1].spawnEnemies.Length);
+        bool active = true;
+        while (active)
+        {
+            if (waveEnemies[waveNumber - 1].spawnEnemies[randomTank].count > 0)
+            {
+                Instantiate(waveEnemies[waveNumber - 1].spawnEnemies[randomTank].enemy, new Vector2(transform.position.x + distance * (-1 + a * 2), transform.position.y + distance * (-1 + b * 2)), transform.rotation);
+                waveEnemies[waveNumber - 1].spawnEnemies[randomTank].count--;
+                active = false;
+            }
+            else
+            {
+                if (randomTank < waveEnemies[waveNumber - 1].spawnEnemies.Length - 1) randomTank++;
+                else randomTank = 0;
+            }
+        }
+        int countSumm = 0;
+        foreach (var count in waveEnemies[waveNumber - 1].spawnEnemies)
+        {
+            countSumm += count.count;
+        }
+        if (countSumm > 0)
+        {
+            Invoke(nameof(Spawn), Random.Range(timeA, timeB));
+            timeA *= 1f - timeMultiplier;
+            timeB *= 1f - timeMultiplier;
+        }
+        if (waveEnemies[waveNumber - 1].friends.Length > 0 && waveEnemies[waveNumber - 1].friends[0])
+        {
+            foreach (var friend in waveEnemies[waveNumber - 1].friends)
+            {
+                Instantiate(friend, new Vector2(transform.position.x + distance * (-1 + a * 2), transform.position.y + distance * (-1 + b * 2)), transform.rotation);
+            }
+            waveEnemies[waveNumber - 1].friends[0] = null;
+        }
+    }
+    public void EnemyDown()
+    {
+        enemiesCounter--;
+        texts[1].text = "Осталось врагов: " + enemiesCounter;
+        if (enemiesCounter == 0)
+        {
+            texts[1].text = "Врагов не осталось";
+            timeToWave = 9;
+            if (waveNumber < waveEnemies.Length) TimerToWave();
+            else Victory();
+        }
+    }
+    void TimerToWave()
+    {
+        texts[2].text = "До следующей волны осталось: " + timeToWave;
+        if (timeToWave >= 0)
+        {
+            Invoke(nameof(TimerToWave), 1);
+            timeToWave--;
+        }
+        else WaveStart();
+    }
+    void WaveStart()
+    {
+        texts[2].text = "";
+        waveNumber++;
+        
+        texts[0].text = "Волна " + waveNumber;
+        foreach (var count in waveEnemies[waveNumber - 1].spawnEnemies)
+        {
+            enemiesCounter += count.count;
+        }
+        texts[1].text = "Осталось врагов: " + enemiesCounter;
         Invoke(nameof(Spawn), Random.Range(timeA, timeB));
-        timeA *= 0.97f;
-        timeB *= 0.97f;
+    }
+    void Victory()
+    {
+        texts[0].text = "Поздравляем!";
+        texts[1].text = "Вы прошли уровень!";
     }
 }
