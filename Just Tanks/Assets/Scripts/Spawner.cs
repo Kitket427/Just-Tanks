@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
+public struct TextTranslation
+{
+    public string[] text;
+}
+
+[System.Serializable]
 struct SpawnEnemies
 {
     public GameObject enemy;
@@ -18,6 +24,8 @@ struct WaveEnemies
 }
 public class Spawner : MonoBehaviour
 {
+    private int language = 1;
+    [SerializeField] private TextTranslation[] textTranslations;
     [SerializeField] private Text[] texts;
     [SerializeField] private int waveNumber, enemiesCounter, timeToWave;
     [SerializeField] private WaveEnemies[] waveEnemies;
@@ -72,10 +80,10 @@ public class Spawner : MonoBehaviour
     public void EnemyDown()
     {
         enemiesCounter--;
-        texts[1].text = "Осталось врагов: " + enemiesCounter;
+        texts[1].text = textTranslations[1].text[language] + " " + enemiesCounter;
         if (enemiesCounter == 0)
         {
-            texts[1].text = "Врагов не осталось";
+            texts[1].text = textTranslations[2].text[language];
             timeToWave = 9;
             if (waveNumber < waveEnemies.Length) TimerToWave();
             else Victory();
@@ -83,7 +91,7 @@ public class Spawner : MonoBehaviour
     }
     void TimerToWave()
     {
-        texts[2].text = "До следующей волны осталось: " + timeToWave;
+        texts[2].text = textTranslations[3].text[language] + " " + timeToWave;
         if (timeToWave >= 0)
         {
             Invoke(nameof(TimerToWave), 1);
@@ -96,17 +104,17 @@ public class Spawner : MonoBehaviour
         texts[2].text = "";
         waveNumber++;
         
-        texts[0].text = "Волна " + waveNumber;
+        texts[0].text = textTranslations[0].text[language] + " " + waveNumber;
         foreach (var count in waveEnemies[waveNumber - 1].spawnEnemies)
         {
             enemiesCounter += count.count;
         }
-        texts[1].text = "Осталось врагов: " + enemiesCounter;
+        texts[1].text = textTranslations[1].text[language] + " " + enemiesCounter;
         Invoke(nameof(Spawn), Random.Range(timeA, timeB));
     }
     void Victory()
     {
-        texts[0].text = "Поздравляем!";
-        texts[1].text = "Вы прошли уровень!";
+        texts[0].text = textTranslations[4].text[language];
+        texts[1].text = textTranslations[5].text[language];
     }
 }
