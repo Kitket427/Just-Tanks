@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     [SerializeField] private GameObject[] spawnObj;
-    public float reloadTime;
+    [SerializeField] private float reloadTime, randomAngle;
     private bool reload;
     [SerializeField] private Animator anim;
     [SerializeField] private LayerMask layerMask;
@@ -15,7 +15,7 @@ public class Fire : MonoBehaviour
         {
             foreach (var item in spawnObj)
             {
-                Instantiate(item, transform.position, transform.rotation);
+                Instantiate(item, transform.position, Quaternion.Euler(0,0,transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
             }
             if (anim) anim.Play("Fire");
             Invoke(nameof(Reload), reloadTime);

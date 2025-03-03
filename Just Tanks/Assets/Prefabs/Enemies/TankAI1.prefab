@@ -240,6 +240,7 @@ MonoBehaviour:
   - {fileID: 4078003966599070294, guid: c7555f164d0692c41a1bff37b981e1bc, type: 3}
   - {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
   reloadTime: 1.7
+  randomAngle: 3
   anim: {fileID: 1915113467049928456}
   layerMask:
     serializedVersion: 2
@@ -766,6 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
 --- !u!1 &8046227620504434006
 GameObject:
   m_ObjectHideFlags: 0

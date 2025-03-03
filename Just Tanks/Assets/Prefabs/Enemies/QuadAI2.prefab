@@ -442,6 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 1
 --- !u!1 &4280957278687168248
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +575,7 @@ MonoBehaviour:
   - {fileID: 1225319890681524585, guid: bddeb87524207ff4f959eca4860a4b52, type: 3}
   - {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
   reloadTime: 0.1
+  randomAngle: 18
   anim: {fileID: 0}
   layerMask:
     serializedVersion: 2

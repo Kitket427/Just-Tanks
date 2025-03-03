@@ -462,9 +462,9 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 45
+  speed: 90
   offset: 0
-  fireRadius: 30
+  fireRadius: 45
   distance: 45
   target: {fileID: 0}
   fire: {fileID: 1535314487141864640}
@@ -798,6 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
 --- !u!1 &8391615109440315266
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +846,8 @@ MonoBehaviour:
   spawnObj:
   - {fileID: 4078003966599070294, guid: c7555f164d0692c41a1bff37b981e1bc, type: 3}
   - {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
-  reloadTime: 0.7
+  reloadTime: 1.1
+  randomAngle: 3
   anim: {fileID: 5122687242716786644}
   layerMask:
     serializedVersion: 2

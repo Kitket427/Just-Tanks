@@ -7,6 +7,7 @@ public class BossBar : MonoBehaviour
 {
     private float hpDamage, hpCurrent, time;
     [SerializeField] private Image[] bars;
+    [SerializeField] private OstSystem ostSystem;
     private void Start()
     {
         hpDamage = hpCurrent = 1;
@@ -16,7 +17,12 @@ public class BossBar : MonoBehaviour
         if(time == 1) hpDamage = Mathf.MoveTowards(hpDamage, hpCurrent, 0.4f * Time.deltaTime);
         bars[1].fillAmount = hpDamage;
         if (hpCurrent > hpDamage) hpDamage = hpCurrent;
-        if (hpCurrent <= 0) Invoke(nameof(Restart), 7f);
+        if (hpCurrent <= 0)
+        {
+            Invoke(nameof(Restart), 7f);
+            Invoke(nameof(GameOver), 4f);
+            ostSystem.GameOver();
+        }
     }
     public void Damage(int hp, int hpmax)
     {
@@ -34,6 +40,10 @@ public class BossBar : MonoBehaviour
     {
         bars[0].fillAmount = 1;
         bars[1].fillAmount = 1;
+    }
+    void GameOver()
+    {
+        bars[2].GetComponent<Animator>().Play("EndGame");
     }
     void Restart()
     {

@@ -644,6 +644,7 @@ MonoBehaviour:
   color: {r: 1, g: 0.6, b: 0.6, a: 1}
   player: 0
   bossColor: 1
+  enemiesCounter: 0
 --- !u!114 &3300133564450184259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,8 +676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11300ceca3e3e5419dde6d5ab0d7b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: {x: 50, y: 50}
-  jump: 100
+  distance: {x: 100, y: 100}
+  jump: 200
 --- !u!114 &4199920049342253446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,6 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
 --- !u!95 &7128018916121861580
 Animator:
   serializedVersion: 5
@@ -819,6 +821,7 @@ MonoBehaviour:
   distance: 45
   target: {fileID: 0}
   fire: {fileID: 457049717824212314}
+  gamepad: 0
 --- !u!114 &126688866827166986
 MonoBehaviour:
   m_ObjectHideFlags: 0

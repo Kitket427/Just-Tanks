@@ -29,13 +29,22 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Text[] texts;
     [SerializeField] private int waveNumber, enemiesCounter, timeToWave;
     [SerializeField] private WaveEnemies[] waveEnemies;
-    [SerializeField] private float timeA, timeB, timeMultiplier, distance;
+    [SerializeField] private float timeA, timeB, timeMultiplier, distance, timeOnTimer;
     private void Start()
     {
         texts[0].text = "";
         texts[1].text = "";
         texts[2].text = "";
+        texts[3].text = "00:00";
         Invoke(nameof(WaveStart), 7);
+        timeOnTimer = 0;
+    }
+    private void Update()
+    {
+        timeOnTimer += Time.deltaTime;
+        int minutes = Mathf.FloorToInt(timeOnTimer / 60);
+        int seconds = Mathf.FloorToInt(timeOnTimer % 60);
+        texts[3].text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
     void Spawn()
     {
@@ -110,7 +119,7 @@ public class Spawner : MonoBehaviour
             enemiesCounter += count.count;
         }
         texts[1].text = textTranslations[1].text[language] + " " + enemiesCounter;
-        Invoke(nameof(Spawn), Random.Range(timeA, timeB));
+        Spawn();
     }
     void Victory()
     {
