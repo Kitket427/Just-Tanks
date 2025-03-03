@@ -3734,9 +3734,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d848478414e8b4890c708c7a43bb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObj:
-  - {fileID: 8515951574723697949, guid: 785ada77ba651b7468b9057cbc908d4b, type: 3}
-  - {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
+  spawnObj: {fileID: 8515951574723697949, guid: 785ada77ba651b7468b9057cbc908d4b, type: 3}
+  effectSpawn: {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
+  addSpawnObj:
+  - {fileID: 7665686016081086721, guid: adaa32bbc93c725489e23fd9385d8028, type: 3}
+  - {fileID: 2699651032565380789, guid: 744a81bc9e3934148a2ca5e8144d8eeb, type: 3}
+  - {fileID: 4880340806200243150, guid: ab2365a0e3f9e64449abd4ec0d04f568, type: 3}
+  countObj: 0
   reloadTime: 0.4
   randomAngle: 3
   anim: {fileID: 354361344}
@@ -4735,6 +4739,7 @@ MonoBehaviour:
   speed: 3
   rotationSpeed: 11
   trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
+  speedMultiplier: 0
 --- !u!114 &1928619036
 MonoBehaviour:
   m_ObjectHideFlags: 0

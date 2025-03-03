@@ -109,6 +109,9 @@ MonoBehaviour:
   target: {fileID: 0}
   fire: {fileID: 22941821262073835}
   gamepad: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 72
 --- !u!1 &1471869083056874792
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,9 +574,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d848478414e8b4890c708c7a43bb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObj:
-  - {fileID: 1225319890681524585, guid: bddeb87524207ff4f959eca4860a4b52, type: 3}
-  - {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
+  spawnObj: {fileID: 1225319890681524585, guid: bddeb87524207ff4f959eca4860a4b52, type: 3}
+  effectSpawn: {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
+  addSpawnObj: []
+  countObj: 0
   reloadTime: 0.1
   randomAngle: 18
   anim: {fileID: 0}

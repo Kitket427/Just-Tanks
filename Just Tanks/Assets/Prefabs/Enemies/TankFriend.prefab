@@ -129,9 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d848478414e8b4890c708c7a43bb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObj:
-  - {fileID: 8515951574723697949, guid: 785ada77ba651b7468b9057cbc908d4b, type: 3}
-  - {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
+  spawnObj: {fileID: 8515951574723697949, guid: 785ada77ba651b7468b9057cbc908d4b, type: 3}
+  effectSpawn: {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
+  addSpawnObj: []
+  countObj: 0
   reloadTime: 0.4
   randomAngle: 3
   anim: {fileID: 3195207229953790270}
@@ -838,3 +839,6 @@ MonoBehaviour:
   target: {fileID: 0}
   fire: {fileID: 520448700441689599}
   gamepad: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 72
