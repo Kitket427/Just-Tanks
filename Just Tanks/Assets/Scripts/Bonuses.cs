@@ -1,7 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
+
+[System.Serializable]
+enum Bonus
+{
+    none, restartWave
+}
 
 [System.Serializable]
 struct BonusesChoise
@@ -18,6 +23,7 @@ struct BonusesChoise
     public float healingAfter;
     public float healingTime;
     public float speedMove;
+    public Bonus bonus;
 }
 public class Bonuses : MonoBehaviour
 {
@@ -30,6 +36,7 @@ public class Bonuses : MonoBehaviour
     [SerializeField] private Aim aim;
     [SerializeField] private HitPoints hitPoints;
     [SerializeField] private Fire fire;
+    [SerializeField] private Spawner spawner;
     [SerializeField] private float x;
     private void Start()
     {
@@ -117,6 +124,10 @@ public class Bonuses : MonoBehaviour
             aim.Bonus(bonuses[choiseC].speedAim);
             fire.Bonus(bonuses[choiseC].reloadTime, bonuses[choiseC].randomAngle, bonuses[choiseC].countObj);
             hitPoints.Bonus(bonuses[choiseC].hp, bonuses[choiseC].healingAfter, bonuses[choiseC].healingTime);
+            if(bonuses[choiseC].bonus == Bonus.restartWave)
+            {
+                spawner.Bonus();
+            }
             bonuses[choiseC].active = false;
             Invoke(nameof(End), 2f);
         }

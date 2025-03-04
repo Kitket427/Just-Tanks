@@ -420,7 +420,7 @@ MonoBehaviour:
   color: {r: 1, g: 1, b: 1, a: 1}
   player: 0
   bossColor: 0
-  enemiesCounter: 1
+  enemiesCounter: 0
 --- !u!114 &3628810445331029788
 MonoBehaviour:
   m_ObjectHideFlags: 0

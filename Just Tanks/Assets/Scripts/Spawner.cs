@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private TextTranslation[] textTranslations;
     [SerializeField] private Text[] texts;
     [SerializeField] private int waveNumber, enemiesCounter, timeToWave;
-    [SerializeField] private WaveEnemies[] waveEnemies;
+    [SerializeField] private WaveEnemies[] waveEnemies, buffer;
     [SerializeField] private float timeA, timeB, timeMultiplier, distance, timeOnTimer;
     [SerializeField] private Bonuses bonuses;
     private void Start()
@@ -128,5 +128,17 @@ public class Spawner : MonoBehaviour
     {
         texts[0].text = textTranslations[4].text[language];
         texts[1].text = textTranslations[5].text[language];
+    }
+    public void Bonus()
+    {
+        waveNumber = 0;
+        for (int i = 0; i < buffer.Length; i++)
+        {
+            for (int j = 0; j < buffer[i].spawnEnemies.Length; j++)
+            {
+                buffer[i].spawnEnemies[j].count *= 2;
+            } 
+        }
+        waveEnemies = buffer;
     }
 }
