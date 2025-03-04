@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5105912467884075097}
   - component: {fileID: 9183433184876061144}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3662758011745878378}
   - component: {fileID: 7808553791561589983}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5617440999243815293}
   - component: {fileID: 2066470229003925251}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 4498774056237206844}
   - component: {fileID: 3090986488153265586}
   - component: {fileID: 5122687242716786644}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 1345393343697222280}
   - component: {fileID: 6398710041071179698}
   - component: {fileID: 2756816263005927602}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,10 +462,10 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 90
+  speed: 180
   offset: 0
-  fireRadius: 45
-  distance: 45
+  fireRadius: 30
+  distance: 60
   target: {fileID: 0}
   fire: {fileID: 1535314487141864640}
   gamepad: 0
@@ -482,7 +482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4099546697120311024}
   - component: {fileID: 7239240827976460931}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 2467302696754339390}
   - component: {fileID: -8762551075838004073}
   - component: {fileID: 1857231946597673899}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TankAI2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4976829512654010091}
   - component: {fileID: 1535314487141864640}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ MonoBehaviour:
   effectSpawn: {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
   addSpawnObj: []
   countObj: 0
-  reloadTime: 1.1
+  reloadTime: 0.6
   randomAngle: 3
   anim: {fileID: 5122687242716786644}
   layerMask:

@@ -30,6 +30,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int waveNumber, enemiesCounter, timeToWave;
     [SerializeField] private WaveEnemies[] waveEnemies;
     [SerializeField] private float timeA, timeB, timeMultiplier, distance, timeOnTimer;
+    [SerializeField] private Bonuses bonuses;
     private void Start()
     {
         texts[0].text = "";
@@ -100,6 +101,8 @@ public class Spawner : MonoBehaviour
     }
     void TimerToWave()
     {
+        if (timeToWave == 8) bonuses.StartChoise();
+        if (timeToWave == 2) bonuses.EndChoise();
         texts[2].text = textTranslations[3].text[language] + " " + timeToWave;
         if (timeToWave >= 0)
         {

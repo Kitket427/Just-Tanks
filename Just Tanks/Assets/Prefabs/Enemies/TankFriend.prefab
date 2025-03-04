@@ -835,10 +835,10 @@ MonoBehaviour:
   speed: 180
   offset: 0
   fireRadius: 15
-  distance: 45
+  distance: 60
   target: {fileID: 0}
   fire: {fileID: 520448700441689599}
   gamepad: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 264

@@ -11,9 +11,9 @@ TagManager:
   - Wall
   - Water
   - UI
-  - Tank
+  - TankPlayer
   - Bullet
-  - 
+  - TankEnemy
   - 
   - 
   - 

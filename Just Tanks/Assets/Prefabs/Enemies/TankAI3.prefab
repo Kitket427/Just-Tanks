@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4916654896190741156}
   - component: {fileID: 4570200410712486558}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5456179491568929785}
   - component: {fileID: 4540001742419355279}
   - component: {fileID: 7696579499900748773}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,10 +187,10 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 135
+  speed: 270
   offset: 0
-  fireRadius: 60
-  distance: 45
+  fireRadius: 45
+  distance: 60
   target: {fileID: 0}
   fire: {fileID: 781482477899411793}
   gamepad: 0
@@ -207,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4948867350281019679}
   - component: {fileID: 5043056655707953059}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5369793971336988417}
   - component: {fileID: 781482477899411793}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ MonoBehaviour:
   effectSpawn: {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
   addSpawnObj: []
   countObj: 0
-  reloadTime: 0.5
+  reloadTime: 0.3
   randomAngle: 3
   anim: {fileID: 7797081173926483724}
   layerMask:
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 6629769861541322910}
   - component: {fileID: 3353461582578356744}
   - component: {fileID: 7797081173926483724}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892988147519560877}
   - component: {fileID: 5900790288124177312}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6624072319350731803}
   - component: {fileID: 7661435881344358930}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 8690617112082074197}
   - component: {fileID: 7111555879091620156}
   - component: {fileID: 1707717907865690359}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TankAI3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

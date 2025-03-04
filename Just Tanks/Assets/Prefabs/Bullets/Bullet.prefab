@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 4102374040657050065}
   - component: {fileID: 820051902432583036}
   - component: {fileID: 700643563039024204}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Rico
   m_TagString: Untagged
   m_Icon: {fileID: 0}

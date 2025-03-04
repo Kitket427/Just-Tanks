@@ -28,4 +28,10 @@ public class Fire : MonoBehaviour
     {
         reload = false;
     }
+    public void Bonus(float reloadTime, float randomAngle, int countObj)
+    {
+        this.reloadTime *= reloadTime;
+        this.randomAngle *= randomAngle;
+        this.countObj += countObj;
+    }
 }

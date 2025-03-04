@@ -557,7 +557,7 @@ MonoBehaviour:
   gamepad: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 264
 --- !u!1 &6570967754420236277
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 950067428521520499}
   - component: {fileID: 1555658652105570276}
   - component: {fileID: 3553722183499100691}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,10 +102,10 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 90
+  speed: 180
   offset: 0
   fireRadius: 30
-  distance: 30
+  distance: 45
   target: {fileID: 0}
   fire: {fileID: 22941821262073835}
   gamepad: 0
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5385833214280414160}
   - component: {fileID: 1852776381775692086}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 6833139407074052381}
   - component: {fileID: 6487144305381310613}
   - component: {fileID: -3541797822725128216}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: QuadAI2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 885868168108715049}
   - component: {fileID: 3960900282557092786}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4703118711021784878}
   - component: {fileID: 22941821262073835}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5852712220022760410}
   - component: {fileID: 5494444467624111457}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turret (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2573453149260314058}
   - component: {fileID: 144307123654070199}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3766448716472507103}
   - component: {fileID: 891444606878495511}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2986203053503092860}
   - component: {fileID: 5760055105554710421}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -932,7 +932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7363778617310889701}
   - component: {fileID: 8578906722421516521}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Base (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ GameObject:
   - component: {fileID: 1799252949647450400}
   - component: {fileID: 4713169456325423158}
   - component: {fileID: 8324444817113737029}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

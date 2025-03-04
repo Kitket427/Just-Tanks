@@ -54,4 +54,9 @@ public class Player : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
         }
     }
+    public void Bonus(float speed)
+    {
+        this.speed *= speed;
+        rotationSpeed *= speed;
+    }
 }

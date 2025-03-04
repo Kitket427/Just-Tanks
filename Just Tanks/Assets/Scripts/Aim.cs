@@ -14,7 +14,7 @@ public class Aim : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private Fire fire;
     [SerializeField] private bool gamepad;
-
+    [SerializeField] private LayerMask layerMask;
     private void Start()
     {
         if (type == TypeOfUnit.player) target.gameObject.SetActive(true);
@@ -23,9 +23,9 @@ public class Aim : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
             if (type == TypeOfUnit.enemy)
             {
-                if(FindObjectOfType<Player>()) target = FindObjectOfType<Player>().GetComponent<Transform>();
+                if(FindObjectOfType<Player>()) InvokeRepeating(nameof(FinderPl), 1, 1);
             }
-            else Finder();
+            else InvokeRepeating(nameof(FinderEn), 1, 1);
         }
         rotate = rotateZ = transform.eulerAngles.z;
         
@@ -58,29 +58,55 @@ public class Aim : MonoBehaviour
             }
         }
     }
-    void Finder()
+    void FinderPl()
+    {
+        if (FindObjectOfType<Player>())
+        {
+            var pos = FindObjectOfType<Player>().GetComponent<Transform>();
+            Vector3 difference = pos.position - transform.position;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, difference, distance, layerMask);
+            if(hit && hit.collider.TryGetComponent(out Player player))
+            {
+                target = pos;
+            }
+            else
+            {
+                target = null;
+            }
+        }
+    }
+    void FinderEn()
     {
         if(FindObjectOfType<EnemyUnit>())
         {
             var enemies = FindObjectsOfType<EnemyUnit>();
             var enemyTarget = FindObjectOfType<EnemyUnit>();
-            float dist = 999;
+            enemyTarget = null;
+            float dist = distance;
             float minDist;
             foreach (var enemy in enemies)
             {
-                minDist = Mathf.Min(dist, Vector2.Distance(enemy.transform.position, transform.position));
-                if (minDist < dist)
+                Vector3 difference = enemy.transform.position - transform.position;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, difference, distance, layerMask);
+                if (hit && hit.collider.TryGetComponent(out EnemyUnit enemyUnit))
                 {
-                    enemyTarget = enemy;
-                    dist = minDist;
+                    minDist = Mathf.Min(dist, Vector2.Distance(enemy.transform.position, transform.position));
+                    if (minDist < dist)
+                    {
+                        enemyTarget = enemy;
+                        dist = minDist;
+                    }
                 }
             }
-            target = enemyTarget.GetComponent<Transform>();
+            if(enemyTarget) target = enemyTarget.GetComponent<Transform>();
         }
-        Invoke(nameof(Finder), 1f);
     }
     private void OnDisable()
     {
         if (type == TypeOfUnit.player) target.gameObject.SetActive(false);
+    }
+    public void Bonus(float speed)
+    {
+        this.speed *= speed;
     }
 }

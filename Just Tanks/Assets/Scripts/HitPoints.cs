@@ -89,4 +89,11 @@ public class HitPoints : MonoBehaviour, ITakeDamage
         if (enemiesCounter) FindObjectOfType<Spawner>().EnemyDown();
         Destroy(objDead);
     }
+    public void Bonus(float hp, float healingAfter, float healingTime)
+    {
+        this.hp = (int)(this.hp * hp);
+        hpMax = (int)(hpMax * hp);
+        this.healingAfter = (int)(this.healingAfter * healingAfter);
+        this.healingTime = (int)(this.healingTime * healingTime);
+    }
 }
