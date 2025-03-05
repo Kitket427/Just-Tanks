@@ -12,7 +12,7 @@ public class Aim : MonoBehaviour
     [SerializeField] private TypeOfUnit type;
     [SerializeField] private float rotateZ, rotate, speed, offset, fireRadius, distance;
     [SerializeField] private Transform target;
-    [SerializeField] private Fire fire;
+    [SerializeField] private Fire[] fire;
     [SerializeField] private bool gamepad;
     [SerializeField] private LayerMask layerMask;
     private void Start()
@@ -47,7 +47,10 @@ public class Aim : MonoBehaviour
                 if (Input.GetKey(KeyCode.Mouse0) && type == TypeOfUnit.player ||
                     type != TypeOfUnit.player && Vector2.Distance(target.position, transform.position) < distance && Mathf.Abs(rotate - rotateZ) < fireRadius)
                 {
-                    fire.Shoot();
+                    foreach (var f in fire)
+                    {
+                        f.Shoot();
+                    } 
                 }
             }
             else
@@ -103,7 +106,7 @@ public class Aim : MonoBehaviour
     }
     private void OnDisable()
     {
-        if (type == TypeOfUnit.player) target.gameObject.SetActive(false);
+        if (target && type == TypeOfUnit.player) target.gameObject.SetActive(false);
     }
     public void Bonus(float speed)
     {

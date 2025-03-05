@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8473231587427063552}
   - component: {fileID: 1869736691029785295}
   - component: {fileID: 9094180999096438846}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Rico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ MonoBehaviour:
   damage: 35
   richoshet: 1
   fire: 0
-  dam: 0
+  dam: 1
   speed: 0.7
   time: 3
   timeEffect: 0
@@ -254,6 +254,7 @@ MonoBehaviour:
   posEffect: {fileID: 8755879459079706237}
   ricount: 7
   breakouts: 0
+  shooter: {fileID: 0}
 --- !u!70 &6040154998184340817
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

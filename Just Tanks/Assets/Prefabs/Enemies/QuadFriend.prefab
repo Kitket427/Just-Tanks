@@ -553,7 +553,8 @@ MonoBehaviour:
   fireRadius: 15
   distance: 45
   target: {fileID: 0}
-  fire: {fileID: 3805124165676246548}
+  fire:
+  - {fileID: 3805124165676246548}
   gamepad: 0
   layerMask:
     serializedVersion: 2
@@ -866,6 +867,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  shooter: {fileID: 1179746750244346375}
 --- !u!1 &8519692786761859988
 GameObject:
   m_ObjectHideFlags: 0

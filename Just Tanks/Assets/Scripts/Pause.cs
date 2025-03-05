@@ -30,7 +30,7 @@ public class Pause : MonoBehaviour
         }
         if (Time.timeScale != 0 && time < 1 + timeAdd)
         {
-            time += Time.deltaTime/ 120f / Time.timeScale;
+            time += Time.deltaTime/ 420f / Time.timeScale;
             Time.timeScale = time;
         }
     }

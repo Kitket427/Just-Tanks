@@ -478,8 +478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 475}
-  m_SizeDelta: {x: 1700, y: -49.99997}
+  m_AnchoredPosition: {x: 0, y: 370}
+  m_SizeDelta: {x: 1000, y: -60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94970810
 MonoBehaviour:
@@ -726,8 +726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 475}
-  m_SizeDelta: {x: 1700, y: -49.99997}
+  m_AnchoredPosition: {x: 0, y: 370}
+  m_SizeDelta: {x: 1000, y: -60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158632021
 MonoBehaviour:
@@ -1765,7 +1765,8 @@ MonoBehaviour:
   fireRadius: 0
   distance: 0
   target: {fileID: 1757114456}
-  fire: {fileID: 1577062002}
+  fire:
+  - {fileID: 1577062002}
   gamepad: 0
   layerMask:
     serializedVersion: 2
@@ -3058,8 +3059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 475}
-  m_SizeDelta: {x: 1700, y: -49.99997}
+  m_AnchoredPosition: {x: 0, y: 370}
+  m_SizeDelta: {x: 1000, y: -60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093604321
 MonoBehaviour:
@@ -4363,6 +4364,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  shooter: {fileID: 1928619034}
 --- !u!1 &1632458134
 GameObject:
   m_ObjectHideFlags: 3
@@ -5402,7 +5404,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -8888
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.12941177}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.43529412}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1

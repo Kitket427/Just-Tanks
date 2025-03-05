@@ -11,12 +11,28 @@ public class Fire : MonoBehaviour
     private bool reload;
     [SerializeField] private Animator anim;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private Collider2D shooter;
+
     public void Shoot()
     {
         if (reload == false && !Physics2D.OverlapCircle(transform.position, 0.3f, layerMask))
         {
-            if(countObj == 0) Instantiate(spawnObj, transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
-            else Instantiate(addSpawnObj[countObj-1], transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
+            if (countObj == 0)
+            {
+                var bullet = spawnObj;
+                bullet.GetComponent<Bullet>().shooter = shooter;
+                Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
+            }
+            else
+            {
+                var addSpawn = addSpawnObj[countObj - 1];
+                var addedBullet = addSpawn.GetComponentsInChildren<Bullet>();
+                foreach (var item in addedBullet)
+                {
+                    item.GetComponent<Bullet>().shooter = shooter;
+                }
+                Instantiate(addSpawn, transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
+            }
             Instantiate(effectSpawn, transform.position, transform.rotation);
             if (anim) anim.Play("Fire");
             Invoke(nameof(Reload), reloadTime);

@@ -20,17 +20,17 @@ public class BossBar : MonoBehaviour
         if (hpCurrent > hpDamage) hpDamage = hpCurrent;
         if (hpCurrent <= 0)
         {
-            Invoke(nameof(Restart), 7f);
-            Invoke(nameof(GameOver), 4f);
+            Invoke(nameof(Restart), 7f * Time.timeScale);
+            Invoke(nameof(GameOver), 4f * Time.timeScale);
             ostSystem.GameOver();
         }
         if(hpDamage <= 0)
         {
-            if (bars[2].color.a > 0) bars[2].color = new Color(bars[2].color.r, bars[2].color.g, bars[2].color.b, bars[2].color.a - Time.deltaTime/2f);
-            if (bars[3].color.a > 0) bars[3].color = new Color(bars[3].color.r, bars[3].color.g, bars[3].color.b, bars[3].color.a - Time.deltaTime/2f);
+            if (bars[2].color.a > 0) bars[2].color = new Color(bars[2].color.r, bars[2].color.g, bars[2].color.b, bars[2].color.a - Time.deltaTime/2f / Time.timeScale);
+            if (bars[3].color.a > 0) bars[3].color = new Color(bars[3].color.r, bars[3].color.g, bars[3].color.b, bars[3].color.a - Time.deltaTime/2f / Time.timeScale);
             foreach (var item in texts)
             {
-                if (item.color.a > 0) item.color = new Color(item.color.r, item.color.g, item.color.b, item.color.a - Time.deltaTime / 2f);
+                if (item.color.a > 0) item.color = new Color(item.color.r, item.color.g, item.color.b, item.color.a - Time.deltaTime / 2f / Time.timeScale);
             }
         }
     }
