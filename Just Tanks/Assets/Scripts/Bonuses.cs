@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [System.Serializable]
 enum Bonus
 {
-    none, restartWave
+    none, restartWave, speedGame
 }
 
 [System.Serializable]
@@ -37,6 +37,7 @@ public class Bonuses : MonoBehaviour
     [SerializeField] private HitPoints hitPoints;
     [SerializeField] private Fire fire;
     [SerializeField] private Spawner spawner;
+    [SerializeField] private Pause pause;
     [SerializeField] private float x;
     private void Start()
     {
@@ -127,6 +128,10 @@ public class Bonuses : MonoBehaviour
             if(bonuses[choiseC].bonus == Bonus.restartWave)
             {
                 spawner.Bonus();
+            }
+            if(bonuses[choiseC].bonus == Bonus.speedGame)
+            {
+                pause.Bonus();
             }
             bonuses[choiseC].active = false;
             Invoke(nameof(End), 2f);

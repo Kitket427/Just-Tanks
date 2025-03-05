@@ -2850,6 +2850,28 @@ MonoBehaviour:
     healingTime: 0.8
     speedMove: 1.25
     bonus: 1
+  - active: 1
+    up:
+      text:
+      - The game will speed up
+      - "\u0418\u0433\u0440\u0430 \u0431\u0443\u0434\u0435\u0442 \u0443\u0441\u043A\u043E\u0440\u044F\u0442\u044C\u0441\u044F"
+    but:
+      text:
+      - BUT
+      - "\u041D\u041E"
+    down:
+      text:
+      - You won't have time
+      - "\u0412\u044B \u043D\u0435 \u0431\u0443\u0434\u0435\u0442\u0435 \u0443\u0441\u043F\u0435\u0432\u0430\u0442\u044C"
+    speedAim: 1
+    reloadTime: 1
+    randomAngle: 1
+    countObj: 0
+    hp: 1
+    healingAfter: 1
+    healingTime: 1
+    speedMove: 1
+    bonus: 2
   leftChoise:
   - {fileID: 620428615}
   - {fileID: 1844738173}
@@ -2863,6 +2885,7 @@ MonoBehaviour:
   hitPoints: {fileID: 0}
   fire: {fileID: 0}
   spawner: {fileID: 1177872055}
+  pause: {fileID: 1899925125}
   x: 0
 --- !u!4 &1019108380
 Transform:

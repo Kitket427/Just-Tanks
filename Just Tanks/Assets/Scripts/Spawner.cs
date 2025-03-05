@@ -42,7 +42,7 @@ public class Spawner : MonoBehaviour
     }
     private void Update()
     {
-        timeOnTimer += Time.deltaTime;
+        if(Time.timeScale != 0) timeOnTimer += Time.deltaTime / Time.timeScale;
         int minutes = Mathf.FloorToInt(timeOnTimer / 60);
         int seconds = Mathf.FloorToInt(timeOnTimer % 60);
         texts[3].text = string.Format("{0:00}:{1:00}", minutes, seconds);

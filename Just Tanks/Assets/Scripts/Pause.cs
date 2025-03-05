@@ -12,8 +12,10 @@ public class Pause : MonoBehaviour
     [SerializeField] private GameObject menu;
     //[SerializeField] private AudioMixerGroup audioMixer;
     private TankControl control;
+    private float time = 1, timeAdd;
     private void Start()
     {
+        Time.timeScale = 1;
         control = InputManager.inputManager.control;
         for (int i = 0; i < texts.Length; i++)
         {
@@ -26,10 +28,15 @@ public class Pause : MonoBehaviour
         {
             PauseMenu();
         }
+        if (Time.timeScale != 0 && time < 1 + timeAdd)
+        {
+            time += Time.deltaTime/ 120f / Time.timeScale;
+            Time.timeScale = time;
+        }
     }
     public void PauseMenu()
     {
-        Time.timeScale = Time.timeScale != 0 ? 0 : 1;
+        Time.timeScale = Time.timeScale != 0 ? 0 : time;
         if (Time.timeScale != 0)
         {
             menu.SetActive(false);
@@ -45,5 +52,8 @@ public class Pause : MonoBehaviour
             control.TankGame.Disable();
         }
     }
-
+    public void Bonus()
+    {
+        timeAdd = 1;
+    }
 }
