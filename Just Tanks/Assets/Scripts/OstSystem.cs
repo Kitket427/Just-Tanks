@@ -5,6 +5,7 @@ using UnityEngine;
 public class OstSystem : MonoBehaviour
 {
     [SerializeField] private AudioSource[] ost;
+    [SerializeField] private int[] ostOff;
     private AudioSource mainOst;
     private bool[] active;
     private void Start()
@@ -48,6 +49,16 @@ public class OstSystem : MonoBehaviour
         foreach (var item in enemies)
         {
             active[item.type] = true;
+        }
+        for (int i = 0; i < ost.Length; i++)
+        {
+            if (ostOff[i] > 0 && active[i])
+            {
+                for(int j = 0; j < ostOff[i]; j++)
+                {
+                    active[i - j - 1] = false;
+                }
+            }
         }
     }
     public void GameOver()

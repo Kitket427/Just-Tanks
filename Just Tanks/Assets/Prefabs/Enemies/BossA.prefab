@@ -632,7 +632,9 @@ MonoBehaviour:
   countObj: 0
   reloadTime: 0.07
   randomAngle: 5
+  adaptiveSpdAnim: 0
   anim: {fileID: 1480285004065220572}
+  adaptiveSpeed: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -687,7 +689,9 @@ MonoBehaviour:
   countObj: 0
   reloadTime: 0.07
   randomAngle: 5
+  adaptiveSpdAnim: 0
   anim: {fileID: 7434117407197417182}
+  adaptiveSpeed: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -870,7 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossBar: {fileID: 0}
-  hp: 1200
+  hp: 2000
   hpMax: 0
   healingAfter: 0
   healingTime: 0
@@ -940,7 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad905c1fe235e1409cb24400a3ea332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 2
 --- !u!95 &7717681550735613097
 Animator:
   serializedVersion: 5

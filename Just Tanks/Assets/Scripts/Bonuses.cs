@@ -44,6 +44,7 @@ public class Bonuses : MonoBehaviour
     private void Start()
     {
         Invoke(nameof(PlayerFind), 1f);
+        bonuses[Random.Range(11, 13)].active = true;
     }
     private void PlayerFind()
     {

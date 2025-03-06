@@ -2996,14 +2996,14 @@ MonoBehaviour:
       - Life will fly by (literally)
       - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u043E\u043B\u0435\u0442\u0430\u0442\u044C
         \u043D\u0435\u0437\u0430\u043C\u0435\u0442\u043D\u043E (\u0431\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E)"
-    speedAim: 1.1
-    reloadTime: 0.9
-    randomAngle: 0.9
+    speedAim: 1.2
+    reloadTime: 0.8
+    randomAngle: 0.8
     countObj: 0
-    hp: 1.1
-    healingAfter: 0.9
-    healingTime: 0.9
-    speedMove: 1.1
+    hp: 1.2
+    healingAfter: 0.8
+    healingTime: 0.8
+    speedMove: 1.2
     timeSpeed: 0.2
     bonus: 2
     bonusActive: 9
@@ -3023,14 +3023,14 @@ MonoBehaviour:
       - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u043E\u043B\u0435\u0442\u0430\u0442\u044C
         \u0435\u0449\u0451 \u0431\u044B\u0441\u0442\u0440\u0435\u0435 \u0447\u0435\u043C
         \u0440\u0430\u043D\u044C\u0448\u0435"
-    speedAim: 1.1
-    reloadTime: 0.9
-    randomAngle: 0.9
+    speedAim: 1.2
+    reloadTime: 0.8
+    randomAngle: 0.8
     countObj: 0
-    hp: 1.1
-    healingAfter: 0.9
-    healingTime: 0.9
-    speedMove: 1.1
+    hp: 1.2
+    healingAfter: 0.8
+    healingTime: 0.8
+    speedMove: 1.2
     timeSpeed: 0.4
     bonus: 2
     bonusActive: 10
@@ -3052,16 +3052,64 @@ MonoBehaviour:
         \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043A\u043E \u0431\u044B\u0441\u0442\u0440\u043E,
         \u0447\u0442\u043E \u0434\u0430\u0436\u0435 \u043D\u0435 \u0443\u0441\u043F\u0435\u0435\u0442\u0435
         \u043C\u043E\u0440\u0433\u043D\u0443\u0442\u044C"
-    speedAim: 1.1
-    reloadTime: 0.9
-    randomAngle: 0.9
+    speedAim: 1.2
+    reloadTime: 0.8
+    randomAngle: 0.8
     countObj: 0
-    hp: 1.1
-    healingAfter: 0.9
-    healingTime: 0.9
-    speedMove: 1.1
-    timeSpeed: 0.7
+    hp: 1.2
+    healingAfter: 0.8
+    healingTime: 0.8
+    speedMove: 1.2
+    timeSpeed: 0.6
     bonus: 2
+    bonusActive: 0
+  - active: 0
+    up:
+      text:
+      - ALL
+      - "\u0412\u0421\u0401"
+    but:
+      text:
+      - OR
+      - "\u0418\u041B\u0418"
+    down:
+      text:
+      - NOTHING
+      - "\u041D\u0418\u0427\u0415\u0413\u041E"
+    speedAim: 1.2
+    reloadTime: 0.8
+    randomAngle: 0.8
+    countObj: 0
+    hp: 1.2
+    healingAfter: 0.8
+    healingTime: 0.8
+    speedMove: 1.2
+    timeSpeed: 0
+    bonus: 0
+    bonusActive: 0
+  - active: 0
+    up:
+      text:
+      - ALL
+      - "\u0412\u0421\u0401"
+    but:
+      text:
+      - OR
+      - "\u0418\u041B\u0418"
+    down:
+      text:
+      - NOTHING
+      - "\u041D\u0418\u0427\u0415\u0413\u041E"
+    speedAim: 0.8
+    reloadTime: 1.2
+    randomAngle: 1.2
+    countObj: 0
+    hp: 0.8
+    healingAfter: 1.2
+    healingTime: 1.2
+    speedMove: 0.8
+    timeSpeed: 0
+    bonus: 0
     bonusActive: 0
   leftChoise:
   - {fileID: 620428615}
@@ -3449,8 +3497,10 @@ MonoBehaviour:
     friends: []
     bosses: 0
   - spawnEnemies:
-    - enemy: {fileID: 7507652437496828360, guid: 72ac74797a4c83e4ba1c4024dae7c8ba, type: 3}
-      count: 6
+    - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
+      count: 5
+    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
+      count: 5
     friends:
     - {fileID: 536430127}
     bosses: 1
@@ -3611,6 +3661,7 @@ Transform:
   - {fileID: 1819332236}
   - {fileID: 546783408}
   - {fileID: 71266374}
+  - {fileID: 1597749716}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1262424205
@@ -3628,6 +3679,8 @@ MonoBehaviour:
   ost:
   - {fileID: 546783407}
   - {fileID: 71266375}
+  - {fileID: 1597749713}
+  ostOff: 000000000000000002000000
 --- !u!1 &1308706478
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,11 +4606,181 @@ MonoBehaviour:
   countObj: 0
   reloadTime: 0.4
   randomAngle: 3
+  adaptiveSpdAnim: 0
   anim: {fileID: 354361344}
+  adaptiveSpeed: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 8
   shooter: {fileID: 1928619034}
+--- !u!1 &1597749712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597749716}
+  - component: {fileID: 1597749713}
+  - component: {fileID: 1597749715}
+  - component: {fileID: 1597749714}
+  m_Layer: 0
+  m_Name: Ost3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1597749713
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597749712}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 86d6f07ca0a53894790a935b5f605fcc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1597749714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597749712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0345ce413c154634a97cc0686b1f5949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+--- !u!169 &1597749715
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597749712}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.15111414
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1597749716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597749712}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262424204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1632458134
 GameObject:
   m_ObjectHideFlags: 3
@@ -5603,7 +5826,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 8, y: 0.03}
+  m_Size: {x: 8, y: 0.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5786,7 +6009,6 @@ MonoBehaviour:
   speed: 3
   rotationSpeed: 11
   trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
-  speedMultiplier: 0
 --- !u!114 &1928619036
 MonoBehaviour:
   m_ObjectHideFlags: 0

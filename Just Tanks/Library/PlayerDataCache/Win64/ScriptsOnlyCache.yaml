@@ -1580,7 +1580,7 @@ ScriptsOnlyBuild:
     className: ScreenSpaceAmbientOcclusion
   - hash:
       serializedVersion: 2
-      Hash: 8ba0937ac1a4ed313af8a0ac73e35f94
+      Hash: 05882754ae549c13b2e6321f3b7be370
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Player
@@ -2258,7 +2258,7 @@ ScriptsOnlyBuild:
     className: Aim
   - hash:
       serializedVersion: 2
-      Hash: 5cfec22dfdef2209bb2fb8795d98ddfd
+      Hash: 879ed7bd69f0c6a3b7f82a25b9affdd9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: OstSystem

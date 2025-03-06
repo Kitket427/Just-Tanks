@@ -12,8 +12,6 @@ public class Player : MonoBehaviour
     [SerializeField] private float rotationSpeed; // скорость поворота
     [SerializeField] private GameObject trail;
     private float time;
-    [Header("Bonuses")]
-    public int speedMultiplier;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,10 +24,10 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         // Применяем силу для движения
-        rb.AddForce(direction * (speed + speed * speedMultiplier / 10f) * 111, ForceMode2D.Force);
+        rb.AddForce(direction * speed * 111, ForceMode2D.Force);
         if(rb.velocity.x > 0.1f || rb.velocity.y > 0.1f || rb.velocity.x < -0.1f || rb.velocity.y < -0.1f)
         {
-            if (time >= 0.3f/(speed + speed * speedMultiplier/10f))
+            if (time >= 0.3f/ speed)
             {
                 Instantiate(trail, transform.position, transform.rotation);
                 time = 0;
@@ -57,6 +55,7 @@ public class Player : MonoBehaviour
     public void Bonus(float speed)
     {
         this.speed *= speed;
+        if (this.speed > 10) speed = 10;
         rotationSpeed *= speed;
     }
 }
