@@ -7,12 +7,17 @@ public class Fire : MonoBehaviour
     [SerializeField] private GameObject spawnObj, effectSpawn;
     [SerializeField] private GameObject[] addSpawnObj;
     public int countObj;
-    [SerializeField] private float reloadTime, randomAngle;
+    [SerializeField] private float reloadTime, randomAngle, adaptiveSpdAnim;
     private bool reload;
     [SerializeField] private Animator anim;
+    [SerializeField] private bool adaptiveSpeed;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private Collider2D shooter;
 
+    private void Start()
+    {
+        adaptiveSpdAnim = reloadTime;
+    }
     public void Shoot()
     {
         if (reload == false && !Physics2D.OverlapCircle(transform.position, 0.3f, layerMask))
@@ -34,7 +39,12 @@ public class Fire : MonoBehaviour
                 Instantiate(addSpawn, transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
             }
             Instantiate(effectSpawn, transform.position, transform.rotation);
-            if (anim) anim.Play("Fire");
+            if (anim)
+            {
+                if (adaptiveSpeed && adaptiveSpdAnim > reloadTime) anim.speed = adaptiveSpdAnim / reloadTime;
+                else anim.speed = 1;
+                anim.Play("Fire");
+            }
             Invoke(nameof(Reload), reloadTime);
             reload = true;
         }
