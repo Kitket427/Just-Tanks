@@ -187,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &308908974675938045
 Transform:
   m_ObjectHideFlags: 0
@@ -465,14 +465,13 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 90
+  speed: 60
   offset: 0
-  fireRadius: 45
+  fireRadius: 5
   distance: 60
   target: {fileID: 0}
   fire:
   - {fileID: 5496715741094941341}
-  - {fileID: 1276618020756049848}
   gamepad: 0
   layerMask:
     serializedVersion: 2
@@ -631,8 +630,8 @@ MonoBehaviour:
   effectSpawn: {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
   addSpawnObj: []
   countObj: 0
-  reloadTime: 0.1
-  randomAngle: 15
+  reloadTime: 0.07
+  randomAngle: 5
   anim: {fileID: 1480285004065220572}
   layerMask:
     serializedVersion: 2
@@ -686,8 +685,8 @@ MonoBehaviour:
   effectSpawn: {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
   addSpawnObj: []
   countObj: 0
-  reloadTime: 0.1
-  randomAngle: 15
+  reloadTime: 0.07
+  randomAngle: 5
   anim: {fileID: 7434117407197417182}
   layerMask:
     serializedVersion: 2
@@ -727,7 +726,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.2, y: 8.1, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8379080458898405564}
@@ -843,7 +842,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 25
+  m_Mass: 14.0625
   m_LinearDrag: 5
   m_AngularDrag: 5
   m_GravityScale: 0
@@ -871,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossBar: {fileID: 0}
-  hp: 2222
+  hp: 1200
   hpMax: 0
   healingAfter: 0
   healingTime: 0
@@ -895,7 +894,7 @@ MonoBehaviour:
   color: {r: 1, g: 1, b: 1, a: 1}
   player: 0
   bossColor: 1
-  enemiesCounter: 0
+  enemiesCounter: 1
 --- !u!114 &2681689966819722231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,13 +907,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275d6af4e797498408d8dec563570fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.6
+  speed: 7
   changeDirectionTime: 0
-  timeA: 0.5
-  timeB: 2
-  distance: 25
+  timeA: 2
+  timeB: 6
+  distance: 44
   rotationSpeed: 11
-  trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
+  trail: {fileID: 6973684161199157656, guid: 1e349a4a29d7492478c73c829005acf2, type: 3}
 --- !u!114 &8942265284516841777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1095,7 @@ Transform:
   m_GameObject: {fileID: 7025629269181067758}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

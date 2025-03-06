@@ -9,16 +9,12 @@ public class BossBar : MonoBehaviour
     [SerializeField] private Image[] bars;
     [SerializeField] private Text[] texts;
     [SerializeField] private OstSystem ostSystem;
-    private void Start()
-    {
-        hpDamage = hpCurrent = 1;
-    }
     private void Update()
     {
-        if(time == 1) hpDamage = Mathf.MoveTowards(hpDamage, hpCurrent, 0.4f * Time.deltaTime);
+        if(time == 1) hpDamage = Mathf.MoveTowards(hpDamage, hpCurrent, 0.7f * Time.deltaTime);
         bars[1].fillAmount = hpDamage;
         if (hpCurrent > hpDamage) hpDamage = hpCurrent;
-        if (hpCurrent <= 0)
+        if (ostSystem && hpCurrent <= 0)
         {
             Invoke(nameof(Restart), 7f * Time.timeScale);
             Invoke(nameof(GameOver), 4f * Time.timeScale);
@@ -26,17 +22,19 @@ public class BossBar : MonoBehaviour
         }
         if(hpDamage <= 0)
         {
-            if (bars[2].color.a > 0) bars[2].color = new Color(bars[2].color.r, bars[2].color.g, bars[2].color.b, bars[2].color.a - Time.deltaTime/2f / Time.timeScale);
-            if (bars[3].color.a > 0) bars[3].color = new Color(bars[3].color.r, bars[3].color.g, bars[3].color.b, bars[3].color.a - Time.deltaTime/2f / Time.timeScale);
+            for (int i = 3; i < bars.Length; i++)
+            {
+                if (bars[i].color.a > 0) bars[i].color = new Color(bars[i].color.r, bars[i].color.g, bars[i].color.b, bars[i].color.a - Time.deltaTime / 2f / Time.timeScale);
+            }
             foreach (var item in texts)
             {
                 if (item.color.a > 0) item.color = new Color(item.color.r, item.color.g, item.color.b, item.color.a - Time.deltaTime / 2f / Time.timeScale);
             }
         }
     }
-    public void Damage(int hp, int hpmax)
+    public void Damage(float hp, float hpmax)
     {
-        bars[0].fillAmount = hp * 1f / hpmax * 1f;
+        bars[0].fillAmount = hp / hpmax;
         hpCurrent = bars[0].fillAmount;
         time = 0;
         CancelInvoke();
@@ -46,10 +44,15 @@ public class BossBar : MonoBehaviour
     {
         time = 1;
     }
-    private void OnEnable()
+    public void BossBattle()
     {
+        hpDamage = hpCurrent = 1;
         bars[0].fillAmount = 1;
         bars[1].fillAmount = 1;
+        for (int i = 3; i < bars.Length; i++)
+        {
+            bars[i].color = new Color(bars[i].color.r, bars[i].color.g, bars[i].color.b, 1);
+        }
     }
     void GameOver()
     {

@@ -12,7 +12,7 @@ public class Pause : MonoBehaviour
     [SerializeField] private GameObject menu;
     //[SerializeField] private AudioMixerGroup audioMixer;
     private TankControl control;
-    private float time = 1, timeAdd;
+    [SerializeField] private float time = 1, timeAdd;
     private void Start()
     {
         Time.timeScale = 1;
@@ -52,8 +52,8 @@ public class Pause : MonoBehaviour
             control.TankGame.Disable();
         }
     }
-    public void Bonus()
+    public void Bonus(float time)
     {
-        timeAdd = 1;
+        timeAdd = time;
     }
 }

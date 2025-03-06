@@ -862,7 +862,7 @@ MonoBehaviour:
   addSpawnObj: []
   countObj: 0
   reloadTime: 0.12
-  randomAngle: 15
+  randomAngle: 7
   anim: {fileID: 0}
   layerMask:
     serializedVersion: 2

@@ -83,7 +83,7 @@ MonoBehaviour:
   speed: 0.5
   time: 2
   timeEffect: 0
-  effect: {fileID: 0}
+  effect: {fileID: 1999461722707672403, guid: 3736d98126a03de499ef700305bf5b99, type: 3}
   ex: {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
   rico: {fileID: 2884583356960329003, guid: 197bcec450b74314ab89241fcb6599e4, type: 3}
   bullet: []

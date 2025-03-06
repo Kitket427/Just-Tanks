@@ -347,6 +347,9 @@ MonoBehaviour:
   - {fileID: 2032102557}
   - {fileID: 1380602176}
   - {fileID: 188694670}
+  - {fileID: 94970811}
+  - {fileID: 158632021}
+  - {fileID: 1093604321}
   texts:
   - {fileID: 1727456184}
   - {fileID: 260868397}
@@ -478,8 +481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 370}
-  m_SizeDelta: {x: 1000, y: -60}
+  m_AnchoredPosition: {x: 0, y: 367.5}
+  m_SizeDelta: {x: 1000, y: -65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94970810
 MonoBehaviour:
@@ -509,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
+  m_Color: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -726,8 +729,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 370}
-  m_SizeDelta: {x: 1000, y: -60}
+  m_AnchoredPosition: {x: 0, y: 367.5}
+  m_SizeDelta: {x: 1000, y: -65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158632021
 MonoBehaviour:
@@ -754,7 +757,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.8
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -767,6 +770,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158632019}
   m_CullTransparentMesh: 1
+--- !u!1001 &171048852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 760844830}
+    m_Modifications:
+    - target: {fileID: 1268556794212990292, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: speed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699061121701892223, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: bossBar
+      value: 
+      objectReference: {fileID: 293136111}
+    - target: {fileID: 5856567579124164510, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_Name
+      value: BossA
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
 --- !u!1 &188694668
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +1038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &293136110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1008,6 +1076,8 @@ MonoBehaviour:
   bars:
   - {fileID: 1093604321}
   - {fileID: 158632021}
+  - {fileID: 1380602176}
+  - {fileID: 94970811}
   texts: []
   ostSystem: {fileID: 0}
 --- !u!1 &329907959
@@ -1963,6 +2033,16 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &536430127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5856567579124164510, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+  m_PrefabInstance: {fileID: 171048852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &536430136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7993732409238746268, guid: f592a6b6a4e562e4dbc68964d9a72e0e, type: 3}
+  m_PrefabInstance: {fileID: 171048852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &546783406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,6 +2478,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708754918}
   m_CullTransparentMesh: 1
+--- !u!1 &760844829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760844830}
+  m_Layer: 0
+  m_Name: Boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &760844830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760844829}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 536430136}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845209884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,8 +2785,9 @@ MonoBehaviour:
   - active: 1
     up:
       text:
-      - Splitting the cannon
-      - "\u0420\u0430\u0437\u0434\u0432\u043E\u0435\u043D\u0438\u0435 \u043F\u0443\u0448\u043A\u0438"
+      - Additional projectile
+      - "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+        \u0441\u043D\u0430\u0440\u044F\u0434"
     but:
       text:
       - BUT
@@ -2691,12 +2804,15 @@ MonoBehaviour:
     healingAfter: 1
     healingTime: 1
     speedMove: 1
+    timeSpeed: 0
     bonus: 0
-  - active: 1
+    bonusActive: 1
+  - active: 0
     up:
       text:
-      - Splitting the cannon
-      - "\u0420\u0430\u0437\u0434\u0432\u043E\u0435\u043D\u0438\u0435 \u043F\u0443\u0448\u043A\u0438"
+      - Additional projectile
+      - "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+        \u0441\u043D\u0430\u0440\u044F\u0434"
     but:
       text:
       - BUT
@@ -2713,12 +2829,15 @@ MonoBehaviour:
     healingAfter: 1
     healingTime: 1
     speedMove: 1
+    timeSpeed: 0
     bonus: 0
-  - active: 1
+    bonusActive: 2
+  - active: 0
     up:
       text:
-      - Splitting the cannon
-      - "\u0420\u0430\u0437\u0434\u0432\u043E\u0435\u043D\u0438\u0435 \u043F\u0443\u0448\u043A\u0438"
+      - Additional projectile
+      - "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+        \u0441\u043D\u0430\u0440\u044F\u0434"
     but:
       text:
       - BUT
@@ -2735,7 +2854,9 @@ MonoBehaviour:
     healingAfter: 1
     healingTime: 1
     speedMove: 1
+    timeSpeed: 0
     bonus: 0
+    bonusActive: 0
   - active: 1
     up:
       text:
@@ -2750,15 +2871,17 @@ MonoBehaviour:
       - Less health and longer treatment
       - "\u0417\u0434\u043E\u0440\u043E\u0432\u044C\u044F \u043C\u0435\u043D\u044C\u0448\u0435
         \u0438 \u043B\u0435\u0447\u0435\u043D\u0438\u0435 \u0434\u043E\u043B\u044C\u0448\u0435"
-    speedAim: 1.5
+    speedAim: 1.25
     reloadTime: 0.75
     randomAngle: 1
     countObj: 0
     hp: 0.75
     healingAfter: 1.25
     healingTime: 1.25
-    speedMove: 1.5
+    speedMove: 1.25
+    timeSpeed: 0
     bonus: 0
+    bonusActive: 0
   - active: 1
     up:
       text:
@@ -2780,7 +2903,9 @@ MonoBehaviour:
     healingAfter: 1
     healingTime: 1
     speedMove: 0.75
+    timeSpeed: 0
     bonus: 0
+    bonusActive: 0
   - active: 1
     up:
       text:
@@ -2802,7 +2927,9 @@ MonoBehaviour:
     healingAfter: 0.5
     healingTime: 0.5
     speedMove: 1
+    timeSpeed: 0
     bonus: 0
+    bonusActive: 0
   - active: 1
     up:
       text:
@@ -2825,7 +2952,9 @@ MonoBehaviour:
     healingAfter: 1
     healingTime: 1
     speedMove: 0.75
+    timeSpeed: 0
     bonus: 0
+    bonusActive: 0
   - active: 1
     up:
       text:
@@ -2843,36 +2972,97 @@ MonoBehaviour:
         \u0438 \u0432\u0440\u0430\u0433\u043E\u0432 \u0431\u0443\u0434\u0435\u0442
         \u0432 \u0434\u0432\u0430 \u0440\u0430\u0437\u0430 \u0431\u043E\u043B\u044C\u0448\u0435"
     speedAim: 1.25
-    reloadTime: 0.8
-    randomAngle: 0.8
+    reloadTime: 0.75
+    randomAngle: 0.75
     countObj: 0
     hp: 1.25
-    healingAfter: 0.8
-    healingTime: 0.8
+    healingAfter: 0.75
+    healingTime: 0.75
     speedMove: 1.25
+    timeSpeed: 0
     bonus: 1
+    bonusActive: 0
   - active: 1
     up:
       text:
-      - The game will speed up
-      - "\u0418\u0433\u0440\u0430 \u0431\u0443\u0434\u0435\u0442 \u0443\u0441\u043A\u043E\u0440\u044F\u0442\u044C\u0441\u044F"
+      - Life will be beautiful
+      - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E\u0439"
     but:
       text:
       - BUT
       - "\u041D\u041E"
     down:
       text:
-      - You won't have time
-      - "\u0412\u044B \u043D\u0435 \u0431\u0443\u0434\u0435\u0442\u0435 \u0443\u0441\u043F\u0435\u0432\u0430\u0442\u044C"
-    speedAim: 1
-    reloadTime: 1
-    randomAngle: 1
+      - Life will fly by (literally)
+      - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u043E\u043B\u0435\u0442\u0430\u0442\u044C
+        \u043D\u0435\u0437\u0430\u043C\u0435\u0442\u043D\u043E (\u0431\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E)"
+    speedAim: 1.1
+    reloadTime: 0.9
+    randomAngle: 0.9
     countObj: 0
-    hp: 1
-    healingAfter: 1
-    healingTime: 1
-    speedMove: 1
+    hp: 1.1
+    healingAfter: 0.9
+    healingTime: 0.9
+    speedMove: 1.1
+    timeSpeed: 0.2
     bonus: 2
+    bonusActive: 9
+  - active: 0
+    up:
+      text:
+      - Life will be even more beautiful
+      - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u0435\u0449\u0451
+        \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u0435\u0435"
+    but:
+      text:
+      - BUT
+      - "\u041D\u041E"
+    down:
+      text:
+      - Life will go by even faster than before
+      - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u043E\u043B\u0435\u0442\u0430\u0442\u044C
+        \u0435\u0449\u0451 \u0431\u044B\u0441\u0442\u0440\u0435\u0435 \u0447\u0435\u043C
+        \u0440\u0430\u043D\u044C\u0448\u0435"
+    speedAim: 1.1
+    reloadTime: 0.9
+    randomAngle: 0.9
+    countObj: 0
+    hp: 1.1
+    healingAfter: 0.9
+    healingTime: 0.9
+    speedMove: 1.1
+    timeSpeed: 0.4
+    bonus: 2
+    bonusActive: 10
+  - active: 0
+    up:
+      text:
+      - You will experience the maximum enjoyment of life
+      - "\u0412\u044B \u0438\u0441\u043F\u044B\u0442\u0430\u0435\u0442\u0435 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
+        \u043D\u0430\u0441\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u0435 \u043E\u0442
+        \u0436\u0438\u0437\u043D\u0438"
+    but:
+      text:
+      - BUT
+      - "\u041D\u041E"
+    down:
+      text:
+      - Life will go by so fast you won't even have time to blink
+      - "\u0416\u0438\u0437\u043D\u044C \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u043E\u043B\u0435\u0442\u0430\u0442\u044C
+        \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043A\u043E \u0431\u044B\u0441\u0442\u0440\u043E,
+        \u0447\u0442\u043E \u0434\u0430\u0436\u0435 \u043D\u0435 \u0443\u0441\u043F\u0435\u0435\u0442\u0435
+        \u043C\u043E\u0440\u0433\u043D\u0443\u0442\u044C"
+    speedAim: 1.1
+    reloadTime: 0.9
+    randomAngle: 0.9
+    countObj: 0
+    hp: 1.1
+    healingAfter: 0.9
+    healingTime: 0.9
+    speedMove: 1.1
+    timeSpeed: 0.7
+    bonus: 2
+    bonusActive: 0
   leftChoise:
   - {fileID: 620428615}
   - {fileID: 1844738173}
@@ -3059,8 +3249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 370}
-  m_SizeDelta: {x: 1000, y: -60}
+  m_AnchoredPosition: {x: 0, y: 367.5}
+  m_SizeDelta: {x: 1000, y: -65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093604321
 MonoBehaviour:
@@ -3087,7 +3277,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.7
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -3177,20 +3367,24 @@ MonoBehaviour:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
       count: 3
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
       count: 3
     - enemy: {fileID: 7507652437496828360, guid: 72ac74797a4c83e4ba1c4024dae7c8ba, type: 3}
       count: 2
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
       count: 7
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 9010642470125476174, guid: bb337b4dbbad5734cb35f58414352b85, type: 3}
-      count: 3
+      count: 4
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
       count: 6
@@ -3199,43 +3393,45 @@ MonoBehaviour:
     friends:
     - {fileID: 8519692786761859988, guid: 5bc21d68f63076f4189065842fb916ab, type: 3}
     - {fileID: 2585867002979618063, guid: 5b741439ee01a734b832b62478740911, type: 3}
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
       count: 10
     - enemy: {fileID: 2952823370686531829, guid: 9f77cef910aa50845882a9f38533dbb3, type: 3}
       count: 5
     friends: []
+    bosses: 0
   - spawnEnemies:
-    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
-      count: 11
-    - enemy: {fileID: 2952823370686531829, guid: 9f77cef910aa50845882a9f38533dbb3, type: 3}
-      count: 11
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
-      count: 11
-    - enemy: {fileID: 7507652437496828360, guid: 72ac74797a4c83e4ba1c4024dae7c8ba, type: 3}
-      count: 11
-    - enemy: {fileID: 9010642470125476174, guid: bb337b4dbbad5734cb35f58414352b85, type: 3}
-      count: 11
-    friends: []
+      count: 5
+    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
+      count: 5
+    friends:
+    - {fileID: 536430127}
+    bosses: 1
   buffer:
   - spawnEnemies:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
       count: 3
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
       count: 3
     - enemy: {fileID: 7507652437496828360, guid: 72ac74797a4c83e4ba1c4024dae7c8ba, type: 3}
       count: 2
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
       count: 7
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 9010642470125476174, guid: bb337b4dbbad5734cb35f58414352b85, type: 3}
-      count: 3
+      count: 4
     friends: []
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
       count: 6
@@ -3244,26 +3440,23 @@ MonoBehaviour:
     friends:
     - {fileID: 8519692786761859988, guid: 5bc21d68f63076f4189065842fb916ab, type: 3}
     - {fileID: 2585867002979618063, guid: 5b741439ee01a734b832b62478740911, type: 3}
+    bosses: 0
   - spawnEnemies:
     - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
       count: 10
     - enemy: {fileID: 2952823370686531829, guid: 9f77cef910aa50845882a9f38533dbb3, type: 3}
       count: 5
     friends: []
+    bosses: 0
   - spawnEnemies:
-    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
-      count: 11
-    - enemy: {fileID: 2952823370686531829, guid: 9f77cef910aa50845882a9f38533dbb3, type: 3}
-      count: 11
-    - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
-      count: 11
     - enemy: {fileID: 7507652437496828360, guid: 72ac74797a4c83e4ba1c4024dae7c8ba, type: 3}
-      count: 11
-    - enemy: {fileID: 9010642470125476174, guid: bb337b4dbbad5734cb35f58414352b85, type: 3}
-      count: 11
-    friends: []
+      count: 6
+    friends:
+    - {fileID: 536430127}
+    bosses: 1
   timeA: 4
   timeB: 7
+  timeMin: 2
   timeMultiplier: 0.02
   distance: 50
   timeOnTimer: 0
@@ -3759,7 +3952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 325}
+  m_AnchoredPosition: {x: 0, y: 320}
   m_SizeDelta: {x: 7777, y: 1111}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515268406
@@ -5295,8 +5488,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 75418224}
-  - {fileID: 293136110}
   - {fileID: 154968410}
+  - {fileID: 293136110}
   - {fileID: 1380602174}
   - {fileID: 940891595}
   m_Father: {fileID: 0}
@@ -5329,6 +5522,8 @@ MonoBehaviour:
   - {fileID: 1656512547}
   - {fileID: 1709152399}
   menu: {fileID: 940891594}
+  time: 1
+  timeAdd: 0
 --- !u!1 &1916571847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5906,3 +6101,4 @@ SceneRoots:
   - {fileID: 1523223218}
   - {fileID: 845209886}
   - {fileID: 1262424204}
+  - {fileID: 760844830}

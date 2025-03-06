@@ -12,7 +12,7 @@ struct Trigger
 public class HitPoints : MonoBehaviour, ITakeDamage
 {
     [SerializeField] private BossBar bossBar;
-    [SerializeField] private int hp, hpMax, healingAfter, healingTime;
+    [SerializeField] private float hp, hpMax, healingAfter, healingTime;
     [SerializeField] private SpriteRenderer[] sprites;
     [SerializeField] private Material[] materials;
     [SerializeField] private GameObject objDead, effect;
@@ -22,6 +22,8 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     [SerializeField] private bool player, bossColor, enemiesCounter;
     void Start()
     {
+        if (bossBar && !player) bossBar.BossBattle();
+        if (player) bossBar.Damage(hp, hpMax);
         hpMax = hp;
         foreach (var item in sprites)
         {
@@ -38,7 +40,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             }
         }
     }
-    void ITakeDamage.TakeDamage(int damage)
+    void ITakeDamage.TakeDamage(float damage)
     {
         if(player) FindObjectOfType<CameraShake>().TriggerShake(0.1f, damage/7f, damage / 7f);
         hp -= damage;
@@ -91,9 +93,9 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     }
     public void Bonus(float hp, float healingAfter, float healingTime)
     {
-        this.hp = (int)(this.hp * hp);
-        hpMax = (int)(hpMax * hp);
-        this.healingAfter = (int)(this.healingAfter * healingAfter);
-        this.healingTime = (int)(this.healingTime * healingTime);
+        this.hp *= hp;
+        hpMax *= hp;
+        this.healingAfter *= healingAfter;
+        this.healingTime *= healingTime;
     }
 }

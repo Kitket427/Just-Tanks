@@ -23,7 +23,9 @@ struct BonusesChoise
     public float healingAfter;
     public float healingTime;
     public float speedMove;
+    public float timeSpeed;
     public Bonus bonus;
+    public int bonusActive;
 }
 public class Bonuses : MonoBehaviour
 {
@@ -131,9 +133,10 @@ public class Bonuses : MonoBehaviour
             }
             if(bonuses[choiseC].bonus == Bonus.speedGame)
             {
-                pause.Bonus();
+                pause.Bonus(bonuses[choiseC].timeSpeed);
             }
             bonuses[choiseC].active = false;
+            if (bonuses[choiseC].bonusActive > 0) bonuses[bonuses[choiseC].bonusActive].active = true;
             Invoke(nameof(End), 2f);
         }
     }

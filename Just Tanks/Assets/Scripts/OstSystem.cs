@@ -18,22 +18,22 @@ public class OstSystem : MonoBehaviour
         {
             if (active[i])
             {
-                if (ost[i].volume < 0.2f) ost[i].volume += Time.deltaTime / 3f;
+                if (ost[i].volume < 0.2f) ost[i].volume += Time.deltaTime / 3f / Time.timeScale;
                 else ost[i].volume = 0.2f;
             }
             else
             {
-                if (ost[i].volume > 0) ost[i].volume -= Time.deltaTime / 3f;
+                if (ost[i].volume > 0) ost[i].volume -= Time.deltaTime / 3f / Time.timeScale;
                 else ost[i].volume = 0;
             }
         }
         if(mainOst)
         {
-            if (mainOst.pitch > 0) mainOst.pitch -= Time.deltaTime / 6f;
+            if (mainOst.pitch > 0) mainOst.pitch -= Time.deltaTime / 6f / Time.timeScale;
             else mainOst.pitch = 0;
             for (int i = 0; i < ost.Length; i++)
             {
-                if (ost[i].pitch     > 0) ost[i].pitch -= Time.deltaTime / 6f;
+                if (ost[i].pitch     > 0) ost[i].pitch -= Time.deltaTime / 6f / Time.timeScale;
                 else ost[i].pitch = 0;
             }
         }

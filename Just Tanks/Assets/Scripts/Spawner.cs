@@ -21,6 +21,7 @@ struct WaveEnemies
 {
     public SpawnEnemies[] spawnEnemies;
     public GameObject[] friends;
+    public int bosses;
 }
 public class Spawner : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Text[] texts;
     [SerializeField] private int waveNumber, enemiesCounter, timeToWave;
     [SerializeField] private WaveEnemies[] waveEnemies, buffer;
-    [SerializeField] private float timeA, timeB, timeMultiplier, distance, timeOnTimer;
+    [SerializeField] private float timeA, timeB, timeMin, timeMultiplier, distance, timeOnTimer;
     [SerializeField] private Bonuses bonuses;
     private void Start()
     {
@@ -75,8 +76,8 @@ public class Spawner : MonoBehaviour
         if (countSumm > 0)
         {
             Invoke(nameof(Spawn), Random.Range(timeA, timeB));
-            timeA *= 1f - timeMultiplier;
-            timeB *= 1f - timeMultiplier;
+            if (timeA > timeMin) timeA *= 1f - timeMultiplier;
+            if (timeB > timeMin) timeB *= 1f - timeMultiplier;
         }
         if (waveEnemies[waveNumber - 1].friends.Length > 0 && waveEnemies[waveNumber - 1].friends[0])
         {
@@ -121,6 +122,7 @@ public class Spawner : MonoBehaviour
         {
             enemiesCounter += count.count;
         }
+        enemiesCounter += waveEnemies[waveNumber - 1].bosses;
         texts[1].text = textTranslations[1].text[language] + " " + enemiesCounter;
         Spawn();
     }
