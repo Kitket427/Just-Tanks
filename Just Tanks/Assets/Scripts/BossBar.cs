@@ -60,6 +60,6 @@ public class BossBar : MonoBehaviour
     }
     void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

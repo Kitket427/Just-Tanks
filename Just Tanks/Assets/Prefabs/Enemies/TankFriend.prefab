@@ -135,7 +135,9 @@ MonoBehaviour:
   countObj: 0
   reloadTime: 0.4
   randomAngle: 3
+  adaptiveSpdAnim: 0
   anim: {fileID: 3195207229953790270}
+  adaptiveSpeed: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -239,6 +241,7 @@ GameObject:
   - component: {fileID: 8575867608795007078}
   - component: {fileID: 3628810445331029788}
   - component: {fileID: 4942624161859148016}
+  - component: {fileID: 1219996933296497928}
   m_Layer: 6
   m_Name: TankFriend
   m_TagString: Untagged
@@ -454,7 +457,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: {x: 50, y: 50}
-  jump: 100
+  jump: {x: 100, y: 100}
+  player: {fileID: 0}
+--- !u!114 &1219996933296497928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585867002979618063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c58d33b93c5644bbea9feba3f77e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3474369985305546288
 GameObject:
   m_ObjectHideFlags: 0

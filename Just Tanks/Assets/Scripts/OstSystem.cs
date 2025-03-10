@@ -19,8 +19,8 @@ public class OstSystem : MonoBehaviour
         {
             if (active[i])
             {
-                if (ost[i].volume < 0.2f) ost[i].volume += Time.deltaTime / 3f / Time.timeScale;
-                else ost[i].volume = 0.2f;
+                if (ost[i].volume < 0.4f) ost[i].volume += Time.deltaTime / 3f / Time.timeScale;
+                else ost[i].volume = 0.4f;
             }
             else
             {

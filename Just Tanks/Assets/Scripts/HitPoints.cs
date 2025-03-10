@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +20,10 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     [SerializeField] private Trigger[] triggers;
     [SerializeField] private Color color;
     private bool isDead;
-    [SerializeField] private bool player, bossColor, enemiesCounter;
+    [SerializeField] private bool player, bossColor, enemiesCounter, respawn;
+    [SerializeField] private GameObject respawnObj;
+    [SerializeField] private Vector2 distance;
+    [SerializeField] private int lifes;
     void Start()
     {
         if (bossBar && !player) bossBar.BossBattle();
@@ -89,6 +93,13 @@ public class HitPoints : MonoBehaviour, ITakeDamage
         }
         FindObjectOfType<CameraShake>().TriggerShake(0.12f, 7f, 7f);
         if (enemiesCounter) FindObjectOfType<Spawner>().EnemyDown();
+        if (respawn && lifes != 0)
+        {
+            int a = Random.Range(0, 2);
+            int b = Random.Range(0, 2);
+            Instantiate(respawnObj, new Vector2(distance.x * (-1 + a * 2), distance.y * (-1 + b * 2)), transform.rotation);
+            lifes--;
+        }
         Destroy(objDead);
     }
     public void Bonus(float hp, float healingAfter, float healingTime)

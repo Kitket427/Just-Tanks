@@ -109,8 +109,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -234,7 +236,7 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Level1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -330,107 +332,107 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6156}
     - Class: 114
-      Script: {instanceID: 6542}
+      Script: {instanceID: 6544}
     - Class: 114
-      Script: {instanceID: 6602}
+      Script: {instanceID: 6604}
     - Class: 114
-      Script: {instanceID: 6730}
+      Script: {instanceID: 6732}
     - Class: 114
-      Script: {instanceID: 6972}
+      Script: {instanceID: 6974}
     - Class: 114
-      Script: {instanceID: 7496}
+      Script: {instanceID: 7498}
     - Class: 114
-      Script: {instanceID: 7612}
+      Script: {instanceID: 7614}
     - Class: 114
-      Script: {instanceID: 7702}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 8136}
+      Script: {instanceID: 8138}
     - Class: 114
-      Script: {instanceID: 8154}
+      Script: {instanceID: 8156}
     - Class: 114
-      Script: {instanceID: 8244}
+      Script: {instanceID: 8246}
     - Class: 114
-      Script: {instanceID: 8556}
+      Script: {instanceID: 8558}
     - Class: 114
-      Script: {instanceID: 8698}
+      Script: {instanceID: 8700}
     - Class: 114
-      Script: {instanceID: 8898}
+      Script: {instanceID: 8900}
     - Class: 114
-      Script: {instanceID: 8964}
-    - Class: 114
-      Script: {instanceID: 8972}
+      Script: {instanceID: 8966}
     - Class: 114
       Script: {instanceID: 8974}
     - Class: 114
-      Script: {instanceID: 8992}
+      Script: {instanceID: 8976}
     - Class: 114
-      Script: {instanceID: 9094}
+      Script: {instanceID: 8994}
     - Class: 114
-      Script: {instanceID: 9464}
+      Script: {instanceID: 9096}
     - Class: 114
-      Script: {instanceID: 9600}
+      Script: {instanceID: 9466}
     - Class: 114
-      Script: {instanceID: 9790}
+      Script: {instanceID: 9602}
     - Class: 114
-      Script: {instanceID: 9860}
+      Script: {instanceID: 9792}
     - Class: 114
-      Script: {instanceID: 10122}
+      Script: {instanceID: 9862}
     - Class: 114
-      Script: {instanceID: 10232}
+      Script: {instanceID: 10124}
     - Class: 114
-      Script: {instanceID: 10422}
+      Script: {instanceID: 10234}
     - Class: 114
-      Script: {instanceID: 10482}
+      Script: {instanceID: 10424}
     - Class: 114
-      Script: {instanceID: 10506}
+      Script: {instanceID: 10484}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11150}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11722}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12112}
+      Script: {instanceID: 11852}
     - Class: 114
-      Script: {instanceID: 12136}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 12152}
+      Script: {instanceID: 12138}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12154}
     - Class: 114
-      Script: {instanceID: 12340}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12350}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 12440}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12564}
+      Script: {instanceID: 12442}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12566}
     - Class: 114
-      Script: {instanceID: 12712}
+      Script: {instanceID: 12618}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12714}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13460}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 13552}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 13820}
+      Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 14040}
+      Script: {instanceID: 13822}
+    - Class: 114
+      Script: {instanceID: 14042}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -454,6 +456,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1280,6 +1288,12 @@ ScriptsOnlyBuild:
     className: TouchSimulation
   - hash:
       serializedVersion: 2
+      Hash: c2f1c85639ef00b41c000b619ad79041
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Test
+  - hash:
+      serializedVersion: 2
       Hash: e63fe08659e7e4647a51098c666f8845
     assemblyName: Unity.InputSystem
     namespaceName: 
@@ -1736,7 +1750,7 @@ ScriptsOnlyBuild:
     className: Spawner
   - hash:
       serializedVersion: 2
-      Hash: 853de15fff10914b5cb9a33f54ad8ff7
+      Hash: b34c2a442335a115531b3029f9b77253
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Teleport
@@ -2544,7 +2558,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 3db94be64847cb6d9a8862219b134de5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
+      Hash: 16d81509a53c5f2b964296ce66c75f21
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Volume
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Games/Just Tanks/Just Tank.exe
+  - Assets/Scenes/Level1.unity
+  playerPath: D:/Games/Just Tanks 2/Just Tank.exe

@@ -23,7 +23,7 @@ public class Aim : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
             if (type == TypeOfUnit.enemy)
             {
-                if(FindObjectOfType<Player>()) InvokeRepeating(nameof(FinderPl), 1, 1);
+                if(FindObjectOfType<FriendUnit>()) InvokeRepeating(nameof(FinderPl), 1, 1);
             }
             else InvokeRepeating(nameof(FinderEn), 1, 1);
         }
@@ -63,12 +63,12 @@ public class Aim : MonoBehaviour
     }
     void FinderPl()
     {
-        if (FindObjectOfType<Player>())
+        if (FindObjectOfType<FriendUnit>())
         {
-            var pos = FindObjectOfType<Player>().GetComponent<Transform>();
+            var pos = FindObjectOfType<FriendUnit>().GetComponent<Transform>();
             Vector3 difference = pos.position - transform.position;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, difference, distance, layerMask);
-            if(hit && hit.collider.TryGetComponent(out Player player))
+            if(hit && hit.collider.TryGetComponent(out FriendUnit friend))
             {
                 target = pos;
             }

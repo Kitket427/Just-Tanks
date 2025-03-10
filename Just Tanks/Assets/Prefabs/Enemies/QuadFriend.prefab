@@ -863,7 +863,9 @@ MonoBehaviour:
   countObj: 0
   reloadTime: 0.12
   randomAngle: 7
+  adaptiveSpdAnim: 0
   anim: {fileID: 0}
+  adaptiveSpeed: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -883,6 +885,7 @@ GameObject:
   - component: {fileID: 5718293591862866487}
   - component: {fileID: 6348941630465252810}
   - component: {fileID: 4895514209273446207}
+  - component: {fileID: 2007603850666266445}
   m_Layer: 6
   m_Name: QuadFriend
   m_TagString: Untagged
@@ -1101,4 +1104,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: {x: 50, y: 50}
-  jump: 100
+  jump: {x: 100, y: 100}
+  player: {fileID: 0}
+--- !u!114 &2007603850666266445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519692786761859988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c58d33b93c5644bbea9feba3f77e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
