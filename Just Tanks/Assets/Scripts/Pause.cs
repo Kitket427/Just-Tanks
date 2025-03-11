@@ -17,6 +17,7 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 1;
         control = InputManager.inputManager.control;
+        language = PlayerPrefs.GetInt("Language");
         for (int i = 0; i < texts.Length; i++)
         {
             texts[i].text = textTranslations[i].text[language];

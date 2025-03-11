@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +18,7 @@ public class Player : MonoBehaviour
         control.TankGame.Enable();
         control.TankGame.Moving.performed += move => direction = move.ReadValue<Vector2>();
         control.TankGame.Moving.canceled += move => direction = Vector2.zero; // Если отпущено, направление ноль
+        transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
     }
 
     void FixedUpdate()

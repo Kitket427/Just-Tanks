@@ -20,15 +20,14 @@ public class Aim : MonoBehaviour
         if (type == TypeOfUnit.player) target.gameObject.SetActive(true);
         else
         {
-            transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
             if (type == TypeOfUnit.enemy)
             {
-                if(FindObjectOfType<FriendUnit>()) InvokeRepeating(nameof(FinderPl), 1, 1);
+                InvokeRepeating(nameof(FinderPl), 1, 1);
             }
             else InvokeRepeating(nameof(FinderEn), 1, 1);
         }
         rotate = rotateZ = transform.eulerAngles.z;
-        
+        transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
     }
     void Update()
     {
@@ -65,17 +64,27 @@ public class Aim : MonoBehaviour
     {
         if (FindObjectOfType<FriendUnit>())
         {
-            var pos = FindObjectOfType<FriendUnit>().GetComponent<Transform>();
-            Vector3 difference = pos.position - transform.position;
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, difference, distance, layerMask);
-            if(hit && hit.collider.TryGetComponent(out FriendUnit friend))
+            var enemies = FindObjectsOfType<FriendUnit>();
+            var enemyTarget = FindObjectOfType<FriendUnit>();
+            enemyTarget = null;
+            float dist = distance;
+            float minDist;
+            foreach (var enemy in enemies)
             {
-                target = pos;
+                Vector3 difference = enemy.transform.position - transform.position;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, difference, distance, layerMask);
+                if (hit && hit.collider.TryGetComponent(out FriendUnit enemyUnit))
+                {
+                    minDist = Mathf.Min(dist, Vector2.Distance(enemy.transform.position, transform.position));
+                    if (minDist < dist)
+                    {
+                        enemyTarget = enemy;
+                        dist = minDist;
+                    }
+                }
             }
-            else
-            {
-                target = null;
-            }
+            if (enemyTarget) target = enemyTarget.GetComponent<Transform>();
+            else target = null;
         }
     }
     void FinderEn()
@@ -101,7 +110,8 @@ public class Aim : MonoBehaviour
                     }
                 }
             }
-            if(enemyTarget) target = enemyTarget.GetComponent<Transform>();
+            if (enemyTarget) target = enemyTarget.GetComponent<Transform>();
+            else target = null;
         }
     }
     private void OnDisable()

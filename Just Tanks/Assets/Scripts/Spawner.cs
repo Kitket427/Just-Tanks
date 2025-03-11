@@ -34,6 +34,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Bonuses bonuses;
     private void Start()
     {
+        language = PlayerPrefs.GetInt("Language");
         texts[0].text = "";
         texts[1].text = "";
         texts[2].text = "";
@@ -102,8 +103,8 @@ public class Spawner : MonoBehaviour
     }
     void TimerToWave()
     {
-        if (timeToWave == 8) bonuses.StartChoise();
-        if (timeToWave == 2) bonuses.EndChoise();
+        if (bonuses && timeToWave == 8) bonuses.StartChoise();
+        if (bonuses && timeToWave == 2) bonuses.EndChoise();
         texts[2].text = textTranslations[3].text[language] + " " + timeToWave;
         if (timeToWave >= 0)
         {

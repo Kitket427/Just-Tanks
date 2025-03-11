@@ -9,7 +9,7 @@ public class Teleport : MonoBehaviour
     [SerializeField] private Transform player;
     private void Start()
     {
-        if(player != null && FindObjectOfType<Player>()) player = FindObjectOfType<Player>().GetComponent<Transform>();
+        if(player == null && FindObjectOfType<Player>()) player = FindObjectOfType<Player>().GetComponent<Transform>();
     }
     private void Update()
     {

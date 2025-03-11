@@ -1049,8 +1049,8 @@ MonoBehaviour:
   bossBar: {fileID: 0}
   hp: 70
   hpMax: 0
-  healingAfter: 5
-  healingTime: 5
+  healingAfter: 4
+  healingTime: 4
   sprites:
   - {fileID: 780855844631818084}
   - {fileID: 2454751650501646250}
@@ -1072,6 +1072,10 @@ MonoBehaviour:
   player: 0
   bossColor: 0
   enemiesCounter: 0
+  respawn: 0
+  respawnObj: {fileID: 0}
+  distance: {x: 0, y: 0}
+  lifes: 0
 --- !u!114 &6348941630465252810
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -43,6 +43,7 @@ public class Bonuses : MonoBehaviour
     [SerializeField] private float x;
     private void Start()
     {
+        language = PlayerPrefs.GetInt("Language");
         Invoke(nameof(PlayerFind), 1f);
         bonuses[Random.Range(11, 13)].active = true;
     }
