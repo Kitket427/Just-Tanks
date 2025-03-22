@@ -133,9 +133,10 @@ MonoBehaviour:
   effectSpawn: {fileID: 7287043295443661613, guid: 55360ba5ae34790449979be2fba508d5, type: 3}
   addSpawnObj: []
   countObj: 0
-  reloadTime: 0.4
+  reloadTime: 0.7
   randomAngle: 3
   adaptiveSpdAnim: 0
+  multiplierPoints: 0
   anim: {fileID: 3195207229953790270}
   adaptiveSpeed: 0
   layerMask:
@@ -425,6 +426,12 @@ MonoBehaviour:
   player: 0
   bossColor: 0
   enemiesCounter: 0
+  respawn: 0
+  friend: 1
+  points: 0
+  respawnObj: {fileID: 0}
+  distance: {x: 0, y: 0}
+  lifes: 0
 --- !u!114 &3628810445331029788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275d6af4e797498408d8dec563570fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 3.2
   changeDirectionTime: 0
   timeA: 2
   timeB: 4
@@ -853,6 +860,7 @@ MonoBehaviour:
   offset: 0
   fireRadius: 15
   distance: 60
+  timeToFind: 0
   target: {fileID: 0}
   fire:
   - {fileID: 520448700441689599}

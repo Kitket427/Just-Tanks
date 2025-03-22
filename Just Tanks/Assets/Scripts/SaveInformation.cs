@@ -1,6 +1,12 @@
+public class Options
+{
+    public float sfxVolume, ostVolume;
+    public string activeSave = "SaveA";
+}
+
 public class Data
 {
-    public string info = "Ты выйди отсюда, тут нечего искать =P";
-    public float sfxVolume, ostVolume;
-    public bool gameComplete;
+    public int points;
+    public int levelProgress;
+    public int[] upgrates = new int[5];
 }

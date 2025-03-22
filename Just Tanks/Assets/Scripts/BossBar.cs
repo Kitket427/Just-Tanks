@@ -30,6 +30,7 @@ public class BossBar : MonoBehaviour
             {
                 if (item.color.a > 0) item.color = new Color(item.color.r, item.color.g, item.color.b, item.color.a - Time.deltaTime / 2f / Time.timeScale);
             }
+            if(texts.Length>0)texts[10].GetComponent<Pointsystem>().enabled = false;
         }
     }
     public void Damage(float hp, float hpmax)

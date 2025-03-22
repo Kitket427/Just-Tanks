@@ -10,7 +10,7 @@ enum TypeOfUnit
 public class Aim : MonoBehaviour
 {
     [SerializeField] private TypeOfUnit type;
-    [SerializeField] private float rotateZ, rotate, speed, offset, fireRadius, distance;
+    [SerializeField] private float rotateZ, rotate, speed, offset, fireRadius, distance, timeToFind;
     [SerializeField] private Transform target;
     [SerializeField] private Fire[] fire;
     [SerializeField] private bool gamepad;
@@ -22,7 +22,7 @@ public class Aim : MonoBehaviour
         {
             if (type == TypeOfUnit.enemy)
             {
-                InvokeRepeating(nameof(FinderPl), 1, 1);
+                InvokeRepeating(nameof(FinderPl), timeToFind, 1);
             }
             else InvokeRepeating(nameof(FinderEn), 1, 1);
         }
@@ -44,7 +44,7 @@ public class Aim : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, rotate);
                 rotate = Mathf.MoveTowardsAngle(transform.eulerAngles.z, rotateZ, speed * Time.deltaTime);
                 if (Input.GetKey(KeyCode.Mouse0) && type == TypeOfUnit.player ||
-                    type != TypeOfUnit.player && Vector2.Distance(target.position, transform.position) < distance && Mathf.Abs(rotate - rotateZ) < fireRadius)
+                    type != TypeOfUnit.player && Vector2.Distance(target.position, transform.position) < distance && Mathf.Abs(rotate - rotateZ) < fireRadius && fire.Length > 0)
                 {
                     foreach (var f in fire)
                     {

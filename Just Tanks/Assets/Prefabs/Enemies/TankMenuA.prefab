@@ -196,7 +196,7 @@ MonoBehaviour:
   objDead: {fileID: 175643158257547186}
   effect: {fileID: 5692371481818956671, guid: f4d425e68861f494eabe6ff31a828b36, type: 3}
   triggers: []
-  color: {r: 1, g: 0.6666667, b: 0.6666667, a: 1}
+  color: {r: 1, g: 0.46666667, b: 0.46666667, a: 1}
   player: 0
   bossColor: 0
   enemiesCounter: 0
@@ -216,12 +216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275d6af4e797498408d8dec563570fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.7
   changeDirectionTime: 0
   timeA: 2
   timeB: 4
   distance: 12
-  rotationSpeed: 8
+  rotationSpeed: 7
   trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
 --- !u!114 &846078745733603210
 MonoBehaviour:
@@ -365,7 +365,7 @@ MonoBehaviour:
   type: 2
   rotateZ: 0
   rotate: 0
-  speed: 180
+  speed: 120
   offset: 0
   fireRadius: 15
   distance: 60

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -42,16 +43,20 @@ public class Pause : MonoBehaviour
         {
             menu.SetActive(false);
             //audioMixer.audioMixer.SetFloat("lowpass", 22000);
-            //audioMixer.audioMixer.SetFloat("sfxP", 1);
+            //audioMixer.audioMixer.SetFloat("sfxSpeed", 1);
             control.TankGame.Enable();
         }
         else
         {
             menu.SetActive(true);
-            //audioMixer.audioMixer.SetFloat("lowpass", 1000);
-            //audioMixer.audioMixer.SetFloat("sfxP", 0);
+            //audioMixer.audioMixer.SetFloat("lowpass", 2000);
+            //audioMixer.audioMixer.SetFloat("sfxSpeed", 0);
             control.TankGame.Disable();
         }
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(1);
     }
     public void Bonus(float time)
     {

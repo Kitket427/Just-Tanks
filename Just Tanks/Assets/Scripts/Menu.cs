@@ -9,16 +9,30 @@ public class Menu : MonoBehaviour
     [SerializeField] private TextTranslation[] texts;
     [SerializeField] private Text[] buttons;
     [SerializeField] private Animator anim;
+    [SerializeField] private Text slotActive;
     [SerializeField] private GameObject[] menus;
     [SerializeField] private TextTranslation[] levelInfo;
     [SerializeField] private Text[] levels;
     [SerializeField] private TextTranslation[] tankInfo;
     [SerializeField] private Text[] tanks;
+    private Options options;
+    private Data data;
     private void Start()
     {
+        options = new Options();
+        data = new Data();
         Time.timeScale = 1;
-        Language();
         PlayerPrefs.DeleteKey("Tank");
+        DataSaver.Open("Options", out options);
+        if (!DataSaver.IsSaveExists(options.activeSave))
+        {
+            DataSaver.Save(data, options.activeSave);
+        }
+        else
+        {
+            DataSaver.Open(options.activeSave, out data);
+        }
+        Language();
     }
     private void Update()
     {
@@ -29,6 +43,7 @@ public class Menu : MonoBehaviour
                 item.SetActive(false);
             }
             menus[0].SetActive(true);
+            menus[5].SetActive(true);
         }
     }
     void BlackScreen()
@@ -54,10 +69,33 @@ public class Menu : MonoBehaviour
         BlackScreen();
         Invoke(nameof(Bye), 2);
     }
+    public void SelectSave(string saveName)
+    {
+        DataSaver.Open("Options", out options);
+        options.activeSave = saveName;
+        DataSaver.Save(options, "Options");
+        if (!DataSaver.IsSaveExists(options.activeSave))
+        {
+            data = new Data();
+            DataSaver.Save(data, options.activeSave);
+        }
+        else
+        {
+            DataSaver.Open(options.activeSave, out data);
+        }
+        slotActive.text = options.activeSave switch
+        {
+            "SaveA" => texts[13].text[language],
+            "SaveB" => texts[14].text[language],
+            "SaveC" => texts[15].text[language],
+            _ => "ÎØÈÁÊÀ! ÎØÈÁÊÀ!"
+        };
+    }
     public void DeleteSave()
     {
-        DataSaver.DeleteGameSaves();
-        Quit();
+        DataSaver.DeleteFile(options.activeSave);
+        data = new Data();
+        DataSaver.Save(data, options.activeSave);
     }
     void Bye()
     {
@@ -78,5 +116,12 @@ public class Menu : MonoBehaviour
         {
             tanks[i].text = tankInfo[i].text[language];
         }
+                slotActive.text = options.activeSave switch
+        {
+            "SaveA" => texts[13].text[language],
+            "SaveB" => texts[14].text[language],
+            "SaveC" => texts[15].text[language],
+            _ => "ÎØÈÁÊÀ! ÎØÈÁÊÀ!"
+        };
     }
 }

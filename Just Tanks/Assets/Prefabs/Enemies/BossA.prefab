@@ -469,6 +469,7 @@ MonoBehaviour:
   offset: 0
   fireRadius: 5
   distance: 60
+  timeToFind: 0
   target: {fileID: 0}
   fire:
   - {fileID: 5496715741094941341}
@@ -633,6 +634,7 @@ MonoBehaviour:
   reloadTime: 0.07
   randomAngle: 5
   adaptiveSpdAnim: 0
+  multiplierPoints: 0
   anim: {fileID: 1480285004065220572}
   adaptiveSpeed: 0
   layerMask:
@@ -690,6 +692,7 @@ MonoBehaviour:
   reloadTime: 0.07
   randomAngle: 5
   adaptiveSpdAnim: 0
+  multiplierPoints: 0
   anim: {fileID: 7434117407197417182}
   adaptiveSpeed: 0
   layerMask:
@@ -899,6 +902,11 @@ MonoBehaviour:
   player: 0
   bossColor: 1
   enemiesCounter: 1
+  respawn: 0
+  points: 3000
+  respawnObj: {fileID: 0}
+  distance: {x: 0, y: 0}
+  lifes: 0
 --- !u!114 &2681689966819722231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275d6af4e797498408d8dec563570fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 6
   changeDirectionTime: 0
   timeA: 2
   timeB: 6
@@ -931,7 +939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: {x: 50, y: 50}
-  jump: 100
+  jump: {x: 100, y: 100}
+  player: {fileID: 0}
 --- !u!114 &8498815262513079617
 MonoBehaviour:
   m_ObjectHideFlags: 0

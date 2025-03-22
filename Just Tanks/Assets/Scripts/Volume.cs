@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -8,7 +9,21 @@ public class Volume : MonoBehaviour
 {
     [SerializeField] private Slider[] sliders;
     [SerializeField] private AudioMixerGroup audioMixer;
-    private Data data;
+    private Options options;
+    private void Awake()
+    {
+        options = new Options();
+        if (!DataSaver.IsSaveExists("Options"))
+        {
+            options.sfxVolume = -15;
+            options.ostVolume = -15;
+            DataSaver.Save(options, "Options");
+        }
+        else
+        {
+            DataSaver.Open("Options", out options);
+        }
+    }
     private void Start()
     {
         //if (!PlayerPrefs.HasKey("sfxVolume"))
@@ -22,46 +37,41 @@ public class Volume : MonoBehaviour
         //sliders[1].value = (30f + PlayerPrefs.GetFloat("ostVolume")) / 30f;
         sliders[0].onValueChanged.AddListener(ChangeVolumeSFX);
         sliders[1].onValueChanged.AddListener(ChangeVolumeOST);
-        data = new Data();
-        if(!DataSaver.IsSaveExists("Save"))
+        sliders[0].value = (30f + options.sfxVolume) / 30f;
+        sliders[1].value = (30f + options.ostVolume) / 30f;
+        if (sliders[0].value > 0.01f) audioMixer.audioMixer.SetFloat("sfxVolume", options.sfxVolume);
+        else audioMixer.audioMixer.SetFloat("sfxVolume", -80);
+        if (sliders[1].value > 0.01f) audioMixer.audioMixer.SetFloat("ostVolume", options.ostVolume);
+        else audioMixer.audioMixer.SetFloat("ostVolume", -80);
+    }
+    private void Update()
+    {
+        if (Time.timeScale != 0)
         {
-            data.sfxVolume = -15;
-            data.ostVolume = -15;
-            DataSaver.Save(data, "Save");
+            audioMixer.audioMixer.SetFloat("lowpass", 22000);
+            audioMixer.audioMixer.SetFloat("ostSpeed", 1);
+            audioMixer.audioMixer.SetFloat("sfxSpeed", 1);
         }
         else
         {
-            DataSaver.Open("Save", out data);
+            audioMixer.audioMixer.SetFloat("lowpass", 700);
+            audioMixer.audioMixer.SetFloat("ostSpeed", 0.7f);
+            audioMixer.audioMixer.SetFloat("sfxSpeed", 0);
         }
-        sliders[0].value = (30f + data.sfxVolume) / 30f;
-        sliders[1].value = (30f + data.ostVolume) / 30f;
-        if (sliders[0].value > 0.01f) audioMixer.audioMixer.SetFloat("sfxVolume", data.sfxVolume);
-        else audioMixer.audioMixer.SetFloat("sfxVolume", -80);
-        if (sliders[1].value > 0.01f) audioMixer.audioMixer.SetFloat("ostVolume", data.ostVolume);
-        else audioMixer.audioMixer.SetFloat("ostVolume", -80);
     }
-    //private void Update()
-    //{
-    //    if (sliders[0].value > 0.01f) audioMixer.audioMixer.SetFloat("sfxVolume", data.sfxVolume);
-    //    else audioMixer.audioMixer.SetFloat("sfxVolume", -80);
-    //    if (sliders[1].value > 0.01f) audioMixer.audioMixer.SetFloat("ostVolume", PlayerPrefs.GetFloat("ostVolume"));
-    //    else audioMixer.audioMixer.SetFloat("ostVolume", -80);
-    //    //PlayerPrefs.SetFloat("sfxVolume", -30f + 30f * sliders[0].value);
-    //    //PlayerPrefs.SetFloat("ostVolume", -30f + 30f * sliders[1].value);
-    //}
     void ChangeVolumeSFX(float volume)
     {
-        data.sfxVolume = -30f + 30f * volume;
-        if (sliders[0].value > 0.01f) audioMixer.audioMixer.SetFloat("sfxVolume", data.sfxVolume);
+        options.sfxVolume = -30f + 30f * volume;
+        if (sliders[0].value > 0.01f) audioMixer.audioMixer.SetFloat("sfxVolume", options.sfxVolume);
         else audioMixer.audioMixer.SetFloat("sfxVolume", -80);
-        DataSaver.Save(data, "Save");
+        DataSaver.Save(options, "Options");
     }
     void ChangeVolumeOST(float volume)
     {
-        data.ostVolume = -30f + 30f * volume;
-        if (sliders[1].value > 0.01f) audioMixer.audioMixer.SetFloat("ostVolume", data.ostVolume);
+        options.ostVolume = -30f + 30f * volume;
+        if (sliders[1].value > 0.01f) audioMixer.audioMixer.SetFloat("ostVolume", options.ostVolume);
         else audioMixer.audioMixer.SetFloat("ostVolume", -80);
-        DataSaver.Save(data, "Save");
+        DataSaver.Save(options, "Options");
     }
     private void OnDestroy()
     {

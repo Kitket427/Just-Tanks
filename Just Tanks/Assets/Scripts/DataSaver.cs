@@ -109,4 +109,10 @@ public static class DataSaver
             Directory.Delete(directory, true);
         PlayerPrefs.DeleteAll();
     }
+    public static void DeleteFile(string name, string directory = "/")
+    {
+        name = string.Concat(Application.persistentDataPath, directory, name, ".json");
+        if (File.Exists(name))
+            File.Delete(name);
+    }
 }

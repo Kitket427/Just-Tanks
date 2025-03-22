@@ -552,6 +552,7 @@ MonoBehaviour:
   offset: 0
   fireRadius: 15
   distance: 45
+  timeToFind: 0
   target: {fileID: 0}
   fire:
   - {fileID: 3805124165676246548}
@@ -861,9 +862,10 @@ MonoBehaviour:
   effectSpawn: {fileID: 4358774549706311578, guid: f53e11c1cfd4ccc4fbc4b0638d490981, type: 3}
   addSpawnObj: []
   countObj: 0
-  reloadTime: 0.12
+  reloadTime: 0.15
   randomAngle: 7
   adaptiveSpdAnim: 0
+  multiplierPoints: 0
   anim: {fileID: 0}
   adaptiveSpeed: 0
   layerMask:
@@ -1073,6 +1075,8 @@ MonoBehaviour:
   bossColor: 0
   enemiesCounter: 0
   respawn: 0
+  friend: 1
+  points: 0
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
   lifes: 0

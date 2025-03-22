@@ -20,7 +20,8 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     [SerializeField] private Trigger[] triggers;
     [SerializeField] private Color color;
     private bool isDead;
-    [SerializeField] private bool player, bossColor, enemiesCounter, respawn;
+    [SerializeField] private bool player, bossColor, enemiesCounter, respawn, friend;
+    [SerializeField] private int points;
     [SerializeField] private GameObject respawnObj;
     [SerializeField] private Vector2 distance;
     [SerializeField] private int lifes;
@@ -33,6 +34,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
         {
             if (item.color != Color.black)item.color = color;
         }
+        if (friend && FindObjectOfType<BonusAlert>()) FindObjectOfType<BonusAlert>().Alert(7, true, 0.3f);
     }
     void Update()
     {
@@ -46,7 +48,11 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     }
     void ITakeDamage.TakeDamage(float damage)
     {
-        if(player) FindObjectOfType<CameraShake>().TriggerShake(0.1f, damage/7f, damage / 7f);
+        if (player)
+        {
+            FindObjectOfType<CameraShake>().TriggerShake(0.1f, damage / 7f, damage / 7f);
+            if(FindObjectOfType<Pointsystem>()) FindObjectOfType<Pointsystem>().LostPoints((int)(damage * 7));
+        }
         hp -= damage;
         if (hp <= 0 && isDead == false)
         {
@@ -92,7 +98,11 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             item.obj.SetActive(item.active);
         }
         FindObjectOfType<CameraShake>().TriggerShake(0.12f, 7f, 7f);
-        if (enemiesCounter) FindObjectOfType<Spawner>().EnemyDown();
+        if (enemiesCounter)
+        {
+            FindObjectOfType<Spawner>().EnemyDown();
+            if (FindObjectOfType<Pointsystem>()) FindObjectOfType<Pointsystem>().GetPoints(points);
+        }
         if (respawn && lifes != 0)
         {
             int a = Random.Range(0, 2);
@@ -100,6 +110,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             Instantiate(respawnObj, new Vector2(distance.x * (-1 + a * 2), distance.y * (-1 + b * 2)), transform.rotation);
             lifes--;
         }
+        if (friend && FindObjectOfType<BonusAlert>()) FindObjectOfType<BonusAlert>().Alert(8, false, 0.3f);
         Destroy(objDead);
     }
     public void Bonus(float hp, float healingAfter, float healingTime)

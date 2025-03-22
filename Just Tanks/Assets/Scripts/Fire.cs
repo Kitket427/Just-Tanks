@@ -9,6 +9,7 @@ public class Fire : MonoBehaviour
     public int countObj;
     [SerializeField] private float reloadTime, randomAngle, adaptiveSpdAnim;
     private bool reload;
+    public float multiplierPoints;
     [SerializeField] private Animator anim;
     [SerializeField] private bool adaptiveSpeed;
     [SerializeField] private LayerMask layerMask;
@@ -16,7 +17,8 @@ public class Fire : MonoBehaviour
 
     private void Start()
     {
-        adaptiveSpdAnim = reloadTime;
+        multiplierPoints = 1;
+        if(adaptiveSpdAnim == 0) adaptiveSpdAnim = reloadTime;
     }
     public void Shoot()
     {
@@ -38,14 +40,14 @@ public class Fire : MonoBehaviour
                 }
                 Instantiate(addSpawn, transform.position, Quaternion.Euler(0, 0, transform.eulerAngles.z + Random.Range(-randomAngle, randomAngle)));
             }
-            Instantiate(effectSpawn, transform.position, transform.rotation);
+            if(effectSpawn)Instantiate(effectSpawn, transform.position, transform.rotation);
             if (anim)
             {
                 if (adaptiveSpeed && adaptiveSpdAnim > reloadTime) anim.speed = adaptiveSpdAnim / reloadTime;
                 else anim.speed = 1;
                 anim.Play("Fire");
             }
-            Invoke(nameof(Reload), reloadTime);
+            Invoke(nameof(Reload), reloadTime / multiplierPoints);
             reload = true;
         }
     }

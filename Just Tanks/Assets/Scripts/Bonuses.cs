@@ -30,6 +30,7 @@ struct BonusesChoise
 public class Bonuses : MonoBehaviour
 {
     private int language = 1;
+    [SerializeField] private BonusAlert bonusAlert;
     [SerializeField] private BonusesChoise[] bonuses;
     [SerializeField] private Text[] leftChoise, rightChoise;
     private int choiseA, choiseB, choiseC, summ;
@@ -45,7 +46,7 @@ public class Bonuses : MonoBehaviour
     {
         language = PlayerPrefs.GetInt("Language");
         Invoke(nameof(PlayerFind), 1f);
-        bonuses[Random.Range(11, 13)].active = true;
+        bonuses[Random.Range(8, 10)].active = true;
     }
     private void PlayerFind()
     {
@@ -138,8 +139,22 @@ public class Bonuses : MonoBehaviour
                 pause.Bonus(bonuses[choiseC].timeSpeed);
             }
             bonuses[choiseC].active = false;
-            if (bonuses[choiseC].bonusActive > 0) bonuses[bonuses[choiseC].bonusActive].active = true;
-            Invoke(nameof(End), 2f);
+            if (bonuses[choiseC].bonusActive > 0) bonuses[bonuses[choiseC].bonusActive].active = !bonuses[bonuses[choiseC].bonusActive].active;
+            Invoke(nameof(End), 0.7f);
+
+            if (bonuses[choiseC].reloadTime < 1) bonusAlert.Alert(0, true);
+            if (bonuses[choiseC].reloadTime > 1) bonusAlert.Alert(0, false);
+            if (bonuses[choiseC].speedAim > 1) bonusAlert.Alert(1, true);
+            if (bonuses[choiseC].speedAim < 1) bonusAlert.Alert(1, false);
+            if (bonuses[choiseC].speedMove > 1) bonusAlert.Alert(2, true);
+            if (bonuses[choiseC].speedMove < 1) bonusAlert.Alert(2, false);
+            if (bonuses[choiseC].hp > 1) bonusAlert.Alert(3, true);
+            if (bonuses[choiseC].hp < 1) bonusAlert.Alert(3, false);
+            if (bonuses[choiseC].randomAngle < 1) bonusAlert.Alert(4, true);
+            if (bonuses[choiseC].randomAngle > 1) bonusAlert.Alert(4, false);
+            if (bonuses[choiseC].healingAfter < 1) bonusAlert.Alert(5, true);
+            if (bonuses[choiseC].healingAfter > 1) bonusAlert.Alert(5, false);
+            if (bonuses[choiseC].countObj > 0) bonusAlert.Alert(6, true);
         }
     }
     void End()
