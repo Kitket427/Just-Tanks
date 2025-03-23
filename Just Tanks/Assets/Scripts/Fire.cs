@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Fire : MonoBehaviour
@@ -11,14 +12,23 @@ public class Fire : MonoBehaviour
     private bool reload;
     public float multiplierPoints;
     [SerializeField] private Animator anim;
-    [SerializeField] private bool adaptiveSpeed;
+    [SerializeField] private bool adaptiveSpeed, player;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private Collider2D shooter;
-
+    private Data data;
+    private Options options;
     private void Start()
     {
         multiplierPoints = 1;
         if(adaptiveSpdAnim == 0) adaptiveSpdAnim = reloadTime;
+        if(player)
+        {
+            data = new Data();
+            options = new Options();
+            DataSaver.Open("Options", out options);
+            DataSaver.Open(options.activeSave, out data);
+            reloadTime *= 1f - data.upgrates[2] * 1f / 40f;
+        }
     }
     public void Shoot()
     {

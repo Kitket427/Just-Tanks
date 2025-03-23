@@ -507,6 +507,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 4247212636857920217}
   adaptiveSpeed: 0
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -1028,13 +1029,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 6f430ec548aeba043a95fb380bd4d9bf, type: 2}
   - {fileID: 2100000, guid: ef3d1f3f9e22fbd41b5499a98960f43d, type: 2}
   objDead: {fileID: 7634991636310813722}
-  effect: {fileID: 5692371481818956671, guid: f4d425e68861f494eabe6ff31a828b36, type: 3}
+  effect: {fileID: 3185192762223278270, guid: 0a4b956799a8497438dcee0ea75621ab, type: 3}
   triggers: []
   color: {r: 1, g: 1, b: 1, a: 1}
   player: 0
   bossColor: 1
   enemiesCounter: 1
   respawn: 0
+  friend: 0
   points: 5000
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
@@ -1272,6 +1274,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 8241552549386384392}
   adaptiveSpeed: 0
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8

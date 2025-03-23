@@ -23,6 +23,7 @@ public struct UpgradeData
 public class Pointsystem : MonoBehaviour
 {
     [SerializeField] private Text pointext, pointiplier;
+    [SerializeField] private float multiForLevel = 1;
     private int points, language = 1;
     private float multiplier;
     private Data data;
@@ -32,6 +33,7 @@ public class Pointsystem : MonoBehaviour
     [SerializeField] private AudioSource[] sfx;
     [SerializeField] private TextTranslation[] texts;
     private bool priceReady;
+    [SerializeField] private Menu menu;
 
     void Start()
     {
@@ -62,10 +64,10 @@ public class Pointsystem : MonoBehaviour
 
     public void GetPoints(int points)
     {
-        UpdatePoint((int)(points * multiplier));
+        UpdatePoint((int)(points * multiplier * multiForLevel));
         if (points < 1000) multiplier += points / 1000f;
         else multiplier++;
-        if (multiplier > 5) multiplier = 5;
+        if (multiplier > 10) multiplier = 10;
         pointiplier.text = "x " + Math.Round(multiplier, 2);
         pointext.color = new Color(0.45f, 1, 0.45f);
         pointiplier.color = new Color(0.45f, 1, 0.45f);
@@ -86,7 +88,7 @@ public class Pointsystem : MonoBehaviour
     void UpdatePoint(int points)
     {
         this.points += points;
-        if (this.points < 0) points = 0;
+        if (this.points < 0) this.points = 0;
         data.points = this.points;
         DataSaver.Save(data, options.activeSave);
         pointext.text = "" + this.points;
@@ -112,7 +114,7 @@ public class Pointsystem : MonoBehaviour
             upgradesData[number].price += upgradesData[number].priceStart;
             Verification();
             DataSaver.Save(data, options.activeSave);
-
+            if (number == 5) menu.NewUnit();
         }
         else
         {
@@ -149,6 +151,7 @@ public class Pointsystem : MonoBehaviour
             if (upgradesData[i].upgrate < upgradesData[i].maxUpgrate) upgradesData[i].textPrice.text = "" + upgradesData[i].price;
             else
             {
+                upgradesData[i].upgrate = upgradesData[i].maxUpgrate;
                 upgradesData[i].textPrice.text = texts[0].text[language];
                 upgradesData[i].barPrice.fillAmount = 1;
                 upgradesData[i].barPrice.color = new Color(0.4f, 0.4f, 0.4f);

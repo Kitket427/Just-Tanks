@@ -17,6 +17,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private Text[] tanks;
     private Options options;
     private Data data;
+    [SerializeField] private GameObject[] slotTank, slotNoTank;
     private void Start()
     {
         options = new Options();
@@ -33,6 +34,7 @@ public class Menu : MonoBehaviour
             DataSaver.Open(options.activeSave, out data);
         }
         Language();
+        NewUnit();
     }
     private void Update()
     {
@@ -123,5 +125,14 @@ public class Menu : MonoBehaviour
             "SaveC" => texts[15].text[language],
             _ => "ньхайю! ньхайю!"
         };
+    }
+    public void NewUnit()
+    {
+        DataSaver.Open(options.activeSave, out data);
+        for (int i = 0; i < data.upgrates[5]; i++)
+        {
+            slotTank[i].SetActive(true);
+            slotNoTank[i].SetActive(false);
+        }
     }
 }

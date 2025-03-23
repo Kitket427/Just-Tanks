@@ -293,6 +293,7 @@ MonoBehaviour:
   speed: 3.2
   rotationSpeed: 11
   trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
+  bonuses: {fileID: 0}
 --- !u!114 &8192106370618454040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +405,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 1352916717584690304}
   adaptiveSpeed: 1
+  player: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -634,6 +636,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 0}
   adaptiveSpeed: 0
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -1014,7 +1017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &539259849745087956
 Transform:
   m_ObjectHideFlags: 0

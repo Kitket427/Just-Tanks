@@ -39,6 +39,7 @@ public class Bonuses : MonoBehaviour
     [SerializeField] private Aim aim;
     [SerializeField] private HitPoints hitPoints;
     [SerializeField] private Fire fire;
+    [SerializeField] private Fire twins;
     [SerializeField] private Spawner spawner;
     [SerializeField] private Pause pause;
     [SerializeField] private float x;
@@ -47,6 +48,10 @@ public class Bonuses : MonoBehaviour
         language = PlayerPrefs.GetInt("Language");
         Invoke(nameof(PlayerFind), 1f);
         bonuses[Random.Range(8, 10)].active = true;
+    }
+    public void BonusDown()
+    {
+        bonuses[0].active = false;
     }
     private void PlayerFind()
     {
@@ -129,6 +134,7 @@ public class Bonuses : MonoBehaviour
             player.Bonus(bonuses[choiseC].speedMove);
             aim.Bonus(bonuses[choiseC].speedAim);
             fire.Bonus(bonuses[choiseC].reloadTime, bonuses[choiseC].randomAngle, bonuses[choiseC].countObj);
+            twins.Bonus(bonuses[choiseC].reloadTime, bonuses[choiseC].randomAngle, bonuses[choiseC].countObj);
             hitPoints.Bonus(bonuses[choiseC].hp, bonuses[choiseC].healingAfter, bonuses[choiseC].healingTime);
             if(bonuses[choiseC].bonus == Bonus.restartWave)
             {

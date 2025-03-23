@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject trail;
     private float time;
     private const float angleThreshold = 7f; // Допустимый угол поворота
-
+    private Data data;
+    private Options options;
+    [SerializeField] private Bonuses bonuses;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,6 +23,12 @@ public class Player : MonoBehaviour
         control.TankGame.Moving.performed += move => direction = move.ReadValue<Vector2>();
         control.TankGame.Moving.canceled += move => direction = Vector2.zero; // Если отпущено, направление ноль
         transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
+        data = new Data();
+        options = new Options();
+        DataSaver.Open("Options", out options);
+        DataSaver.Open(options.activeSave, out data);
+        speed *= 1f+data.upgrates[1] * 1f / 100f;
+        if (bonuses) bonuses.BonusDown();
     }
 
     void FixedUpdate()
@@ -48,7 +56,7 @@ public class Player : MonoBehaviour
             float angleDifference = Mathf.DeltaAngle(transform.eulerAngles.z, targetAngle - 90);
 
             // Проверяем, превышает ли угол допустимый порог
-            if (Mathf.Abs(angleDifference) > rotationSpeed)
+            if (Mathf.Abs(angleDifference) > angleThreshold)
             {
                 // Поворачиваем на 180 градусов, если угол больше 90
                 if (Mathf.Abs(angleDifference) > 90)
@@ -59,11 +67,9 @@ public class Player : MonoBehaviour
                 // Плавный поворот
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
             }
-            else
+            else if (transform.eulerAngles.z != targetAngle)
             {
-                // Доворачиваем танк, когда близко к целевому углу
-                float smoothAngle = Mathf.MoveTowardsAngle(transform.eulerAngles.z, targetAngle - 90, rotationSpeed);
-                transform.rotation = Quaternion.Euler(new Vector3(0, 0, smoothAngle));
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, targetAngle - 90));
             }
         }
     }
@@ -71,7 +77,6 @@ public class Player : MonoBehaviour
     public void Bonus(float speed)
     {
         this.speed *= speed;
-        if (this.speed > 10) this.speed = 10;
         rotationSpeed *= speed;
     }
 }

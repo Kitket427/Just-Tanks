@@ -25,10 +25,23 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     [SerializeField] private GameObject respawnObj;
     [SerializeField] private Vector2 distance;
     [SerializeField] private int lifes;
+    private Data data;
+    private Options options;
     void Start()
     {
         if (bossBar && !player) bossBar.BossBattle();
-        if (player) bossBar.Damage(hp, hpMax);
+        if (player)
+        {
+            data = new Data();
+            options = new Options();
+            DataSaver.Open("Options", out options);
+            DataSaver.Open(options.activeSave, out data);
+            hp *= 1f + data.upgrates[0] * 1f / 20f;
+            hpMax = hp;
+            healingAfter *= 1f - data.upgrates[4] * 1f / 100f;
+            healingTime *= 1f - data.upgrates[4] * 1f / 100f;
+            bossBar.Damage(hp, hpMax);
+        }
         hpMax = hp;
         foreach (var item in sprites)
         {
@@ -51,7 +64,7 @@ public class HitPoints : MonoBehaviour, ITakeDamage
         if (player)
         {
             FindObjectOfType<CameraShake>().TriggerShake(0.1f, damage / 7f, damage / 7f);
-            if(FindObjectOfType<Pointsystem>()) FindObjectOfType<Pointsystem>().LostPoints((int)(damage * 7));
+            if(FindObjectOfType<Pointsystem>()) FindObjectOfType<Pointsystem>().LostPoints((int)(damage * 3));
         }
         hp -= damage;
         if (hp <= 0 && isDead == false)

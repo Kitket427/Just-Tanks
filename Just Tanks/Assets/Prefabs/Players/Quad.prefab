@@ -444,6 +444,7 @@ MonoBehaviour:
   offset: 0
   fireRadius: 0
   distance: 0
+  timeToFind: 0
   target: {fileID: 0}
   fire:
   - {fileID: 1085341072007058865}
@@ -786,6 +787,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 0}
   adaptiveSpeed: 0
+  player: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -1052,6 +1054,7 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 15
   trail: {fileID: 6224818047359100559, guid: 64622275a7268ac47a6d1127709038f2, type: 3}
+  bonuses: {fileID: 0}
 --- !u!114 &836923395199413688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,6 +1094,7 @@ MonoBehaviour:
   bossColor: 0
   enemiesCounter: 0
   respawn: 0
+  friend: 0
   points: 0
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}

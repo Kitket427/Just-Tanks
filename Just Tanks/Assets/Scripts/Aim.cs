@@ -15,9 +15,19 @@ public class Aim : MonoBehaviour
     [SerializeField] private Fire[] fire;
     [SerializeField] private bool gamepad;
     [SerializeField] private LayerMask layerMask;
+    private Data data;
+    private Options options;
     private void Start()
     {
-        if (type == TypeOfUnit.player) target.gameObject.SetActive(true);
+        if (type == TypeOfUnit.player)
+        {
+            target.gameObject.SetActive(true);
+            data = new Data();
+            options = new Options();
+            DataSaver.Open("Options", out options);
+            DataSaver.Open(options.activeSave, out data);
+            speed *= 1f + data.upgrates[3] * 1f / 25f;
+        }
         else
         {
             if (type == TypeOfUnit.enemy)

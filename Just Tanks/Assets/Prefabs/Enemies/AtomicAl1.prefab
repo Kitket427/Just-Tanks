@@ -230,6 +230,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 6255339148793626080}
   adaptiveSpeed: 1
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -437,6 +438,7 @@ MonoBehaviour:
   bossColor: 0
   enemiesCounter: 1
   respawn: 0
+  friend: 0
   points: 40
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
@@ -453,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275d6af4e797498408d8dec563570fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 3
   changeDirectionTime: 0
   timeA: 1
   timeB: 2
