@@ -11942,7 +11942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLevels: 10
-  maxUpgrates: 182
+  maxUpgrates: 184
   bars:
   - {fileID: 421664454}
   - {fileID: 1472715969}
@@ -42499,7 +42499,7 @@ MonoBehaviour:
         \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438"
     info: {fileID: 1923566787}
   - upgrate: 0
-    maxUpgrate: 2
+    maxUpgrate: 4
     price: 5000
     priceStart: 0
     barUpgrate: {fileID: 430167296}

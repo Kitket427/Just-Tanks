@@ -51,11 +51,12 @@ public class HitPoints : MonoBehaviour, ITakeDamage
     }
     void OnEnable()
     {
-        if (timeToDie > 0) Invoke(nameof(ShieldOff), timeToDie);
+        if (timeToDie > 0) Invoke(nameof(Die), timeToDie);
     }
-    void ShieldOff()
+    void Die()
     {
-        gameObject.SetActive(false);
+        if (shield) gameObject.SetActive(false);
+        else Dead();
     }
     void Update()
     {

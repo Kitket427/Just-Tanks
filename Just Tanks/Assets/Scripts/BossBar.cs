@@ -9,6 +9,7 @@ public class BossBar : MonoBehaviour
     [SerializeField] private Image[] bars;
     [SerializeField] private Text[] texts;
     [SerializeField] private OstSystem ostSystem;
+    [SerializeField] private Pause pause;
     private void Update()
     {
         if(time == 1) hpDamage = Mathf.MoveTowards(hpDamage, hpCurrent, 0.7f * Time.deltaTime);
@@ -16,9 +17,7 @@ public class BossBar : MonoBehaviour
         if (hpCurrent > hpDamage) hpDamage = hpCurrent;
         if (ostSystem && hpCurrent <= 0)
         {
-            Invoke(nameof(Restart), 7f * Time.timeScale);
-            Invoke(nameof(GameOver), 4f * Time.timeScale);
-            ostSystem.GameOver();
+            End();
         }
         if(hpDamage <= 0)
         {
@@ -62,5 +61,12 @@ public class BossBar : MonoBehaviour
     void Restart()
     {
         SceneManager.LoadScene(1);
+    }
+    public void End()
+    {
+        pause.enabled = false;
+        Invoke(nameof(Restart), 7f * Time.timeScale);
+        Invoke(nameof(GameOver), 4f * Time.timeScale);
+        ostSystem.GameOver();
     }
 }

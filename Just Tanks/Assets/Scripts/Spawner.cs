@@ -32,6 +32,10 @@ public class Spawner : MonoBehaviour
     [SerializeField] private WaveEnemies[] waveEnemies, buffer;
     [SerializeField] private float timeA, timeB, timeMin, timeMultiplier, distance;
     [SerializeField] private Bonuses bonuses;
+    [SerializeField] private BossBar bossBar;
+    private Data data;
+    private Options options;
+    [SerializeField] private int levelUp;
     private void Start()
     {
         language = PlayerPrefs.GetInt("Language");
@@ -122,6 +126,13 @@ public class Spawner : MonoBehaviour
     {
         texts[0].text = textTranslations[4].text[language];
         texts[1].text = textTranslations[5].text[language];
+        bossBar.End();
+        data = new Data();
+        options = new Options();
+        DataSaver.Open("Options", out options);
+        DataSaver.Open(options.activeSave, out data);
+        data.levelProgress = levelUp;
+        DataSaver.Save(data, options.activeSave);
     }
     public void Bonus()
     {

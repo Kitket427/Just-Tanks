@@ -34,7 +34,7 @@ public class OstSystem : MonoBehaviour
             else mainOst.pitch = 0;
             for (int i = 0; i < ost.Length; i++)
             {
-                if (ost[i].pitch     > 0) ost[i].pitch -= Time.deltaTime / 6f / Time.timeScale;
+                if (ost[i].pitch > 0) ost[i].pitch -= Time.deltaTime / 6f / Time.timeScale;
                 else ost[i].pitch = 0;
             }
         }

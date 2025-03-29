@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -84,6 +85,7 @@ public class Pointsystem : MonoBehaviour
 
     void UpdatePoint(int points)
     {
+        DataSaver.Open(options.activeSave, out data);
         this.points += points;
         if (this.points < 0) this.points = 0;
         data.points = this.points;
@@ -108,8 +110,8 @@ public class Pointsystem : MonoBehaviour
             data.upgrates[number] = upgradesData[number].upgrate;
             data.points = points -= upgradesData[number].price;
             pointext.text = "" + points;
-            upgradesData[number].price += upgradesData[number].priceStart;
-            if (number == 6) upgradesData[number].price *= upgradesData[number].upgrate;
+            if (number == 6) upgradesData[number].price *= 3;
+            else upgradesData[number].price += upgradesData[number].priceStart;
             Verification();
             DataSaver.Save(data, options.activeSave);
             if (number == 6) menu.NewUnit();
@@ -138,7 +140,12 @@ public class Pointsystem : MonoBehaviour
                 upgradesData[i].priceStart = upgradesData[i].price;
                 for (int j = 0; j < upgradesData[i].upgrate; j++)
                 {
-                    upgradesData[i].price += upgradesData[i].priceStart;
+                    if (i == 6)
+                    {
+                        if (upgradesData[i].price == 0) upgradesData[i].price += upgradesData[i].priceStart;
+                        upgradesData[i].price *= 3;
+                    }
+                    else upgradesData[i].price += upgradesData[i].priceStart;
                 }
             }
             upgradesData[i].barUpgrate.fillAmount = upgradesData[i].upgrate * 1f / upgradesData[i].maxUpgrate * 1f;

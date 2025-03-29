@@ -450,7 +450,9 @@ MonoBehaviour:
   - {fileID: 455172542}
   - {fileID: 251049421}
   - {fileID: 85934035}
+  - {fileID: 255802072}
   ostSystem: {fileID: 1262424205}
+  pause: {fileID: 1899925125}
 --- !u!1 &85934031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +1944,7 @@ MonoBehaviour:
   - {fileID: 94970811}
   texts: []
   ostSystem: {fileID: 0}
+  pause: {fileID: 0}
 --- !u!1 &312810491
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,48 +5134,6 @@ MonoBehaviour:
       count: 3
     friends: []
     bosses: 0
-  - spawnEnemies:
-    - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
-      count: 3
-    - enemy: {fileID: 7507652437496828360, guid: 72ac74797a4c83e4ba1c4024dae7c8ba, type: 3}
-      count: 2
-    friends:
-    - {fileID: 2585867002979618063, guid: 5b741439ee01a734b832b62478740911, type: 3}
-    bosses: 0
-  - spawnEnemies:
-    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
-      count: 7
-    friends: []
-    bosses: 0
-  - spawnEnemies:
-    - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
-      count: 7
-    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
-      count: 7
-    friends:
-    - {fileID: 8519692786761859988, guid: 5bc21d68f63076f4189065842fb916ab, type: 3}
-    - {fileID: 2585867002979618063, guid: 5b741439ee01a734b832b62478740911, type: 3}
-    bosses: 0
-  - spawnEnemies:
-    - enemy: {fileID: 9010642470125476174, guid: bb337b4dbbad5734cb35f58414352b85, type: 3}
-      count: 4
-    friends: []
-    bosses: 0
-  - spawnEnemies:
-    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
-      count: 10
-    - enemy: {fileID: 2952823370686531829, guid: 9f77cef910aa50845882a9f38533dbb3, type: 3}
-      count: 5
-    friends: []
-    bosses: 0
-  - spawnEnemies:
-    - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
-      count: 5
-    - enemy: {fileID: 6269024014703266720, guid: 5e88d926583b8aa4fa9e879aedd734d4, type: 3}
-      count: 5
-    friends:
-    - {fileID: 536430127}
-    bosses: 1
   buffer:
   - spawnEnemies:
     - enemy: {fileID: 7962580341932633482, guid: ba2e4610000d8c3479a0491dd3d7195b, type: 3}
@@ -5227,6 +5188,8 @@ MonoBehaviour:
   timeMultiplier: 0.02
   distance: 50
   bonuses: {fileID: 1019108379}
+  bossBar: {fileID: 75418225}
+  levelUp: 1
 --- !u!1 &1190955286
 GameObject:
   m_ObjectHideFlags: 0
@@ -9586,6 +9549,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1757114456}
+    - target: {fileID: 3727037036477349970, guid: 63853a04aaceaca47bc0fa8a3303b4c6, type: 3}
+      propertyPath: ability
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3727037036477349970, guid: 63853a04aaceaca47bc0fa8a3303b4c6, type: 3}
       propertyPath: abilityBar
       value: 
