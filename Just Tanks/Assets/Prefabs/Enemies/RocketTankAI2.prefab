@@ -138,6 +138,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 4128918953221243199}
   adaptiveSpeed: 0
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -511,6 +512,7 @@ MonoBehaviour:
   bossColor: 0
   enemiesCounter: 1
   respawn: 0
+  friend: 0
   points: 140
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
@@ -676,6 +678,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &8129687741083005863
 GameObject:
   m_ObjectHideFlags: 0

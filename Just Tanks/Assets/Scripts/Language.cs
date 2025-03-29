@@ -15,6 +15,7 @@ public class Language : MonoBehaviour
         {
             anim.Play("EndGame");
             Invoke(nameof(Menu), 2);
+            PlayerPrefs.SetString("Firstry", "Hi");
         }
         else menu.Language();
     }

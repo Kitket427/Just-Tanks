@@ -139,6 +139,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 3195207229953790270}
   adaptiveSpeed: 0
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -856,7 +857,7 @@ MonoBehaviour:
   type: 2
   rotateZ: 0
   rotate: 0
-  speed: 180
+  speed: 120
   offset: 0
   fireRadius: 15
   distance: 60
@@ -868,3 +869,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 264
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0

@@ -27,7 +27,7 @@ public class Fire : MonoBehaviour
             options = new Options();
             DataSaver.Open("Options", out options);
             DataSaver.Open(options.activeSave, out data);
-            reloadTime *= 1f - data.upgrates[2] * 1f / 40f;
+            reloadTime *= 1f - data.upgrates[4] * 1f / 60f;
         }
     }
     public void Shoot()

@@ -12,10 +12,11 @@ public class Bullet : MonoBehaviour
     [SerializeField] private Transform posEffect;
     [SerializeField] private int ricount;
     public int breakouts;
-    public Collider2D shooter;
+    public Collider2D shooter, shield;
     private void Start()
     {
-        Physics2D.IgnoreCollision(GetComponent<CapsuleCollider2D>(), shooter, true);
+        if (shooter) Physics2D.IgnoreCollision(GetComponent<CapsuleCollider2D>(), shooter, true);
+        if (shield) Physics2D.IgnoreCollision(GetComponent<CapsuleCollider2D>(), shield, true);
         if (time > 0) Invoke(nameof(Dead), time);
         if (!richoshet && GetComponentInChildren<Rico>()) GetComponentInChildren<Rico>().enabled = false;
         Invoke(nameof(Active), 0.02f);
@@ -71,6 +72,7 @@ public class Bullet : MonoBehaviour
             else
             {
                 if(shooter) Physics2D.IgnoreCollision(GetComponent<CapsuleCollider2D>(), shooter, false);
+                if (shield) Physics2D.IgnoreCollision(GetComponent<CapsuleCollider2D>(), shield, false);
                 Instantiate(rico, transform.position, transform.rotation);
                 dam = true;
                 ricount--;

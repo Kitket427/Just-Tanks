@@ -8,5 +8,6 @@ public class Data
 {
     public int points;
     public int levelProgress;
-    public int[] upgrates = new int[6];
+    public int[] upgrates = new int[7];
+    public float time;
 }

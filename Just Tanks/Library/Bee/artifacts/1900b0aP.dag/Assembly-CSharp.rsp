@@ -333,6 +333,7 @@
 "Assets/Scripts/AIController.cs"
 "Assets/Scripts/Aim.cs"
 "Assets/Scripts/AnimSpeed.cs"
+"Assets/Scripts/BonusAlert.cs"
 "Assets/Scripts/Bonuses.cs"
 "Assets/Scripts/BossBar.cs"
 "Assets/Scripts/Bullet.cs"
@@ -357,10 +358,12 @@
 "Assets/Scripts/RandomSpawn.cs"
 "Assets/Scripts/Rico.cs"
 "Assets/Scripts/SaveInformation.cs"
+"Assets/Scripts/SaveInfoSlots.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TankControl.cs"
 "Assets/Scripts/Teleport.cs"
 "Assets/Scripts/Test.cs"
+"Assets/Scripts/TimeInGame.cs"
 "Assets/Scripts/Volume.cs"
 -langversion:9.0
 

@@ -13,14 +13,14 @@ struct Trigger
 public class HitPoints : MonoBehaviour, ITakeDamage
 {
     [SerializeField] private BossBar bossBar;
-    [SerializeField] private float hp, hpMax, healingAfter, healingTime;
+    [SerializeField] private float hp, hpMax, healingAfter, healingTime, timeToDie;
     [SerializeField] private SpriteRenderer[] sprites;
     [SerializeField] private Material[] materials;
     [SerializeField] private GameObject objDead, effect;
     [SerializeField] private Trigger[] triggers;
     [SerializeField] private Color color;
     private bool isDead;
-    [SerializeField] private bool player, bossColor, enemiesCounter, respawn, friend;
+    [SerializeField] private bool player, bossColor, enemiesCounter, respawn, friend, shield;
     [SerializeField] private int points;
     [SerializeField] private GameObject respawnObj;
     [SerializeField] private Vector2 distance;
@@ -36,10 +36,10 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             options = new Options();
             DataSaver.Open("Options", out options);
             DataSaver.Open(options.activeSave, out data);
-            hp *= 1f + data.upgrates[0] * 1f / 20f;
+            hp *= 1f + data.upgrates[0] * 1f / 15f;
             hpMax = hp;
-            healingAfter *= 1f - data.upgrates[4] * 1f / 100f;
-            healingTime *= 1f - data.upgrates[4] * 1f / 100f;
+            healingAfter *= 1f - data.upgrates[1] * 1f / 60f;
+            healingTime *= 1f - data.upgrates[1] * 1f / 60f;
             bossBar.Damage(hp, hpMax);
         }
         hpMax = hp;
@@ -48,6 +48,14 @@ public class HitPoints : MonoBehaviour, ITakeDamage
             if (item.color != Color.black)item.color = color;
         }
         if (friend && FindObjectOfType<BonusAlert>()) FindObjectOfType<BonusAlert>().Alert(7, true, 0.3f);
+    }
+    void OnEnable()
+    {
+        if (timeToDie > 0) Invoke(nameof(ShieldOff), timeToDie);
+    }
+    void ShieldOff()
+    {
+        gameObject.SetActive(false);
     }
     void Update()
     {
@@ -65,6 +73,10 @@ public class HitPoints : MonoBehaviour, ITakeDamage
         {
             FindObjectOfType<CameraShake>().TriggerShake(0.1f, damage / 7f, damage / 7f);
             if(FindObjectOfType<Pointsystem>()) FindObjectOfType<Pointsystem>().LostPoints((int)(damage * 3));
+        }
+        if(shield)
+        {
+            if (FindObjectOfType<Pointsystem>()) FindObjectOfType<Pointsystem>().GetPoints((int)damage);
         }
         hp -= damage;
         if (hp <= 0 && isDead == false)

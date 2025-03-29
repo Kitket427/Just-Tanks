@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -112,9 +109,10 @@ public class Pointsystem : MonoBehaviour
             data.points = points -= upgradesData[number].price;
             pointext.text = "" + points;
             upgradesData[number].price += upgradesData[number].priceStart;
+            if (number == 6) upgradesData[number].price *= upgradesData[number].upgrate;
             Verification();
             DataSaver.Save(data, options.activeSave);
-            if (number == 5) menu.NewUnit();
+            if (number == 6) menu.NewUnit();
         }
         else
         {

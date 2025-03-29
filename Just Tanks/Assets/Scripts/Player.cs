@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         options = new Options();
         DataSaver.Open("Options", out options);
         DataSaver.Open(options.activeSave, out data);
-        speed *= 1f+data.upgrates[1] * 1f / 100f;
+        speed *= 1f + data.upgrates[1] * 1f / 60f;
         if (bonuses) bonuses.BonusDown();
     }
 
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
                 // Плавный поворот
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
             }
-            else if (transform.eulerAngles.z != targetAngle)
+            else if (transform.eulerAngles.z != targetAngle-90)
             {
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, targetAngle - 90));
             }

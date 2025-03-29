@@ -412,10 +412,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossBar: {fileID: 0}
-  hp: 15
+  hp: 30
   hpMax: 0
   healingAfter: 0
   healingTime: 0
+  timeToDie: 0
   sprites:
   - {fileID: 1604930768747300072}
   - {fileID: 8050052035063907072}
@@ -439,6 +440,7 @@ MonoBehaviour:
   enemiesCounter: 1
   respawn: 0
   friend: 0
+  shield: 0
   points: 40
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
@@ -1288,7 +1290,7 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 360
+  speed: 180
   offset: 0
   fireRadius: 3
   distance: 45
@@ -1300,3 +1302,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 72
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0

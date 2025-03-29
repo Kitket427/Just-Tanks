@@ -35,6 +35,12 @@ public class Menu : MonoBehaviour
         }
         Language();
         NewUnit();
+        if(PlayerPrefs.HasKey("Firstry"))
+        {
+            menus[8].SetActive(true);
+            menus[0].SetActive(false);
+            PlayerPrefs.DeleteKey("Firstry");
+        }
     }
     private void Update()
     {
@@ -92,12 +98,14 @@ public class Menu : MonoBehaviour
             "SaveC" => texts[15].text[language],
             _ => "Œÿ»¡ ¿! Œÿ»¡ ¿!"
         };
+        NewUnit();
     }
     public void DeleteSave()
     {
         DataSaver.DeleteFile(options.activeSave);
         data = new Data();
         DataSaver.Save(data, options.activeSave);
+        NewUnit();
     }
     void Bye()
     {
@@ -129,7 +137,12 @@ public class Menu : MonoBehaviour
     public void NewUnit()
     {
         DataSaver.Open(options.activeSave, out data);
-        for (int i = 0; i < data.upgrates[5]; i++)
+        for (int i = 0; i < 4; i++)
+        {
+            slotNoTank[i].SetActive(true);
+            slotTank[i].SetActive(false);
+        }
+        for (int i = 0; i < data.upgrates[6]; i++)
         {
             slotTank[i].SetActive(true);
             slotNoTank[i].SetActive(false);

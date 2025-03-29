@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 enum TypeOfUnit
 {
     player, enemy, friend
+}
+enum TypeOfAbility
+{
+    none, rocket, shield, turret
 }
 public class Aim : MonoBehaviour
 {
@@ -17,6 +22,10 @@ public class Aim : MonoBehaviour
     [SerializeField] private LayerMask layerMask;
     private Data data;
     private Options options;
+    [SerializeField] private TypeOfAbility ability;
+    [SerializeField] private GameObject abilityObj;
+    [SerializeField] private Image abilityBar;
+    [SerializeField] private float abilityReload;
     private void Start()
     {
         if (type == TypeOfUnit.player)
@@ -26,7 +35,8 @@ public class Aim : MonoBehaviour
             options = new Options();
             DataSaver.Open("Options", out options);
             DataSaver.Open(options.activeSave, out data);
-            speed *= 1f + data.upgrates[3] * 1f / 25f;
+            speed *= 1f + data.upgrates[3] * 1f / 30f;
+            abilityReload *= 1f - data.upgrates[5] * 1f / 60f;
         }
         else
         {
@@ -68,7 +78,18 @@ public class Aim : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, rotate);
                 rotate = Mathf.MoveTowardsAngle(transform.eulerAngles.z, rotateZ, speed * Time.deltaTime);
             }
+            if (type == TypeOfUnit.player)
+            {
+                if (Input.GetKeyDown(KeyCode.Mouse1) && abilityBar.fillAmount == 1)
+                {
+                    if (ability == TypeOfAbility.rocket || ability == TypeOfAbility.turret) Instantiate(abilityObj, transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+                    else abilityObj.SetActive(true);
+                    abilityBar.fillAmount = 0;
+                }
+                if (abilityBar.fillAmount < 1) abilityBar.fillAmount += Time.deltaTime / abilityReload;
+            }
         }
+        if (ability == TypeOfAbility.shield) abilityObj.transform.position = transform.position;
     }
     void FinderPl()
     {

@@ -422,10 +422,12 @@
 "Assets/Scripts/RandomSpawn.cs"
 "Assets/Scripts/Rico.cs"
 "Assets/Scripts/SaveInformation.cs"
+"Assets/Scripts/SaveInfoSlots.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TankControl.cs"
 "Assets/Scripts/Teleport.cs"
 "Assets/Scripts/Test.cs"
+"Assets/Scripts/TimeInGame.cs"
 "Assets/Scripts/Volume.cs"
 -langversion:9.0
 

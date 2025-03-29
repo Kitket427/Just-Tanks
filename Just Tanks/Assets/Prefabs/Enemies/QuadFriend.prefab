@@ -548,7 +548,7 @@ MonoBehaviour:
   type: 2
   rotateZ: 0
   rotate: 0
-  speed: 180
+  speed: 150
   offset: 0
   fireRadius: 15
   distance: 45
@@ -560,6 +560,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 264
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &6570967754420236277
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +872,7 @@ MonoBehaviour:
   multiplierPoints: 0
   anim: {fileID: 0}
   adaptiveSpeed: 0
+  player: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 8

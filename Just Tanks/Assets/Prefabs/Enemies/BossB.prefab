@@ -271,7 +271,7 @@ MonoBehaviour:
   type: 1
   rotateZ: 0
   rotate: 0
-  speed: 90
+  speed: 120
   offset: 0
   fireRadius: 15
   distance: 60
@@ -283,6 +283,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 72
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &4723121506882566467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossBar: {fileID: 0}
-  hp: 4000
+  hp: 3000
   hpMax: 0
   healingAfter: 0
   healingTime: 0
@@ -1037,6 +1041,7 @@ MonoBehaviour:
   enemiesCounter: 1
   respawn: 0
   friend: 0
+  shield: 0
   points: 5000
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
@@ -1072,8 +1077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11300ceca3e3e5419dde6d5ab0d7b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: {x: 50, y: 50}
-  jump: {x: 100, y: 100}
+  distance: {x: 100, y: 100}
+  jump: {x: 200, y: 200}
   player: {fileID: 0}
 --- !u!114 &7607345371289833646
 MonoBehaviour:
