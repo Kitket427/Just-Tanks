@@ -60,6 +60,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &1331391109421133269
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +208,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &1435365814468698877
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +663,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 264
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &2197961620418374074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1035,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 0
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &3096126249402103385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1306,7 @@ MonoBehaviour:
   hpMax: 0
   healingAfter: 8
   healingTime: 8
+  timeToDie: 0
   sprites:
   - {fileID: 2445422667655634366}
   - {fileID: 7761806932897663649}
@@ -1323,6 +1340,7 @@ MonoBehaviour:
   enemiesCounter: 0
   respawn: 0
   friend: 0
+  shield: 0
   points: 0
   respawnObj: {fileID: 0}
   distance: {x: 0, y: 0}
@@ -2053,6 +2071,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 264
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &6530624711465519878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2737,6 +2759,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  ability: 0
+  abilityObj: {fileID: 0}
+  abilityBar: {fileID: 0}
+  abilityReload: 0
 --- !u!1 &8825981886516875962
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
 
                 // Плавный поворот
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+                //transform.rotation = targetRotation;
             }
             else if (transform.eulerAngles.z != targetAngle-90)
             {
